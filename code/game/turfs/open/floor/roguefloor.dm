@@ -79,6 +79,7 @@
 /turf/open/floor/rogue/twig/platform
 	name = "platform"
 	desc = "A destructible platform."
+	icon_state = "platform"
 	damage_deflection = 6
 	max_integrity = 200
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'

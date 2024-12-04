@@ -307,7 +307,7 @@
 	destroy_sound = 'sound/misc/treefall.ogg'
 	icon_state = "fence"
 	density = TRUE
-	opacity = TRUE
+	opacity = FALSE
 	anchored = TRUE
 	layer = 2.91
 	climbable = FALSE

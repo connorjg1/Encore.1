@@ -98,8 +98,8 @@
 /turf/closed/wall/mineral/rogue/wood
 	name = "wooden wall"
 	desc = "A rough-hewn wall of wood."
-	icon = 'icons/turf/walls/roguewood.dmi'
-	icon_state = "wood"
+	icon = 'icons/turf/walls/wood_wall_plain.dmi'
+	icon_state = "wallformed"
 	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
@@ -148,9 +148,9 @@
 /turf/closed/wall/mineral/rogue/wooddark
 	name = "dark wood wall"
 	desc = "Made from durable, somewhat darker wood." // i am not sure if the wood is really dark
-	icon = 'icons/turf/roguewall.dmi'
-	icon_state = "corner"
-	smooth = SMOOTH_FALSE
+	icon = 'icons/turf/walls/wood_wall_plain_alt.dmi'
+	icon_state = "wallformed"
+	smooth = SMOOTH_TRUE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
@@ -213,9 +213,9 @@
 /turf/closed/wall/mineral/rogue/decowood
 	name = "decorated wooden wall"
 	desc = "Meticulously designed by an professional carpenter."
-	icon = 'icons/turf/roguewall.dmi'
-	icon_state = "decowood"
-	smooth = SMOOTH_FALSE
+	icon = 'icons/turf/walls/wood_wall.dmi'
+	icon_state = "wallformed"
+	smooth = SMOOTH_TRUE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
@@ -232,7 +232,8 @@
 
 /turf/closed/wall/mineral/rogue/decowood/vert
 	name = "decorated wooden wall"
-	icon_state = "decowood-vert"
+	icon = 'icons/turf/walls/wood_wall_alt.dmi'
+	icon_state = "wallformed"
 
 /turf/closed/wall/mineral/rogue/decostone
 	name = "decorated stone wall"
