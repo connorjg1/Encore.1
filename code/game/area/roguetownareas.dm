@@ -120,7 +120,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	first_time_text = "THE CANYON OF DECEPTION"
 
 /area/rogue/outdoors/mountains/decap
-	name = "mt decapitation"
+	name = "mount miracle"
 	icon_state = "decap"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt)
@@ -142,7 +142,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 
 /area/rogue/outdoors/mountains/decap/stepbelow
-	name = "mt decapitation inner"
+	name = "mount miracle"
 	icon_state = "decap"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt)
@@ -158,7 +158,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 
 /area/rogue/outdoors/rtfield
-	name = "azure basin"
+	name = "county of etgard"
 	icon_state = "rtfield"
 	soundenv = 19
 	ambush_times = list("night")
@@ -168,7 +168,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambush_mobs = list(
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 30,
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 50)
-	first_time_text = "AZURE BASIN"
+	first_time_text = "COUNTY OF ETGARD"
 	droning_sound = 'sound/music/area/field.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
@@ -199,7 +199,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 40,
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
 				/mob/living/carbon/human/species/goblin/npc/ambush = 30)
-	first_time_text = "THE AZURE GROVE"
+	first_time_text = "COUNTY OF THE WEEPING WOOD"
 	converted_type = /area/rogue/indoors/shelter/woods
 /area/rogue/indoors/shelter/woods
 	icon_state = "woods"
@@ -207,6 +207,27 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 
+
+/area/rogue/outdoors/woods/lakeside
+	first_time_text = "THE HAMLET OF LAKESIDE"
+
+/area/rogue/outdoors/woods/whisperen
+	first_time_text = "THE HAMLET OF WEY WHISPEREN"
+
+/area/rogue/outdoors/woods/berkleigh
+	first_time_text = "THE HAMLET OF LODGE BERKLEIGH"
+
+/area/rogue/outdoors/woods/seculton
+	first_time_text = "THE SECULTON GATE"
+
+/area/rogue/outdoors/woods/northplains
+	first_time_text = "THE COUNTY OF NORTHPLAINS"
+
+/area/rogue/outdoors/woods/heavenscoast
+	first_time_text = "THE COUNTY OF HEAVENSCOAST"
+
+/area/rogue/outdoors/woods/crossroads
+	first_time_text = "THE COUNTY OF CROSSROADS"
 
 /area/rogue/outdoors/river
 	name = "river"
@@ -242,7 +263,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll = 20,
 				/mob/living/simple_animal/hostile/retaliate/rogue/spider = 40,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 30)
-	first_time_text = "THE TERRORBOG"
+	first_time_text = "THE SINKING MIRE"
 	converted_type = /area/rogue/indoors/shelter/bog
 
 /area/rogue/indoors/shelter/bog
@@ -284,7 +305,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 30,
 				/mob/living/carbon/human/species/human/northern/searaider/ambush = 10,
 				/mob/living/carbon/human/species/goblin/npc/ambush/sea = 40)
-	first_time_text = "THE AZURE COAST"
+	first_time_text = "NORTHERN DOMOTAN COAST"
 	converted_type = /area/rogue/indoors/shelter/woods
 
 //// UNDER AREAS (no indoor rain sound usually)
@@ -333,7 +354,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/under/cavewet
 	name = "cavewet"
 	icon_state = "cavewet"
-	first_time_text = "The Undersea"
+	first_time_text = "THE BURIED SEA"
 	ambientsounds = AMB_CAVEWATER
 	ambientnight = AMB_CAVEWATER
 	spookysounds = SPOOKY_CAVE
@@ -535,7 +556,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
-	first_time_text = "THE KEEP OF AZURE PEAK"
+	first_time_text = "ETGARD KEEP"
 	keep_area = TRUE
 
 /area/rogue/outdoors/exposed/manorgarri
@@ -645,7 +666,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/indoors/town/church/chapel
 	icon_state = "chapel"
-	first_time_text = "THE HOUSE OF THE TEN"
+	first_time_text = "TEMPLE OF ASPECTS"
 
 /area/rogue/indoors/town/fire_chamber
 	name = "incinerator"
@@ -679,7 +700,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/dwarf.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "The Dwarven Quarter"
+	first_time_text = "THE DWARVEN QUARTER"
 	converted_type = /area/rogue/outdoors/exposed/dwarf
 /area/rogue/outdoors/exposed/dwarf
 	icon_state = "dwarf"
@@ -697,7 +718,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	converted_type = /area/rogue/indoors/shelter/town
-	first_time_text = "THE CITY OF AZURE PEAK"
+	first_time_text = "THE TOWN OF OLD DOMA"
 	town_area = TRUE
 
 /area/rogue/indoors/shelter/town

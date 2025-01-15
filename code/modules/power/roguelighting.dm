@@ -1,6 +1,6 @@
 /obj/effect/sunlight
 	var/brightness = 10
-	light_power = 1
+	light_power = 5
 	light_color = "#2f1313"
 	layer = BELOW_MOB_LAYER
 	icon = 'icons/effects/effects.dmi'
@@ -635,8 +635,8 @@
 	icon = 'icons/roguetown/misc/tallwide.dmi'
 	density = FALSE
 	brightness = 10
-	pixel_x = -10
-	pixel_y = -10
+	pixel_x = -32
+	pixel_y = -32
 	layer = 2.0
 	fueluse = 0
 	soundloop = null

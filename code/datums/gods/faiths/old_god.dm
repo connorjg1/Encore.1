@@ -1,8 +1,5 @@
 /datum/faith/old_god
-	name = "Old God"
-	desc = "The Holy See has been taken over by misguided fools who defile Psydon and worship false gods, but we survive.\n\
-		<b>PSYDON YET LIVES. PSYDON YET ENDURES.</b>\n\
-		PSYDON sent the COMET SYON to destroy the rampaging ARCHDEVIL VHESLYN and save all Humenity. Though he rests now, the fools believe him DEAD- but \
-		PSYDON YET LIVES, AND PSYDON YET ENDURES. Unanswered prayers and impotent miracles - they are TESTS."
-	worshippers = "People of Zybantium, people of Stine, religious extremists, zealotry-filled fools"
+	name = "The All-Aspect"
+	desc = "The worship of the balance and order of things between the Four Elementals specifically. This is usually the focus of the Katholikos, the largest sect within the Goblet which acts in favor of all Elementals."
+	worshippers = "The Katholikos, high clergy and obsessed zealots"
 	godhead = /datum/patron/old_god

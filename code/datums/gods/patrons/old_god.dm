@@ -1,12 +1,12 @@
 /datum/patron/old_god
-	name = "Psydon"
-	domain = "God of Ontological Reality"
-	desc = "The true God of everything, Psydon is maximally good - He created humen in his image to live in Psydonia, and defended the Azure Basin by sending the COMET SYON to defeat the rampaging archdemon."
-	worshippers = "Fanatics and Nostalgists"
+	name = "The All-Aspect"
+	domain = "The balance of all four Elementals"
+	desc = "The balance between the Elementals is always adhered to, but the worshippers most keen to maintain the balance are those of the Katholikos."
+	worshippers = "Fanatics, zealots and inquisitors"
 	associated_faith = /datum/faith/old_god
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	confess_lines = list(
-		"THERE IS ONLY ONE TRUE GOD!",
-		"PSYDON YET LIVES! PSYDON YET ENDURES!",
-		"REBUKE THE HERETICAL- PSYDON ENDURES!",
+		"THE BALANCE COMMANDS!",
+		"THE ASPECTS PREVAIL!",
+		"THE CYCLE IS MAINTAINED!",
 	)

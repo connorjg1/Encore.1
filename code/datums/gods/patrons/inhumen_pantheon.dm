@@ -4,64 +4,64 @@
 	undead_hater = FALSE
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	confess_lines = list(
-		"PSYDON IS THE DEMIURGE!",
-		"THE TEN ARE WORTHLESS COWARDS!",
-		"THE TEN ARE DECEIVERS!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
 	)
 
-/datum/patron/inhumen/zizo
-	name = "Zizo"
-	domain = "Advancement, Hubris, Left Hand Magicks"
-	desc = "Snow Elf turned God- banished by the Ten for spreading unholy magicks and forbidden sciences. Her craft taught mortals to bend the natural world to their will, but destroyed the Snow Elf race.."
-	worshippers = "Necromancers, Warlocks, and the Undead"
+/datum/patron/inhumen/zizo//Change to new god, the Jealous God
+	name = "The Jealous God"
+	domain = "Domotan Island, and seemingly little else"
+	desc = "She whose name is unknown, he whose agenda is lost; the Jealous God embodies no elemental aspect, and serves neither the divine nor ilk of Hell. Her solemn devotees are the royal family of Etgard itself, the Shirleigh Dynasty and their constituents. They are the only divine to lay absolute claim over Domotan Island, and is thus praised only in hushed tones beyond the walls of Etgard Keep."
+	worshippers = "The Shirleigh Dynasty, the brainwashed and the desperate"
 	mob_traits = list(TRAIT_CABAL)
 	t1 = /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle
 	t2 = /obj/effect/proc_holder/spell/invoked/raise_lesser_undead/miracle
 	t3 = /obj/effect/proc_holder/spell/invoked/rituos/miracle
 	confess_lines = list(
-		"PRAISE ZIZO!",
-		"LONG LIVE ZIZO!",
-		"ZIZO IS QUEEN!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
 	)
 
-/datum/patron/inhumen/graggar
-	name = "Graggar"
-	domain = "God of Conquest, War, Murder, Pillaging"
-	desc = "Orc turned deity, said by the Holy Ecclesial to have been blessed by Ravox himself. He took his blessings to rampage and tear down the Old Ten. Though some Graggarites might care for 'honor', most do not- what matters are results, and victory at any cost."
-	worshippers = "Prisoners, Murderers and the Cruel"
+/datum/patron/inhumen/graggar//Change to new god, Archdevils of War
+	name = "Archdevils of War"
+	domain = "All heretical anti-deities of conquest, war, murder and pillaging"
+	desc = "Archdevils of the steepest rage whose influence has been made in the world, either as intruders from Hell itself or hidden Divines seeking to disrupt the Elemental Balance. Worshippers of warring devils are usually affected by the fall of Angros, whose descent into madness is idealized as an attempt to break free of divine shackles."
+	worshippers = "Prisoners, murderers and the cruel"
 	mob_traits = list(TRAIT_HORDE, TRAIT_ORGAN_EATER)
 	confess_lines = list(
-		"GRAGGAR IS THE BEAST I WORSHIP!",
-		"THROUGH VIOLENCE, DIVINITY!",
-		"THE GOD OF CONQUEST DEMANDS BLOOD!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
 	)
 
-/datum/patron/inhumen/matthios
-	name = "Matthios"
-	domain = "God of Robbery, Redistribution of Wealth, and Commerce"
-	desc = "The Man who stole fire from the Underworld and gave it in exchange for worship; the first Transaction, cutting a hole in the firmament and flooding ontological reality with the fact of Wealth. Take from the wealthy, give to the worthless, empower."
-	worshippers = "Highwaymen, Robbers, Downtrodden Peasants, Merchants"
+/datum/patron/inhumen/baotha//Change to new god, Archdevils of Madness
+	name = "Archdevils of Madness"
+	domain = "Heretical anti-deities of trickery, deception and illusion"
+	desc = "Archdevils or hidden Divines who survive and affect the world by means of deceit, serving to sew the seeds of misfortune between the Elementals."
+	worshippers = "Addicts, drunkards, and the depraved"
+	mob_traits = list(TRAIT_DEPRAVED, TRAIT_CRACKHEAD)
+	confess_lines = list(
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+	)
+
+/datum/patron/inhumen/matthios//Change to new god, Archdevils of Loss
+	name = "Archdevils of Greed"
+	domain = "Unfathomably selfish idols of everlasting greed"
+	desc = "Any heretical anti-deity serving to disrupt commerce and fill their own material hoards, redistributing the wealth of the world between themselves and the common men."
+	worshippers = "Highwaymen, robbers, downtrodden peasants, shady merchants"
 	mob_traits = list(TRAIT_COMMIE, TRAIT_SEEPRICES_SHITTY)
 	t0 = /obj/effect/proc_holder/spell/invoked/appraise
 	t1 = /obj/effect/proc_holder/spell/invoked/transact
 	t2 = /obj/effect/proc_holder/spell/invoked/equalize
 	t3 = /obj/effect/proc_holder/spell/invoked/churnwealthy
 	confess_lines = list(
-		"MATTHIOS STEALS FROM THE WORTHLESS!",
-		"MATTHIOS IS JUSTICE!",
-		"MATTHIOS IS MY LORD!",
-	)
-
-/datum/patron/inhumen/baotha
-	name = "Baotha"
-	domain = "Goddess of Degeneracy, Debauchery and Addiction"
-	desc = "Eora's crueler half, made be from her one true love having been unfaithful. Filled with bitterness, she separated from Eora in spirit and spiraled into a dark hole of crippling hedonism. She teaches her ilk to place their trust in no one, and do only as they please."
-	worshippers = "Perverts, Gamblers, Drunkards, and Bards"
-	mob_traits = list(TRAIT_DEPRAVED, TRAIT_CRACKHEAD)
-	confess_lines = list(
-		"BAOTHA DEMANDS PLEASURE!",
-		"LIVE, LAUGH, LOVE!",
-		"BAOTHA IS MY JOY!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
+		"PLACEHOLDER CONFESSION!",
 	)
 
 

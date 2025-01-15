@@ -67,10 +67,10 @@
 #define TRAIT_XYLIX "Blessing of Xylix" //secret thieves cant language
 
 // ASCENDANT CULTIST TRAITS (all of them recognize each other)
-#define TRAIT_COMMIE "Blessing of Matthios" //recognized by bandits as an ally
-#define TRAIT_CABAL "Of the Cabal" //Zizo cultists recognize each other too
-#define TRAIT_HORDE "Anointed" //Graggarites also recognize each other
-#define TRAIT_DEPRAVED "Fallen" //Baothans also recognize each other
+#define TRAIT_COMMIE "Blessing of Greed" //Greed archdevils
+#define TRAIT_CABAL "Of the One Divine" //Jealous God cultists recognize each other too
+#define TRAIT_HORDE "Bloodthirst" //War archdevils also recognize each other
+#define TRAIT_DEPRAVED "Deceiver" //Madness archdevils also recognize each other
 
 #define TRAIT_BASHDOORS "bashdoors"
 #define TRAIT_NOMOOD "no_mood"

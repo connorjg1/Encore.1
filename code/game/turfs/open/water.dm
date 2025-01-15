@@ -389,6 +389,10 @@
 	wash_in = TRUE
 	water_reagent = /datum/reagent/water/gross
 
+/turf/open/water/ocean
+	desc = "Thin and muddied water of a coast, it only appears deep enough to reach a one's knees."
+	water_level = 1
+
 /turf/open/water/ocean/deep
 	name = "salt water"
 	desc = "Deceptively deep, be careful not to find yourself this far out."

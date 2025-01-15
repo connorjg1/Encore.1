@@ -299,6 +299,11 @@
 	icon_state = "border"
 	passcrawl = FALSE
 
+/obj/structure/fluff/railing/rampart
+	icon_state = "rampart"
+	blade_dulling = DULLING_BASHCHOP
+	layer = ABOVE_MOB_LAYER
+
 /obj/structure/fluff/railing/fence
 	name = "palisade"
 	desc = ""
@@ -718,7 +723,7 @@
 	if(!user.is_literate())
 		. += "I have no idea what it says."
 	else
-		. += "It says \"AZURE PEAK\""
+		. += "It says \"DOMOTAN\""
 
 /obj/structure/fluff/buysign
 	icon_state = "signwrote"
@@ -887,6 +892,10 @@
 /obj/structure/fluff/statue/knightalt/r
 	icon_state = "knightstatue2_r"
 
+/obj/structure/fluff/statue/huge_knight
+	icon = 'icons/roguetown/misc/96x96.dmi'
+	icon_state = "huge_knight"
+	pixel_x = -32
 
 /obj/structure/fluff/statue/myth
 	icon_state = "myth"
