@@ -93,7 +93,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/list/friendlyGenders = list("male" = "masculine", "female" = "feminine")
 	var/phobia = "spiders"
 	var/shake = TRUE
-	var/sexable = FALSE
 
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"

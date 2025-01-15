@@ -497,13 +497,7 @@
 					C.blood_volume = max(C.blood_volume-45, 0)
 					C.vitae_bank -= 500
 					if(ishuman(C))
-						var/mob/living/carbon/human/H = C
-						if(H.virginity)
-							to_chat(user, "<span class='love'>Virgin blood, delicious!</span>")
-							if(VDrinker.isspawn)
-								VDrinker.handle_vitae(750, 750)
-							else
-								VDrinker.handle_vitae(750)
+						VDrinker.handle_vitae(750)
 					if(VDrinker.isspawn)
 						VDrinker.handle_vitae(500, 500)
 					else

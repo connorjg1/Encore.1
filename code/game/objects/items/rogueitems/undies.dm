@@ -13,7 +13,6 @@
 	var/gendered
 	var/race
 	var/datum/bodypart_feature/underwear/undies_feature
-	var/covers_breasts = FALSE
 	sewrepair = TRUE
 
 /obj/item/undies/attack(mob/M, mob/user, def_zone)
@@ -33,7 +32,6 @@
 /obj/item/undies/bikini
 	name = "bikini"
 	icon_state = "bikini"
-	covers_breasts = TRUE
 
 /obj/item/undies/panties
 	name = "panties"
@@ -42,4 +40,3 @@
 /obj/item/undies/leotard
 	name = "leotard"
 	icon_state = "leotard"
-	covers_breasts = TRUE

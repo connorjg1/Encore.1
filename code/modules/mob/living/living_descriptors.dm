@@ -36,11 +36,7 @@
 
 /mob/living/proc/get_extra_mob_descriptors()
 	return list(
-		/datum/mob_descriptor/age,
-		/datum/mob_descriptor/penis,
-		/datum/mob_descriptor/testicles,
-		/datum/mob_descriptor/breasts,
-		/datum/mob_descriptor/vagina,
+		/datum/mob_descriptor/age
 		)
 
 /mob/living/proc/get_descriptor_of_slot(descriptor_slot, list/descs)
@@ -83,14 +79,6 @@
 	var/fourth_line = build_coalesce_description(desc_copy, described, list(MOB_DESCRIPTOR_SLOT_PROMINENT, MOB_DESCRIPTOR_SLOT_PROMINENT), "%THEY% %DESC1% and %DESC2%.")
 	if(fourth_line)
 		lines += fourth_line
-
-	var/fifth = build_coalesce_description(desc_copy, described, list(MOB_DESCRIPTOR_SLOT_PENIS, MOB_DESCRIPTOR_SLOT_TESTICLES), "%THEY% %DESC1% and %DESC2%.")
-	if(fifth)
-		lines += fifth
-
-	var/sixth = build_coalesce_description(desc_copy, described, list(MOB_DESCRIPTOR_SLOT_BREASTS, MOB_DESCRIPTOR_SLOT_VAGINA), "%THEY% %DESC1% and %DESC2%.")
-	if(sixth)
-		lines += sixth
 
 	/// Print the remaining ones in seperate lines
 	for(var/descriptor_type in desc_copy)

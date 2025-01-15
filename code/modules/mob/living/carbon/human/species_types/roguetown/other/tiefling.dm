@@ -74,11 +74,7 @@
 		/datum/customizer/bodypart_feature/face_detail,
 		/datum/customizer/bodypart_feature/underwear,
 		/datum/customizer/organ/horns/anthro,
-		/datum/customizer/organ/tail/tiefling,
-		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
-		/datum/customizer/organ/breasts/human,
-		/datum/customizer/organ/vagina/human,
+		/datum/customizer/organ/tail/tiefling
 		)
 	body_markings = list(
 		/datum/body_marking/flushed_cheeks,

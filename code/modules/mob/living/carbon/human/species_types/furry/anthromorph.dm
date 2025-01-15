@@ -50,11 +50,7 @@
 		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue,
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
-		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
-		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
-		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted,
-		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
-		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
+		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix
 		)
 	bodypart_features = list(
 		/datum/bodypart_feature/hair/head,
@@ -74,11 +70,7 @@
 		/datum/customizer/organ/horns/anthro,
 		/datum/customizer/organ/frills/anthro,
 		/datum/customizer/organ/wings/anthro,
-		/datum/customizer/organ/neck_feature/anthro,
-		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
-		/datum/customizer/organ/breasts/animal,
-		/datum/customizer/organ/vagina/anthro,
+		/datum/customizer/organ/neck_feature/anthro
 		)
 	body_marking_sets = list(
 		/datum/body_marking_set/none,

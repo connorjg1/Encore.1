@@ -1896,9 +1896,4 @@ generate/load female uniform sprites matching all previously decided variables
 	update_inv_mouth()
 
 /mob/living/carbon/proc/has_boobed_overlay()
-	var/obj/item/organ/breasts/boobs = getorganslot(ORGAN_SLOT_BREASTS)
-	if(!boobs)
-		return FALSE
-	if(boobs.breast_size == 0)
-		return FALSE
 	return TRUE

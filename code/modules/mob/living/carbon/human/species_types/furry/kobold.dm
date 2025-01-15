@@ -48,11 +48,7 @@
 		ORGAN_SLOT_TAIL = /obj/item/organ/tail/kobold,
 		ORGAN_SLOT_SNOUT = /obj/item/organ/snout/lizard,
 		ORGAN_SLOT_FRILLS = /obj/item/organ/frills/lizard,
-		ORGAN_SLOT_HORNS = /obj/item/organ/horns,
-		//ORGAN_SLOT_TESTICLES = /obj/item/organ/testicles,
-		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/tapered,
-		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
-		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
+		ORGAN_SLOT_HORNS = /obj/item/organ/horns
 		)
 	customizers = list(
 		/datum/customizer/organ/eyes/humanoid,
@@ -63,11 +59,7 @@
 		/datum/customizer/bodypart_feature/underwear,
 		/datum/customizer/organ/snout/lizard,
 		/datum/customizer/organ/frills/lizard,
-		/datum/customizer/organ/horns/humanoid,
-		/datum/customizer/organ/testicles/anthro,
-		/datum/customizer/organ/penis/anthro,
-		/datum/customizer/organ/breasts/animal,
-		/datum/customizer/organ/vagina/animal,
+		/datum/customizer/organ/horns/humanoid
 		)
 	body_marking_sets = list(
 		/datum/body_marking_set/none,

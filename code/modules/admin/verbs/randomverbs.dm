@@ -1149,16 +1149,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			to_chat(ligga, "<span class='userdanger'>I have been sent to <span class='green'>Brazil</span>!</span>")
 		*/
 
-		if(ADMIN_PUNISHMENT_CBT)
-			if(!ishuman(target))
-				to_chat(usr,span_warning("Target must be human!"))
-				return
-			var/mob/living/carbon/human/humie = target
-			var/obj/item/bodypart/affecting = humie.get_bodypart(BODY_ZONE_CHEST)
-			if(!affecting)
-				to_chat(usr,span_warning("Target must have a chest!"))
-				return
-			affecting.add_wound(/datum/wound/cbt/permanent)
 		if(ADMIN_PUNISHMENT_NECKSNAP)
 			if(!ishuman(target))
 				to_chat(usr,span_warning("Target must be human!"))

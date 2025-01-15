@@ -47,9 +47,6 @@
 #endif
 
 /mob/living/carbon/human/Initialize()
-#ifdef MATURESERVER
-	sexcon = new /datum/sex_controller(src)
-#endif
 	verbs += /mob/living/proc/mob_sleep
 	verbs += /mob/living/proc/lay_down
 
@@ -117,7 +114,6 @@
 		AddComponent(/datum/component/mood)
 
 /mob/living/carbon/human/Destroy()
-	QDEL_NULL(sexcon)
 	STOP_PROCESSING(SShumannpc, src)
 	QDEL_NULL(physiology)
 	GLOB.human_list -= src
@@ -1167,24 +1163,3 @@
 /mob/living/carbon/human/species/zombie/krokodil_addict
 	race = /datum/species/krokodil_addict
 
-//Vrell - Moving this here to fix load order bugs
-/mob/living/carbon/human/has_penis()
-	return getorganslot(ORGAN_SLOT_PENIS)
-
-/mob/living/carbon/human/has_testicles()
-	return getorganslot(ORGAN_SLOT_TESTICLES)
-
-/mob/living/carbon/human/has_vagina()
-	return getorganslot(ORGAN_SLOT_VAGINA)
-
-/mob/living/carbon/human/has_breasts()
-	RETURN_TYPE(/obj/item/organ/breasts)
-	return getorganslot(ORGAN_SLOT_BREASTS)
-
-/mob/living/carbon/human/proc/is_fertile()
-	var/obj/item/organ/vagina/vagina = getorganslot(ORGAN_SLOT_VAGINA)
-	return vagina.fertility
-
-/mob/living/carbon/human/proc/is_virile()
-	var/obj/item/organ/testicles/testicles = getorganslot(ORGAN_SLOT_TESTICLES)
-	return testicles.virility
