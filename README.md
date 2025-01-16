@@ -1,6 +1,6 @@
+## Summary
+An SS13 heavy roleplay server based on Roguetown code.
 
-## Wiki
-The wiki is currently being worked on at [here](https://azurepeak.miraheze.org/wiki/Main_Page).
-
-## Discord
-Come say hi on the [discord](https://discord.gg/NCFXUAgCPT), it is where the community is the most active.
+## External resources
+[Discord](https://discord.gg/PcnpNHZf)
+[Wiki](https://encore.miraheze.org/wiki/Main_Page).
