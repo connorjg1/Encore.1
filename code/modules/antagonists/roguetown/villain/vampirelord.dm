@@ -120,7 +120,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 	eyes = new /obj/item/organ/eyes/night_vision/zombie
 	eyes.Insert(owner.current)
 	H.equipOutfit(/datum/outfit/job/roguetown/vamplord)
-	H.set_patron(/datum/patron/inhumen/zizo)
+	H.set_patron(/datum/patron/heretic/devil)
 
 	return TRUE
 
@@ -790,13 +790,13 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 						spawn(6000)
 							GLOB.todoverride = null
 							sunstolen = FALSE
-						priority_announce("The Sun is torn from the sky!", "Terrible Omen", 'sound/misc/astratascream.ogg')
+						priority_announce("A blackened shroud erupts from the land and bathes all of Domotan. Darkness falls!", "Terrible Omen", 'sound/misc/astratascream.ogg')
 						addomen(OMEN_SUNSTEAL)
-						for(var/mob/living/carbon/human/astrater in GLOB.human_list)
-							if(!istype(astrater.patron, /datum/patron/divine/astrata) || !length(astrater.mind?.antag_datums))
+						for(var/mob/living/carbon/human/earthling in GLOB.human_list)
+							if(!istype(earthling.patron, /datum/patron/elemental/gani) || !length(earthling.mind?.antag_datums))
 								continue
-							to_chat(astrater, span_userdanger("You feel the pain of [astrater.patron.name]!"))
-							astrater.emote_scream()
+							to_chat(earthling, span_userdanger("You feel the pain of [earthling.patron.name]!"))
+							earthling.emote_scream()
 
 	if(user.mind.special_role == "Vampire Spawn")
 		to_chat(user, "I don't have the power to use this!")

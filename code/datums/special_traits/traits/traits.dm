@@ -173,10 +173,10 @@
 	character.mind.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 6, TRUE)
 
 /datum/special_trait/psydons_rider
-	name = "Psydon's Drunkest Rider"
-	greet_text = span_notice("I ride! None of the laws shall stop me for that is Psydon's divine will!")
-	req_text = "Worship Psydon"
-	allowed_patrons = list(/datum/patron/old_god)
+	name = "The Pantheon's Drunkest Rider"
+	greet_text = span_notice("I ride! None of the laws shall stop me for that is the Elemental's divine will!")
+	req_text = "Worship the All-Aspect"
+	allowed_patrons = list(/datum/patron/all_aspect)
 	weight = 100
 
 /datum/special_trait/psydons_rider/on_apply(mob/living/carbon/human/character, silent)
@@ -293,9 +293,9 @@
 
 /datum/special_trait/lucky
 	name = "Fortune's Grace"
-	greet_text = span_notice("Xylix favor me, I am extremely lucky.")
-	req_text = "Have Xylix as your Patron"
-	allowed_patrons = list(/datum/patron/divine/xylix)
+	greet_text = span_notice("Iliope favors me, I am extremely lucky.")
+	req_text = "Have Iliope as your Patron"
+	allowed_patrons = list(/datum/patron/elemental/iliope)
 	weight = 7
 
 /datum/special_trait/lucky/on_apply(mob/living/carbon/human/character, silent)

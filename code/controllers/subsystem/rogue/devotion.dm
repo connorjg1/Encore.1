@@ -42,12 +42,12 @@
 	src.holder = holder
 	holder?.devotion = src
 	src.patron = patron
-	if (patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/divine/necra)
+	if (patron.type == /datum/patron/heretic/devil || patron.type == /datum/patron/elemental)
 		ADD_TRAIT(holder, TRAIT_DEATHSIGHT, "devotion")
 
 /datum/devotion/Destroy(force)
 	. = ..()
-	if (patron.type == /datum/patron/inhumen/zizo || patron.type == /datum/patron/divine/necra)
+	if (patron.type == /datum/patron/heretic/devil || patron.type == /datum/patron/elemental)
 		REMOVE_TRAIT(holder, TRAIT_DEATHSIGHT, "devotion")
 	holder?.devotion = null
 	holder = null
@@ -122,7 +122,7 @@
 		return
 
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0)
-	if(istype(patron,/datum/patron/divine))
+	if(istype(patron,/datum/patron/elemental))
 		spelllist += /obj/effect/proc_holder/spell/targeted/abrogation
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))

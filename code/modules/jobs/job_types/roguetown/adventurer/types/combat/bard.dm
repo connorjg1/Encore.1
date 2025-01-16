@@ -172,22 +172,14 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			switch(H.patron?.type)
-				if(/datum/patron/divine/astrata)
+				if(/datum/patron/elemental/visires)
 					neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-				if(/datum/patron/divine/noc)
+				if(/datum/patron/elemental/akan)
 					neck = /obj/item/clothing/neck/roguetown/psicross/noc
-				if(/datum/patron/divine/dendor)
+				if(/datum/patron/elemental/gani)
 					neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-				if(/datum/patron/divine/necra)
+				if(/datum/patron/elemental/mjallidhorn)
 					neck = /obj/item/clothing/neck/roguetown/psicross/necra
-				if(/datum/patron/divine/pestra)
-					neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-				if(/datum/patron/divine/ravox)
-					neck = /obj/item/clothing/neck/roguetown/psicross/ravox
-				if(/datum/patron/divine/malum)
-					neck = /obj/item/clothing/neck/roguetown/psicross/malum
-				if(/datum/patron/divine/eora) //Eora content from Stonekeep
-					neck = /obj/item/clothing/neck/roguetown/psicross/eora
 			backpack_contents = list(/obj/item/lockpickring/one = 1)
 			H.change_stat("strength", 1)
 			H.change_stat("intelligence", 2)

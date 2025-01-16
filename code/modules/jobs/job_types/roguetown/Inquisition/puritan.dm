@@ -7,8 +7,8 @@
 	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = list(/datum/patron/old_god) //You MUST have a Psydonite character to start. Just so people don't get japed into Oops Suddenly Psydon!
-	tutorial = "PSYDON YET LIVES. PSYDON YET ENDURES. You have been sent by the High Bishop of Otava, leader of a radical denomination of the Holy See that still believes in the endurance of PSYDON, and holds him above the Ten. Officially, you are here on diplomatic business. /n /n Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from Ten-worshippers that stray too far from doctrine, to Ecclesial fools that worship Ascendants. The Duchy tolerates you due to your ability to fight the inhumen, and the Church tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
+	allowed_patrons = list(/datum/patron/all_aspect)
+	tutorial = "You have been sent by the High Bishop of the Katholikos, leader of a radical denomination of the One Church that only believes in the endurance of the All-Aspect, and the security of the Elemental Pantheon. Officially, you are here on diplomatic business. /n /n Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from heretics that stray too far from doctrine, to poisoned fools that worship devils. The locals tolerate you due to your ability to fight the demonic, and Etgard's royalty tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
 	whitelist_req = TRUE
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
@@ -23,7 +23,7 @@
 /datum/outfit/job/roguetown/puritan
 	name = "Inquisitor"
 	jobtype = /datum/job/roguetown/puritan
-	allowed_patrons = list(/datum/patron/old_god)
+	allowed_patrons = list(/datum/patron/all_aspect)
 
 /datum/outfit/job/roguetown/puritan/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -120,7 +120,7 @@
 		return
 	if(!H.stat)
 		var/static/list/faith_lines = list(
-			"DO YOU DENY THE TEN?",
+			"DO YOU DENY THE ELEMENTALS?",
 			"WHO IS YOUR GOD?",
 			"ARE YOU FAITHFUL?",
 			"WHO IS YOUR SHEPHERD?",

@@ -16,34 +16,22 @@
 	..()
 	cloak = /obj/item/clothing/cloak/tabard/crusader
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/elemental/visires)
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/elemental/gani)
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/elemental/mjallidhorn)
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
 			cloak = /obj/item/clothing/cloak/tabard/crusader/necra
-		if(/datum/patron/divine/pestra)
-			neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-			cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/elemental/akan)
 			neck = /obj/item/clothing/neck/roguetown/psicross/noc
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
-		if(/datum/patron/divine/ravox)
-			neck = /obj/item/clothing/neck/roguetown/psicross/ravox
-			cloak = /obj/item/clothing/cloak/tabard/crusader/ravox
-		if(/datum/patron/divine/malum)
-			neck = /obj/item/clothing/neck/roguetown/psicross/malum
-			cloak = /obj/item/clothing/cloak/tabard/crusader/malum
-		if(/datum/patron/divine/eora) //Eora content from Stonekeep
-			neck = /obj/item/clothing/neck/roguetown/psicross/eora
-			cloak = /obj/item/clothing/cloak/tabard/crusader/eora
-		if(/datum/patron/old_god)
+		if(/datum/patron/all_aspect)
 			neck = /obj/item/clothing/neck/roguetown/psicross/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
-		if(/datum/patron/inhumen/zizo) 
+		if(/datum/patron/heretic/devil) 
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			neck = /obj/item/roguekey/inhumen
 

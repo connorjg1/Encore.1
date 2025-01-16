@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/warscholar
-	name = "Naledi Warscholar"
-	tutorial = "Heralded by sigils of black-and-gold and their distinct masks, the Naledi Warscholars once prowled the dunes of their homeland, exterminating daemons in exchange for coin, artifacts, or knowledge. As Naledi's economy falters, the Warscholars travel to foreign lands to seek further business."
+	name = "Sultanate Warscholar"
+	tutorial = "Heralded by sigils of black-and-gold and their distinct masks, the Qadirid Warscholars once prowled the dunes of the Southern Reach, exterminating the ill-favored in exchange for coin, artifacts, or knowledge. A sellsword by all accounts, but legendary in their capability."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/warscholar
@@ -9,11 +9,11 @@
 
 /datum/outfit/job/roguetown/mercenary/warscholar
 	var/detailcolor
-	allowed_patrons = list(/datum/patron/old_god)
+	allowed_patrons = ALL_DIVINE_PATRONS
 
 /datum/outfit/job/roguetown/mercenary/warscholar/pre_equip(mob/living/carbon/human/H)
 	..()
-	var/list/naledicolors = sortList(list(
+	var/list/sultancolors = sortList(list(
 		"GOLD" = "#C8BE6D",
 		"PALE PURPLE" = "#9E93FF",
 		"BLUE" = "#A7B4F6",
@@ -28,8 +28,8 @@
 	))
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
-	detailcolor = input("Choose a color.", "NALEDIAN COLORPLEX") as anything in naledicolors
-	detailcolor = naledicolors[detailcolor]
+	detailcolor = input("Choose a color.", "SULTAN COLORPLEX") as anything in sultancolors
+	detailcolor = sultancolors[detailcolor]
 	var/classes = list("Hierophant","Pontifex","Vizier")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
@@ -43,9 +43,9 @@
 
 	switch(classchoice)
 
-		if("Hierophant")
+		if("Hierophant")//TBD-Class Overhaul
 			H.set_blindness(0)
-			to_chat(H, span_warning("Hierophants are magicians who studied under cloistered sages, well-versed in all manners of arcyne. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
+			to_chat(H, span_warning("Hierophants are magicians who studied under cloistered sages, well-versed in all manners of Thauma. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
@@ -55,7 +55,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 			H.grant_language(/datum/language/celestial)
@@ -81,7 +81,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
 
-		if("Pontifex")
+		if("Pontifex")//TBD-Class Overhaul
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Naledi Pontifex, a warrior trained into a hybridized style of movement-controlling magic and hand-to-hand combat. Though your abilities in magical fields are lacking, you are far more dangerous than other magi in a straight fight. You manifest your calm, practiced skill into a killing intent that takes the shape of an arcyne blade."))
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
@@ -113,7 +113,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex
 			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
 
-		if("Vizier")
+		if("Vizier")//TBD-Class Overhaul
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Naledi Vizier. You are a healer, trained in both physick and holy practices. Likely of a learned or upper class background, you are a supporting fellow, meant to heal your allies with miracles and surgeries- though you are no stranger to combat."))
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)

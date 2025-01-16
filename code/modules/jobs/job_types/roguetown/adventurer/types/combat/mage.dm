@@ -51,6 +51,6 @@
 		H.mind.adjust_spellpoints(1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		switch(H.patron?.type)
-			if(/datum/patron/inhumen/zizo)
+			if(/datum/patron/heretic/devil)
 				H.cmode_music = 'sound/music/combat_cult.ogg'
 				backpack_contents = list(/obj/item/roguekey/inhumen = 1)

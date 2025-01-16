@@ -1,6 +1,6 @@
 /datum/advclass/iconoclast //Support Cleric, Heavy armor, unarmed, miracles.
 	name = "Iconoclast"
-	tutorial = "Trained by an Ecclesial sect, you uphold the Ideological purity of the Matthian Creed. Take from the wealthy, give to the worthless, empower. They will look up to you, in search of the God of Robbery's guidance. Be their light in the dark."
+	tutorial = "Trained by an ecclesial sect, you uphold the creed of a disruptive God somewhere far away. Make little of the Katholikos' grandeur and empower those who suffer at their hands."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/iconoclast
@@ -10,7 +10,7 @@
 
 /datum/outfit/job/roguetown/bandit/iconoclast/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.set_patron(/datum/patron/inhumen/matthios) // we gotta be a matthian before the devotion stuff starts
+	H.set_patron(/datum/patron/heretic/otherkind) // we gotta be a matthian before the devotion stuff starts
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)

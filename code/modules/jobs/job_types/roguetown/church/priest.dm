@@ -24,7 +24,7 @@
 	round_contrib_points = 3
 
 /datum/outfit/job/roguetown/priest
-	allowed_patrons = list(/datum/patron/divine/astrata)
+	allowed_patrons = list(/datum/patron/elemental/gani)
 
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()

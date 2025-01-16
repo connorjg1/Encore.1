@@ -22,7 +22,7 @@
 	name = "Acolyte"
 	jobtype = /datum/job/roguetown/monk
 
-	allowed_patrons = list(/datum/patron/divine/pestra, /datum/patron/divine/astrata, /datum/patron/divine/eora, /datum/patron/divine/noc, /datum/patron/divine/necra) //Eora content from Stonekeep
+	allowed_patrons = ALL_DIVINE_PATRONS
 
 
 /datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)
@@ -31,24 +31,24 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/keyring/churchie
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/elemental/visires)
 			head = /obj/item/clothing/head/roguetown/roguehood/astrata
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/elemental/akan)
 			head = /obj/item/clothing/head/roguetown/nochood
 			neck = /obj/item/clothing/neck/roguetown/psicross/noc
 			wrists = /obj/item/clothing/wrists/roguetown/nocwrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/noc
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		if(/datum/patron/divine/dendor) //Dendorites all busted. Play Druid.
+		if(/datum/patron/elemental/gani)
 			head = /obj/item/clothing/head/roguetown/dendormask
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/elemental/mjallidhorn)
 			head = /obj/item/clothing/head/roguetown/necrahood
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -56,28 +56,11 @@
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
 			shirt = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
-		if(/datum/patron/divine/pestra) //PLEASE add leper gear later, this SUCKS dude
-			head = /obj/item/clothing/head/roguetown/necrahood
-			neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-			shoes = /obj/item/clothing/shoes/roguetown/boots
-			pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
-		if(/datum/patron/divine/eora) //Eora content from Stonekeep
-			head = /obj/item/clothing/head/roguetown/eoramask
-			neck = /obj/item/clothing/neck/roguetown/psicross/eora
-			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/eora
-		else
-			head = /obj/item/clothing/head/roguetown/roguehood/astrata
-			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-			wrists = /obj/item/clothing/wrists/roguetown/wrappings
-			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-		if(H.patron?.type == /datum/patron/divine/pestra)
+		if(H.patron?.type == /datum/patron/elemental/akan)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
@@ -91,10 +74,10 @@
 		H.change_stat("intelligence", 3)
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
-		if(H.patron?.type == /datum/patron/divine/necra)
+		if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
 			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/divine/eora)
+		if(H.patron?.type == /datum/patron/elemental/iliope)
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)

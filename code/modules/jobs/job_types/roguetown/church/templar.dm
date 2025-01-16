@@ -48,30 +48,18 @@
 	neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/elemental/visires)
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/elemental/gani)
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/elemental/mjallidhorn)
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
 			cloak = /obj/item/clothing/cloak/tabard/crusader/necra
-		if(/datum/patron/divine/pestra)
-			neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-			cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-		if(/datum/patron/divine/eora) //Eora content from stonekeep
-			neck = /obj/item/clothing/neck/roguetown/psicross/eora
-			cloak = /obj/item/clothing/cloak/tabard/crusader/eora
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/elemental/akan)
 			neck = /obj/item/clothing/neck/roguetown/psicross/noc
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
-		if(/datum/patron/divine/ravox)
-			neck = /obj/item/clothing/neck/roguetown/psicross/ravox
-			cloak = /obj/item/clothing/cloak/tabard/crusader/ravox
-		if(/datum/patron/divine/malum)
-			neck = /obj/item/clothing/neck/roguetown/psicross/malum
-			cloak = /obj/item/clothing/cloak/tabard/crusader/malum
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
@@ -112,37 +100,23 @@
 	wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/elemental/visires)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratan
 			cloak = /obj/item/clothing/cloak/templar/astratan
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/elemental/gani)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/elemental/mjallidhorn)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/necra
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/necran
 			cloak = /obj/item/clothing/cloak/templar/necran
-		if(/datum/patron/divine/pestra)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/pestra
-			cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-		if(/datum/patron/divine/eora) //Eora content from stonekeep
-			wrists = /obj/item/clothing/neck/roguetown/psicross/eora
-			head = /obj/item/clothing/head/roguetown/helmet/sallet
-			cloak = /obj/item/clothing/cloak/tabard/crusader/eora
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/elemental/akan)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/noc
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
-		if(/datum/patron/divine/ravox)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/ravox
-			cloak = /obj/item/clothing/cloak/tabard/crusader/ravox
-		if(/datum/patron/divine/malum)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/malum
-			cloak = /obj/item/clothing/cloak/templar/malumite
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/malum
-		if(/datum/patron/old_god)
+		if(/datum/patron/all_aspect)
 			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
 	backr = /obj/item/rogueweapon/shield/tower/metal

@@ -47,7 +47,7 @@
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
-#define TRAIT_NOCSIGHT "Blessing of Noc" // I can see just a bit more clearly in darkness.
+#define TRAIT_AKANSIGHT "Blessing of Noc" // I can see just a bit more clearly in darkness.
 #define TRAIT_DEATHSIGHT "Veiled Whispers" // Is notified when a player character dies, but not told exactly where or how.
 //Hearthstone/Azure end.
 
@@ -63,14 +63,14 @@
 #define TRAIT_SOUL_EXAMINE "Blessing of Necra" //can check bodies to see if they have departed
 #define TRAIT_CRACKHEAD "Blessing of Baotha" //will never overdose
 #define TRAIT_CHOSEN "Astrata's Chosen"
-#define TRAIT_ABYSSOR_SWIM "Blessing of Abyssor" //less base fatigue drain when swimming
-#define TRAIT_XYLIX "Blessing of Xylix" //secret thieves cant language
+#define TRAIT_MJALLIDHORN_SWIM "Blessing of Mjallidhorn" //less base fatigue drain when swimming
+#define TRAIT_ILIOPE "Blessing of Iliope" //secret thieves cant language
 
 // ASCENDANT CULTIST TRAITS (all of them recognize each other)
-#define TRAIT_COMMIE "Blessing of Greed" //Greed archdevils
-#define TRAIT_CABAL "Of the One Divine" //Jealous God cultists recognize each other too
-#define TRAIT_HORDE "Bloodthirst" //War archdevils also recognize each other
-#define TRAIT_DEPRAVED "Deceiver" //Madness archdevils also recognize each other
+#define TRAIT_COMMIE "Blessing of Greed"
+#define TRAIT_CABAL "of the One Envy" //Jealous God cultists recognize each other too
+#define TRAIT_HORDE "Daemonic" //Archdevils also recognize each other
+#define TRAIT_DEPRAVED "Deceiver" //Secret heretics recognize each other
 
 #define TRAIT_BASHDOORS "bashdoors"
 #define TRAIT_NOMOOD "no_mood"

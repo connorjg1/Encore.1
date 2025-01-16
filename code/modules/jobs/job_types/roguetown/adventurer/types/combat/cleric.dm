@@ -14,23 +14,15 @@
 /datum/outfit/job/roguetown/adventurer/cleric/pre_equip(mob/living/carbon/human/H)
 	..()
 	switch(H.patron?.type)
-		if(/datum/patron/divine/astrata)
+		if(/datum/patron/elemental/visires)
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-		if(/datum/patron/divine/noc)
+		if(/datum/patron/elemental/akan)
 			neck = /obj/item/clothing/neck/roguetown/psicross/noc
-		if(/datum/patron/divine/dendor)
+		if(/datum/patron/elemental/gani)
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-		if(/datum/patron/divine/necra)
+		if(/datum/patron/elemental/mjallidhorn)
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
-		if(/datum/patron/divine/pestra)
-			neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-		if(/datum/patron/divine/ravox)
-			neck = /obj/item/clothing/neck/roguetown/psicross/ravox
-		if(/datum/patron/divine/malum)
-			neck = /obj/item/clothing/neck/roguetown/psicross/malum
-		if(/datum/patron/divine/eora) //Eora content from Stonekeep
-			neck = /obj/item/clothing/neck/roguetown/psicross/eora
-		if(/datum/patron/inhumen/zizo)
+		if(/datum/patron/heretic/devil)
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			neck = /obj/item/roguekey/inhumen
 
@@ -145,28 +137,25 @@
 		shoes = /obj/item/clothing/shoes/roguetown/boots
 		// apply patron-specific outfit alterations
 		switch(H.patron?.type)
-			if(/datum/patron/divine/astrata)
+			if(/datum/patron/elemental/visires)
 				head = /obj/item/clothing/head/roguetown/roguehood/astrata
 				armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
 				beltr = /obj/item/flashlight/flare/torch/lantern // you are the lightbringer
-			if(/datum/patron/divine/noc)
+			if(/datum/patron/elemental/akan)
 				head =  /obj/item/clothing/head/roguetown/nochood
 				armor = /obj/item/clothing/suit/roguetown/shirt/robe/noc
 				pants = /obj/item/clothing/under/roguetown/tights/black
 				belt = /obj/item/storage/belt/rogue/leather/black
-			if(/datum/patron/divine/necra)
+			if(/datum/patron/elemental/mjallidhorn)
 				head = /obj/item/clothing/head/roguetown/necrahood
 				armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
 				pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-			if(/datum/patron/divine/dendor)
+			if(/datum/patron/elemental/gani)
 				head = /obj/item/clothing/head/roguetown/dendormask
 				armor = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
 				pants = /obj/item/clothing/under/roguetown/loincloth
 				belt = /obj/item/storage/belt/rogue/leather/rope
 				shoes = /obj/item/clothing/shoes/roguetown/sandals
-			if(/datum/patron/divine/eora)
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/eora
-				// HEARTHSTONE ADDITION: cloistered devout devo regen & tier buff
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
 		C.passive_devotion_gain += 0.25
 		C.grant_spells(H) // don't give churn as an extra spell to cloistered since they get their patron's full spell list (up to t3)
