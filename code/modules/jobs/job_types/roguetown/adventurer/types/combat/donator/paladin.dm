@@ -17,20 +17,20 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
+			cloak = /obj/item/clothing/cloak/tabard/crusader/visires
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
+			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/necra
-			cloak = /obj/item/clothing/cloak/tabard/crusader/necra
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+			cloak = /obj/item/clothing/cloak/tabard/crusader/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/noc
-			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
+			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			neck = /obj/item/clothing/neck/roguetown/psicross/silver
-			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
+			neck = /obj/item/clothing/neck/roguetown/psicross
+			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 		if(/datum/patron/heretic/devil) 
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			neck = /obj/item/roguekey/inhumen

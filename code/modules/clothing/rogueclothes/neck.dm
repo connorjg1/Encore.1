@@ -181,53 +181,38 @@
 	experimental_onhip = TRUE
 	anvilrepair = /datum/skill/craft/armorsmithing
 
-/obj/item/clothing/neck/roguetown/psicross/astrata
-	name = "amulet of Astrata"
+/obj/item/clothing/neck/roguetown/psicross/visires
+	name = "amulet of Visires"
 	desc = ""
 	icon_state = "astrata"
 
-/obj/item/clothing/neck/roguetown/psicross/noc
-	name = "amulet of Noc"
+/obj/item/clothing/neck/roguetown/psicross/akan
+	name = "amulet of Akan"
 	desc = ""
 	icon_state = "noc"
 
-/obj/item/clothing/neck/roguetown/psicross/dendor
-	name = "amulet of Dendor"
+/obj/item/clothing/neck/roguetown/psicross/gani
+	name = "amulet of Gani"
 	desc = ""
 	icon_state = "dendor"
 
-/obj/item/clothing/neck/roguetown/psicross/necra
-	name = "amulet of Necra"
+/obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+	name = "amulet of Mjallidhorn"
 	desc = ""
 	icon_state = "necra"
 
-/obj/item/clothing/neck/roguetown/psicross/pestra
-	name = "amulet of Pestra"
-	desc = ""
-	icon_state = "pestra"
-
-/obj/item/clothing/neck/roguetown/psicross/ravox
-	name = "amulet of Ravox"
-	desc = ""
-	icon_state = "ravox"
-
-/obj/item/clothing/neck/roguetown/psicross/malum
-	name = "amulet of Malum"
+/obj/item/clothing/neck/roguetown/psicross/golerkanh
+	name = "amulet of Goler Kanh"
 	desc = ""
 	icon_state = "malum"
 
-/obj/item/clothing/neck/roguetown/psicross/eora
-	name = "amulet of Eora"
-	desc = ""
-	icon_state = "eora"
-
 /obj/item/clothing/neck/roguetown/psicross/wood
-	name = "wooden psycross"
+	name = "wooden cross"
 	icon_state = "psicrossw"
 	sellprice = 0
 
 /obj/item/clothing/neck/roguetown/psicross/silver
-	name = "silver psycross"
+	name = "silver cross"
 	icon_state = "psicrosssteel"
 	sellprice = 50
 
@@ -280,7 +265,7 @@
 			H.Paralyze(20)
 
 /obj/item/clothing/neck/roguetown/psicross/g
-	name = "golden psycross"
+	name = "golden cross"
 	desc = ""
 	icon_state = "psicrossg"
 	//dropshrink = 0.75
@@ -299,7 +284,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/neck/roguetown/horus
-	name = "eye of horuz"
+	name = "eye of greed"
 	desc = ""
 	icon_state = "horus"
 	//dropshrink = 0.75
@@ -334,8 +319,8 @@
 	sellprice = 100
 	anvilrepair = /datum/skill/craft/armorsmithing
 
-/obj/item/clothing/neck/roguetown/psicross/naledi
-	name = "naledian psy-bracelet"
-	desc = "A peculiar icon of worship from a foreign land. Forming the three-progned Psydonite cross in a circular ring, this bracelet embodies the Naledian belief of Psydon's eternity."
+/obj/item/clothing/neck/roguetown/psicross/sultanate
+	name = "sultanate bracelet"
+	desc = "A peculiar icon of worship from a foreign land. This bracelet embodies the Sultans' belief of Maruhadar's eternity."
 	icon_state = "psybracelet"
 	item_state = null

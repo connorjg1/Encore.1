@@ -1,26 +1,26 @@
-/datum/advclass/psydoniantemplar // A templar, but for the Inquisition
+/datum/advclass/katholikostemplar // A templar, but for the Inquisition
 	name = "Adjudicator"
 	tutorial = "You are the strong arm of the Inquisition. You serve as a Templar under the local Inquisitor to forward the goals of the Katholikos."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	outfit = /datum/outfit/job/roguetown/psydoniantemplar
+	outfit = /datum/outfit/job/roguetown/katholikostemplar
 	category_tags = list(CTAG_INQUISITION)
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 
-/datum/outfit/job/roguetown/psydoniantemplar/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/katholikostemplar/pre_equip(mob/living/carbon/human/H)
 	..()
 	has_loadout = TRUE
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
-	cloak = /obj/item/clothing/cloak/psydontabard
+	cloak = /obj/item/clothing/cloak/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
-	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
+	gloves = /obj/item/clothing/gloves/roguetown/chain/all_aspect
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	backl = /obj/item/storage/backpack/rogue/satchel/black
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	shoes = /obj/item/clothing/shoes/roguetown/psydonboots
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	id = /obj/item/clothing/ring/silver
@@ -52,7 +52,7 @@
 		H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 
-/datum/outfit/job/roguetown/psydoniantemplar/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/katholikostemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Bastard Sword","Flail","Mace")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons

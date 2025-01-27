@@ -11,7 +11,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS //gets set to dendor on the outfit anyways lol
 	outfit = /datum/outfit/job/roguetown/druid
-	tutorial = "You have always been drawn to the wild, and the wild drawn to you. When your calling came, it was from Dendor. Your patron claims dominion over all nature--promising bounties to those who act in his name to bring balance to His domain. The forest is the most comfortable place for you, toiling alongside soilsons and soilbrides...although sometimes what lies beyond the gates fills your soul with a feral yearning."
+	tutorial = "You have always been drawn to the wild, and the wild drawn to you. When your calling came, it was from Gani herself. Your patron claims dominion over all nature--promising bounties to those who act in Her name to bring balance to Her domain. The forest is the most comfortable place for you, toiling alongside soilsons and soilbrides...although sometimes what lies beyond the gates fills your soul with a feral yearning."
 
 	display_order = JDO_DRUID
 	give_bank_account = TRUE
@@ -31,9 +31,9 @@
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	beltl = /obj/item/rogueweapon/whip //The whip itself is not often associated to many jobs. Druids feel like a thematic choice to have a self-defense whip
 	backl = /obj/item/storage/backpack/rogue/satchel
-	head = /obj/item/clothing/head/roguetown/dendormask
-	wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
-	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
+	head = /obj/item/clothing/head/roguetown/ganimask
+	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/gani
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)

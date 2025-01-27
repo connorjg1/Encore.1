@@ -4,7 +4,8 @@
 /datum/species/moth
 	name = "Fluvian"
 	id = "moth"
-	desc = "A curious, insectoid creature that almost seems out of place. Uniquely, despite their size, they're capable of flight!"
+	desc = "A curious, insectoid creature that almost seems out of place. \
+	Most seen are derivatives of the Lost Undermen, subterranean nations which fell alongside the ancient Arnkin empire."
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS,HAIR)
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT

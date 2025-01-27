@@ -2,9 +2,9 @@
 	castdrain = 25
 	school = "transmutation"
 
-/obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon
-	name = "Blade of Psydon"
-	desc = "The manifestation of the higher concept of a blade itself. Said to be drawn upon from Noc's tresury of wisdom, each casting a poor facsimile of the perfect weapon They hold."
+/obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofaspects
+	name = "Blade of Aspects"
+	desc = "The manifestation of the higher concept of a blade itself. Said to be drawn upon from Akan's treasury of wisdom, stolen by Visires after her great ascension."
 	clothes_req = FALSE
 	drawmessage = "I imagine the perfect weapon, forged by arcyne knowledge, it's edge flawless. \
 	I feel it in my mind's eye -- but it's just out of reach. I pull away it's shadow, a bad copy, and yet it is one of a great weapon nonetheless... "
@@ -12,9 +12,9 @@
 	overlay_state = "boundkatar"
 	chargedloop = /datum/looping_sound/invokegen
 	associated_skill = /datum/skill/magic/arcane
-	hand_path = /obj/item/melee/touch_attack/rogueweapon/bladeofpsydon
+	hand_path = /obj/item/melee/touch_attack/rogueweapon/bladeofaspects
 
-/obj/item/melee/touch_attack/rogueweapon/bladeofpsydon
+/obj/item/melee/touch_attack/rogueweapon/bladeofaspects
 	name = "\improper arcyne push dagger"
 	desc = "This blade throbs, translucent and iridiscent, blueish arcyne energies running through it's translucent surface..."
 	catchphrase = null

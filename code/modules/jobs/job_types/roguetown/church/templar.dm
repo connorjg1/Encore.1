@@ -45,21 +45,21 @@
 
 /datum/outfit/job/roguetown/templar/monk/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/clothing/neck/roguetown/psicross/astrata
+	neck = /obj/item/clothing/neck/roguetown/psicross/gani
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
+			cloak = /obj/item/clothing/cloak/tabard/crusader/visires
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
+			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/necra
-			cloak = /obj/item/clothing/cloak/tabard/crusader/necra
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+			cloak = /obj/item/clothing/cloak/tabard/crusader/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/noc
-			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
+			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
@@ -97,28 +97,28 @@
 /datum/outfit/job/roguetown/templar/crusader/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
-	wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
+	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratan
-			cloak = /obj/item/clothing/cloak/templar/astratan
+			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
-			cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
+			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/necra
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/necran
-			cloak = /obj/item/clothing/cloak/templar/necran
+			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/noc
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
-			cloak = /obj/item/clothing/cloak/tabard/crusader/noc
+			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
 			wrists = /obj/item/clothing/neck/roguetown/psicross
-			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
+			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	neck = /obj/item/clothing/neck/roguetown/chaincoif

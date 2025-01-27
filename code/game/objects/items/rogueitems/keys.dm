@@ -43,8 +43,8 @@
 	resistance_flags = FIRE_PROOF
 
 /obj/item/roguekey/lord
-	name = "master key"
-	desc = "The Lord's key."
+	name = "key of the Shirleighs"
+	desc = "The grand master key of the Shirleighs in all its glory. Dangerous."
 	icon_state = "bosskey"
 	lockid = "lord"
 	visual_replacement = /obj/item/roguekey/royal
@@ -57,7 +57,7 @@
 		SSroguemachine.key = src
 
 /obj/item/roguekey/lord/proc/anti_stall()
-	src.visible_message(span_warning("The Key of Azure Peak crumbles to dust, the ashes spiriting away in the direction of the Keep."))
+	src.visible_message(span_warning("The Key of the Shirleighs crumbles to dust, the ashes spiriting away in the direction of the Keep."))
 	SSroguemachine.key = null //Do not harddel.
 	qdel(src) //Anti-stall
 

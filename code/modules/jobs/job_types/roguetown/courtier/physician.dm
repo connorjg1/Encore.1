@@ -32,7 +32,7 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/physician
 	mask = /obj/item/clothing/mask/rogue/physician
-	neck = /obj/item/clothing/neck/roguetown/psicross/pestra
+	neck = /obj/item/clothing/neck/roguetown/psicross
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/physician
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
 	gloves = /obj/item/clothing/gloves/roguetown/leather

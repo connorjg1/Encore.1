@@ -343,32 +343,32 @@
 	createditem_num = 1
 	craftdiff = 2
 
-/datum/anvil_recipe/armor/steel/astratahelm
-	name = "Astrata Helmet (+1 Steel)"
+/datum/anvil_recipe/armor/steel/visireshelm
+	name = "Helmet of Fire (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/visireshelm
 	craftdiff = 3
 
-/datum/anvil_recipe/armor/steel/necrahelm
-	name = "Necra Helmet (+1 Steel)"
+/datum/anvil_recipe/armor/steel/mjallidhornhelm
+	name = "Helmet of Frost (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/necrahelm
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 	craftdiff = 3
 
-/datum/anvil_recipe/armor/steel/nochelm
-	name = "Noc Helmet (+1 Steel)"
+/datum/anvil_recipe/armor/steel/akanhelm
+	name = "Helmet of Air (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/akan
 	craftdiff = 3
 
-/datum/anvil_recipe/armor/steel/dendorhelm
-	name = "Dendor Helmet (+1 Steel)"
+/datum/anvil_recipe/armor/steel/ganihelm
+	name = "Helmet of Earth (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 	craftdiff = 3
 
 /datum/anvil_recipe/armor/steel/frogmouth

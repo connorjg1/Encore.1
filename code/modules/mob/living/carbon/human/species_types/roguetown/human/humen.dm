@@ -2,16 +2,13 @@
 	race = /datum/species/human/northern
 
 /datum/species/human/northern
-	name = "Humen"
-	id = "humen"
-	desc = "<b>Humen</b><br>\
-	Humen (or Human) are the eldest of the weeping gods creation. Noted for their\
-	tenacity and overwhelming population, humans tend to outnumber the other races. \
-	at a rate of about ten to one in regions such as Grenzelhoft. Althrough to the west \
-	the opposite is true. Humen come from a vast swathe of cultures and ethnicity, most of which\
-	have historically been at odds with one another. Being the eldest of the weeping God, humen\
-	tend to find fortune easier than the other races, and are so diverse that no other racial trait\
-	are dominant in their species... \
+	name = "Human"
+	id = "human"
+	desc = "<b>Human</b><br>\
+	Humans are the common face of civilization throughout the Goblet. Before the world fell, this was less the case.\
+	Now, they represent a baseline by which the most extraordinary beings are measured.\
+	In the greatest legends, there is always a Human who has strived to climb beyond what they are afforded.\
+	They are a naturally independent and clever race, owing them boons of intellect where it counts.\
 	+1 Intelligence."
 
 	skin_tone_wording = "Ancestry"

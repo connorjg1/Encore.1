@@ -5,14 +5,14 @@
 	name = "Aasimar"
 	id = "aasimar"
 	desc = "<b>Aasimar</b><br>\
-	Aasimar are born of a rare union between Humans and Angels. \
+	Aasimar are born of a rare union between Humans and spirits. \
 	They bear the mark of their celestial touch through many varying physical features. \
-	Their looks resemble the traditional characteristics of whichever of the Gods the Angel parent was associated with. \
+	Their looks resemble the traditional characteristics of whichever of the Gods the spirit parent was associated with. \
 	Most commonly, Aasimar are similar to Humans, albeit taller, and possess uncanny beauty. \
 	They have strangely colored skin and are more physically frail than the average Human. \
 	Because of their upbringing, they make for natural conduits for godly powers. \
-	Azure Peak's populace holds them with a mixture of uneasy fear or, and respect. \
-	It is also widely believed that an Aasimars death is a bad omen... \
+	The Goblet's populace holds them with a mixture of uneasy fear or, and respect. \
+	It is also widely believed that an Aasimar's death is a bad omen... \
 	+1 Fortune, -1 Perception."
 
 	skin_tone_wording = "Craft"
@@ -83,13 +83,13 @@
 		"Spiritus" = SKIN_COLOR_SPIRITUS,
 		"Planetar" = SKIN_COLOR_PLANETAR,
 		"Deva"	   = SKIN_COLOR_DEVA,
-		"Solar" = SKIN_COLOR_SOLAR,
-		"Empyrea" = SKIN_COLOR_EMPYREA,
-		"Gaeia" = SKIN_COLOR_GAEIA,
+		"Visires' Hunger" = SKIN_COLOR_SOLAR,
+		"Aspects' Gleam" = SKIN_COLOR_EMPYREA,
+		"Gani-Touched" = SKIN_COLOR_GAEIA,
 		"Celestial" = SKIN_COLOR_CELESTIAL,
 		"Olympia" = SKIN_COLOR_OLYMPIA,
 		"Necral" = SKIN_COLOR_NECRAL,
-		"Abyssal" = SKIN_COLOR_ABYSSAL,
+		"Frost of Ages" = SKIN_COLOR_ABYSSAL,
 	)
 
 /datum/species/aasimar/get_hairc_list()

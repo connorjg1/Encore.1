@@ -112,48 +112,50 @@
 		H.change_stat("fortune", 1)
 		H.change_stat("speed", 1)
 
-/datum/advclass/heir/inbred
-	name = "Inbred wastrel"
-	tutorial = "Your bloodline ensures Psydon smiles upon you by divine right, the blessing of nobility... until you were born, anyway. You are a child forsaken, and even though your body boils as you go about your day, your spine creaks, and your drooling form needs to be waited on tirelessly you are still considered more important then the peasant that keeps the town fed and warm. Remind them of that fact when your lungs are particularly pus free."
-	outfit = /datum/outfit/job/roguetown/heir/inbred
-	category_tags = list(CTAG_HEIR)
+//Least grimpoop roguetown role
 
-/datum/outfit/job/roguetown/heir/inbred/pre_equip(mob/living/carbon/human/H)
-	..()
-	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NORUN, TRAIT_GENERIC)
-	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/storage/keyring/heir
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	if(H.pronouns == HE_HIM || H.pronouns == THEY_THEM || H.pronouns == IT_ITS)
-		pants = /obj/item/clothing/under/roguetown/tights
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		belt = /obj/item/storage/belt/rogue/leather
-		shoes = /obj/item/clothing/shoes/roguetown/nobleboot
-	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
-		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-		head = /obj/item/clothing/head/roguetown/hennin
-		armor = /obj/item/clothing/suit/roguetown/armor/silkcoat
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/princess
-		shoes = /obj/item/clothing/shoes/roguetown/shortboots
-		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
-	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, pick(0,1), TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(0,0,1), TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/athletics, pick(0,1), TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-		H.change_stat("strength", -2)
-		H.change_stat("perception", -2)
-		H.change_stat("intelligence", -2)
-		H.change_stat("constitution", -2)
-		H.change_stat("endurance", -2)
-		H.change_stat("fortune", -2) //They already can't run, no need to do speed and torture their move speed.
+// /datum/advclass/heir/inbred
+// 	name = "Inbred wastrel"
+// 	tutorial = "Your bloodline ensures Psydon smiles upon you by divine right, the blessing of nobility... until you were born, anyway. You are a child forsaken, and even though your body boils as you go about your day, your spine creaks, and your drooling form needs to be waited on tirelessly you are still considered more important then the peasant that keeps the town fed and warm. Remind them of that fact when your lungs are particularly pus free."
+// 	outfit = /datum/outfit/job/roguetown/heir/inbred
+// 	category_tags = list(CTAG_HEIR)
+
+// /datum/outfit/job/roguetown/heir/inbred/pre_equip(mob/living/carbon/human/H)
+// 	..()
+// 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+// 	ADD_TRAIT(H, TRAIT_CRITICAL_WEAKNESS, TRAIT_GENERIC)
+// 	ADD_TRAIT(H, TRAIT_NORUN, TRAIT_GENERIC)
+// 	belt = /obj/item/storage/belt/rogue/leather
+// 	beltl = /obj/item/storage/keyring/heir
+// 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+// 	if(H.pronouns == HE_HIM || H.pronouns == THEY_THEM || H.pronouns == IT_ITS)
+// 		pants = /obj/item/clothing/under/roguetown/tights
+// 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+// 		belt = /obj/item/storage/belt/rogue/leather
+// 		shoes = /obj/item/clothing/shoes/roguetown/nobleboot
+// 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
+// 		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
+// 		head = /obj/item/clothing/head/roguetown/hennin
+// 		armor = /obj/item/clothing/suit/roguetown/armor/silkcoat
+// 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/princess
+// 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+// 		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
+// 	if(H.mind)
+// 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, pick(0,1), TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(0,0,1), TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, pick(0,1), TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+// 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
+// 		H.change_stat("strength", -2)
+// 		H.change_stat("perception", -2)
+// 		H.change_stat("intelligence", -2)
+// 		H.change_stat("constitution", -2)
+// 		H.change_stat("endurance", -2)
+// 		H.change_stat("fortune", -2) //They already can't run, no need to do speed and torture their move speed.

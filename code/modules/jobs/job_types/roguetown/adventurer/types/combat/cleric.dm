@@ -15,13 +15,13 @@
 	..()
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/noc
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/necra
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 		if(/datum/patron/heretic/devil)
 			H.cmode_music = 'sound/music/combat_cult.ogg'
 			neck = /obj/item/roguekey/inhumen
@@ -138,21 +138,21 @@
 		// apply patron-specific outfit alterations
 		switch(H.patron?.type)
 			if(/datum/patron/elemental/visires)
-				head = /obj/item/clothing/head/roguetown/roguehood/astrata
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+				head = /obj/item/clothing/head/roguetown/roguehood
+				armor = /obj/item/clothing/suit/roguetown/shirt/robe/visires
 				beltr = /obj/item/flashlight/flare/torch/lantern // you are the lightbringer
 			if(/datum/patron/elemental/akan)
-				head =  /obj/item/clothing/head/roguetown/nochood
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/noc
+				head =  /obj/item/clothing/head/roguetown/akanhood
+				armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
 				pants = /obj/item/clothing/under/roguetown/tights/black
 				belt = /obj/item/storage/belt/rogue/leather/black
 			if(/datum/patron/elemental/mjallidhorn)
-				head = /obj/item/clothing/head/roguetown/necrahood
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
+				head = /obj/item/clothing/head/roguetown/mjallidhornhood
+				armor = /obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn
 				pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
 			if(/datum/patron/elemental/gani)
-				head = /obj/item/clothing/head/roguetown/dendormask
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
+				head = /obj/item/clothing/head/roguetown/ganimask
+				armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
 				pants = /obj/item/clothing/under/roguetown/loincloth
 				belt = /obj/item/storage/belt/rogue/leather/rope
 				shoes = /obj/item/clothing/shoes/roguetown/sandals

@@ -1,6 +1,6 @@
 /datum/advclass/disciple
 	name = "Disciple"
-	tutorial = "Disciples are Otavan martial artists, recruited by the Inquisition for their iron physique. Psydonian Monks."
+	tutorial = "Disciples are Otavan martial artists, recruited by the Inquisition for their iron physique. Elemental  Monks."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/disciple
@@ -8,8 +8,8 @@
 
 /datum/outfit/job/roguetown/disciple/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/clothing/neck/roguetown/psicross/astrata
-	cloak = /obj/item/clothing/cloak/psydontabard/alt
+	neck = /obj/item/clothing/neck/roguetown/psicross
+	cloak = /obj/item/clothing/cloak/all_aspect/alt
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/sandals

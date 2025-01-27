@@ -1,56 +1,40 @@
 //used in various places
-#define ALL_RACES_TYPES list(\
-	/datum/species/human/northern,\
-	/datum/species/human/halfelf,\
-	/datum/species/elf/dark,\
-	/datum/species/elf/wood,\
-	/datum/species/dwarf/mountain,\
-	/datum/species/tieberian,\
-	/datum/species/aasimar,\
-	/datum/species/lizardfolk,\
-	/datum/species/lupian,\
-	/datum/species/tabaxi,\
-	/datum/species/vulpkanin,\
-	/datum/species/akula,\
-	/datum/species/moth,\
-	/datum/species/dracon,\
-	/datum/species/anthromorph,\
-	/datum/species/anthromorphsmall,\
-	/datum/species/demihuman,\
-	/datum/species/halforc,\
-	/datum/species/kobold,\
-	/datum/species/goblinp,\
-)
-
 #define RACES_RESPECTED \
 	/datum/species/human/northern,\
 	/datum/species/elf/wood,\
 	/datum/species/human/halfelf,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/aasimar,\
-	/datum/species/lupian,\
 	/datum/species/vulpkanin,\
 	/datum/species/moth,\
-	/datum/species/dracon,
+	/datum/species/akula,\
+	/datum/species/anthromorph,\
+	/datum/species/dracon,\
 
+//Tolerated races are races which don't fit and will inevitably begone mechanically
 #define RACES_TOLERATED \
 	/datum/species/elf/dark,\
 	/datum/species/tieberian,\
 	/datum/species/lizardfolk,\
 	/datum/species/tabaxi,\
-	/datum/species/akula,\
-	/datum/species/anthromorph,\
-	/datum/species/demihuman
+	/datum/species/lupian,\
 
+//Shunned races are strictly foreign or antagonistic
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
 	/datum/species/anthromorphsmall,\
-	/datum/species/kobold
+	/datum/species/kobold\
+	/datum/species/tieberian,\
+	/datum/species/lizardfolk,\
+	/datum/species/tabaxi,\
+	/datum/species/lupian,\
+	/datum/species/demihuman,\
 
+//Despised races are strictly antagonistic
 #define RACES_DESPISED \
 	/datum/species/goblinp,\
 
-#define RACES_ALL_KINDS list(RACES_DESPISED, RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
+#define RACES_ALL_KINDS list(RACES_RESPECTED)//temporary because I can not be assed to categorize over 150 entries rn
 
 #define RACES_SHUNNED_UP list(RACES_SHUNNED, RACES_TOLERATED, RACES_RESPECTED)
 

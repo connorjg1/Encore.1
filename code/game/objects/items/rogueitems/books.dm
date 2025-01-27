@@ -246,14 +246,14 @@
 	base_icon_state = "book5"
 	bookfile = "knowledge.json"
 
-/obj/item/book/rogue/secret/xylix
+/obj/item/book/rogue/secret/iliope
 	name = "Book of Gold"
 	desc = "<font color='red'><blink>An ominous book with untold powers.</blink></font>"
 	icon_state ="xylix_0"
 	base_icon_state = "xylix"
 	bookfile = "xylix.json"
 
-/obj/item/book/rogue/xylix/attack_self(mob/user)
+/obj/item/book/rogue/iliope/attack_self(mob/user)
 	if(!open)
 		attack_right(user)
 		return
@@ -326,23 +326,23 @@
 	base_icon_state = "book8"
 	bookfile = "tales7.json"
 
-/obj/item/book/rogue/abyssor
+/obj/item/book/rogue/norts
 	name = "A Tale of Those Who Live At Sea"
 	desc = "By Bellum Aegir"
 	icon_state ="book2_0"
 	base_icon_state = "book2"
 	bookfile = "tales8.json"
 
-/obj/item/book/rogue/necra
-	name = "Burial Rites for Necra"
-	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Necra."
+/obj/item/book/rogue/mjallidhorn
+	name = "Burial Rites for mjallidhorn"
+	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Mjallidhorn."
 	icon_state ="book6_0"
 	base_icon_state = "book6"
 	bookfile = "tales9.json"
 
 /obj/item/book/rogue/noc
 	name = "Dreamseeker"
-	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Necra."
+	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Mjallidhorn."
 	icon_state ="book6_0"
 	base_icon_state = "book6"
 	bookfile = "tales10.json"

@@ -6,16 +6,8 @@
 	id = "elfw"
 	desc = "<b>Elf</b><br>\
 	Elves, or Wood-Elf by the Elder races, are a generic term for tall, pointy-eared \
-	humanoids that trace their original heritage to the ancient mysterious Snow Elves. \
-	Considering their diverse history, it is extremely difficult for other mortals \
-	to even concept the various intricacies found in elven society, and the hundreds \
-	if not thousands of tribes that exist within their culture! \
-	Elves tend to be looked poorly upon by humans, as historically the two races have \
-	been rivals in various conflicts and territorial disputes. This however does not stop \
-	many humans and elves from forming relationships, which are capable of producing child.\
-	Elves are known for their intelligence and sharp eyes, but their graceful nature does \
-	not lend itself to the concepts of strength or durability... \
-	There are elves from a small smattering of tribes in these parts.\
+	humanoids that trace their original heritage to the most ancient civilizations.\
+	In modern times, they are known for composing the second-half majority of Aelonda alongside Humans.\
 	+1 Speed, -1 Constitution."
 
 	skin_tone_wording = "Tribal Identity"
@@ -87,14 +79,14 @@
 
 /datum/species/elf/wood/get_skin_list()
 	return list(
-		"Dandelion Creek" = SKIN_COLOR_DANDELION_CREEK,
-		"Roseveil" = SKIN_COLOR_ROSEVEIL,
-		"Azuregrove" = SKIN_COLOR_AZUREGROVE,
-		"Arborshome" = SKIN_COLOR_ARBORSHOME,
-		"Almondvalle" = SKIN_COLOR_ALMONDVALLE,
-		"Walnut Woods" = SKIN_COLOR_WALNUT_WOODS,
-		"Timberborn" = SKIN_COLOR_TIMBERBORN,
-		"Lotus Coast" = SKIN_COLOR_LOTUS_COAST
+		"Sanct of Aelonda" = SKIN_COLOR_DANDELION_CREEK,
+		"Saint's Rest" = SKIN_COLOR_ROSEVEIL,
+		"Amberling" = SKIN_COLOR_AZUREGROVE,
+		"Nortmidst" = SKIN_COLOR_ARBORSHOME,
+		"Old Arnkin" = SKIN_COLOR_ALMONDVALLE,
+		"The Far Wild" = SKIN_COLOR_WALNUT_WOODS,
+		"Manesi Lowland" = SKIN_COLOR_TIMBERBORN,
+		"The Delve" = SKIN_COLOR_LOTUS_COAST
 	)
 
 /datum/species/elf/wood/get_hairc_list()

@@ -10,7 +10,7 @@
 	allowed_patrons = ALL_ACOLYTE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/monk
-	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Priest in their daily tasks, maybe today will be the day something interesting happens. (Currently Astrata, Eora, Noc, Necra, and Pestra are supported.)"
+	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Priest in their daily tasks, maybe today will be the day something interesting happens."
 
 	display_order = JDO_MONK
 	give_bank_account = TRUE
@@ -32,28 +32,28 @@
 	beltl = /obj/item/storage/keyring/churchie
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/roguehood/astrata
-			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
+			head = /obj/item/clothing/head/roguetown/roguehood
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/visires
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/nochood
-			neck = /obj/item/clothing/neck/roguetown/psicross/noc
+			head = /obj/item/clothing/head/roguetown/akanhood
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			wrists = /obj/item/clothing/wrists/roguetown/nocwrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/noc
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/dendormask
-			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/dendor
+			head = /obj/item/clothing/head/roguetown/ganimask
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/necrahood
-			neck = /obj/item/clothing/neck/roguetown/psicross/necra
+			head = /obj/item/clothing/head/roguetown/mjallidhornhood
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necra
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn
 			shirt = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
 	if(H.mind)

@@ -5,16 +5,9 @@
 	name = "Half-Elf"
 	id = "helf"
 	desc = "<b>Half Elf</b><br>\
-	The child of an Elf and Humen, Half-Elves are generally frowned \
-	upon by more conservative peoples, although as racial tensions lower, \
-	more and more half-elves are being born. To the point that some scholars \
-	worry that someday, it may be impossible to distinguish the two species. \
-	Half-Elves are extremely diverse, as they bring in human and elvish culture\
-	and it is widely considered that Half-Elf culture is simply a melting pot of \
-	various other cultures condensing into one vibrant entity. \
-	Due to their heritage, Half-Elves tend to gain racial traits depending on how strong their fathers, or mothers, genes were. \
-	Half-Elves also typically try to find identity in one of two regions they have similarities towards. \
-	+1 Perception." 
+	The child of an Elf and a Human, Half-elves were once non-existent, the first in history being the Good King Rols of Aelonda.\
+	The birth of Rols inevitably spurned a grand union between the Elves of Old Aelonda, building the new nation to untold heights.\
+	Those of this heritage are more keen and perceptive than either of their forefathers, granting them +1 perception." 
 
 	skin_tone_wording = "Identity"
 	default_color = "FFFFFF"

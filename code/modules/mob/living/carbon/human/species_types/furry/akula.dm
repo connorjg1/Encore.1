@@ -5,13 +5,9 @@
 	name = "Axian"
 	id = "akula"
 	desc = "<b>Axian</b><br>\
-	Axians are a proud, shark-like people that have a heritage founded in maritime trade, \
-	tax evasion, and piracy. They have a strong distaste for the nobility and taxation, \
-	making them a target of discrimination in the Azurean lands. They are oftentimes scapegoats for crime. \
-	Due to their penchant for trade and travel, they can be found all over the world, oftentimes \
-	seeing places many could not even dream of. They look down at those they considered the 'settled' \
-	and often uproot themselves quite often in their lifetimes. However, due to the isolation in Azure, many Axians \
-	find their sanity being clawed away as they find themselves stuck in one place."
+	Axians are a proud, shark-like people that have a heritage founded in maritime trade, tax evasion, and piracy. \
+	In history, they have earned a respected and feared name in anything to do with the open ocean. \
+	They breathe water as if air, and have no qualms under the waves."
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_WATERBREATHING)

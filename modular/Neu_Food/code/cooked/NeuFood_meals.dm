@@ -239,7 +239,7 @@
 	list_reagents = list(/datum/reagent/consumable/nutriment = MEAL_MEAGRE)
 	tastes = list("frybird" = 1, "tato" = 1)
 	name = "frybird with a tato"
-	desc = "Hearty, comforting and rich - Alleged favorite dish of Ravox."
+	desc = "Hearty, comforting and rich - Alleged favorite dish of Mjallidhorn."
 	faretype = FARE_FINE
 	portable = FALSE
 	icon_state = "frybirdtato"
@@ -290,7 +290,7 @@
 /*	.................   Plated fryfish   ................... */
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/carp/plated
 	icon = 'modular/Neu_Food/icons/food.dmi'
-	desc = "Abyssor's bounty, make sure to eat the eyes!"
+	desc = "The sea's bounty, make sure to eat the eyes!"
 	icon_state = "carpcooked_plated"
 	item_state = "plate_food"
 	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'
@@ -305,7 +305,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/clownfish/plated
 	icon = 'modular/Neu_Food/icons/food.dmi'
-	desc = "Abyssor's bounty, make sure to eat the eyes!"
+	desc = "The sea's bounty, make sure to eat the eyes!"
 	icon_state = "clownfishcooked_plated"
 	item_state = "plate_food"
 	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'
@@ -320,7 +320,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/angler/plated
 	icon = 'modular/Neu_Food/icons/food.dmi'
-	desc = "Abyssor's bounty, make sure to eat the eyes!"
+	desc = "The sea's bounty, make sure to eat the eyes!"
 	icon_state = "anglercooked_plated"
 	item_state = "plate_food"
 	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'
@@ -335,7 +335,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/fryfish/eel/plated
 	icon = 'modular/Neu_Food/icons/food.dmi'
-	desc = "Abyssor's bounty, make sure to eat the eyes!"
+	desc = "The sea's bounty, make sure to eat the eyes!"
 	icon_state = "eelcooked_plated"
 	item_state = "plate_food"
 	lefthand_file = 'modular/Neu_Food/icons/food_lefthand.dmi'

@@ -198,7 +198,7 @@
 
 	log_game("The round has ended.")
 
-	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this tale on Azure Peak.</span>")
+	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this tale on Domotan Island.</span>")
 	get_end_reason()
 
 	var/list/key_list = list()
@@ -316,14 +316,14 @@
 						"Thus the week's events have taken place. Eventful or mundane, life continues.",
 						"Pawns of gods, preachers of nite, all come together to recite this tale.",
 						"Whether with loss or life, the duchy survives... for now.",
-						"The people of Azure prepare to look forward; their actions locked in the impermeable past.")
+						"The people of Domotan Island prepare to look forward; their actions locked in the impermeable past.")
 //		if(C.not_enough_players)
 //			end_reason = "The town was abandoned."
 
 		if(C.vampire_werewolf() == "vampire")
-			end_reason = "When the Vampires finished sucking the town dry, they moved on to the next one."
+			end_reason = "When the Vampires finished sucking the island dry, they moved on to the next one."
 		if(C.vampire_werewolf() == "werewolf")
-			end_reason = "The Werevolves formed an unholy clan, marauding Azure Peak until the end of its daes."
+			end_reason = "The Werevolves formed an unholy clan, marauding the Sea of Fire until the end of its daes."
 
 		if(C.headrebdecree)
 			end_reason = "The peasant rebels took control of the throne, hail the new community!"
@@ -332,7 +332,7 @@
 	if(end_reason)
 		to_chat(world, span_bigbold("[end_reason]."))
 	else
-		to_chat(world, span_bigbold("The town has managed to survive another week."))
+		to_chat(world, span_bigbold("The island has managed to survive another week."))
 
 /datum/controller/subsystem/ticker/proc/gamemode_report()
 	var/list/all_teams = list()
@@ -388,7 +388,6 @@
 	shit += "<br><font color='#af2323'><span class='bold'>Blood spilt:</span></font> [round(blood_lost / 100, 1)]L"
 	shit += "<br><font color='#36959c'><span class='bold'>TRIUMPH(s) Awarded:</span></font> [tri_gained]"
 	shit += "<br><font color='#a02fa4'><span class='bold'>TRIUMPH(s) Stolen:</span></font> [tri_lost * -1]"
-	shit += "<br><font color='#ffd4fd'><span class='bold'>Pleasures:</span></font> [cums]"
 	if(GLOB.confessors.len)
 		shit += "<br><font color='#93cac7'><span class='bold'>Confessors:</span></font> "
 		for(var/x in GLOB.confessors)

@@ -3,7 +3,7 @@
 /datum/advclass/mastercarpenter
 	name = "Master Carpenter"
 	tutorial = "A master carpenter, unlike the masons you went to discover the secrets of the wood. \
-	The elves, created by Dendor ,who taught you how to transform the wood into anything you wish, \
+	The dryad-spirits created by Gani, who taught you how to transform the wood into anything you wish, \
 	but you swore to chop down trees only when it is necessary."
 	
 	allowed_sexes = list(MALE, FEMALE)
@@ -33,7 +33,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	
 	head = /obj/item/clothing/head/roguetown/hatblu
-	armor = /obj/item/clothing/suit/roguetown/shirt/robe/dendor 
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani 
 	pants = /obj/item/clothing/under/roguetown/trou
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather

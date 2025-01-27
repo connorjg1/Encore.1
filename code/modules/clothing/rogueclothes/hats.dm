@@ -82,9 +82,9 @@
 /obj/item/clothing/head/roguetown/roguehood/shalal/black
 	color = CLOTHING_BLACK
 
-/obj/item/clothing/head/roguetown/roguehood/astrata
-	name = "sun hood"
-	desc = "A hood worn by those who favor Astrata. Praise the firstborn sun!"
+/obj/item/clothing/head/roguetown/roguehood/gani
+	name = "earthen hood"
+	desc = "A hood worn by those who favor Gani."
 	color = null
 	icon_state = "astratahood"
 	item_state = "astratahood"
@@ -97,9 +97,9 @@
 	toggle_icon_state = TRUE
 	max_integrity = 100
 
-/obj/item/clothing/head/roguetown/nochood
-	name = "moon hood"
-	desc = "A hood worn by those who favor Noc with a mask in the shape of a crescent."
+/obj/item/clothing/head/roguetown/akanhood
+	name = "air hood"
+	desc = "A hood worn by those who favor Akan with a mask in the shape of a crescent."
 	color = null
 	icon_state = "nochood"
 	item_state = "nochood"
@@ -107,7 +107,7 @@
 	dynamic_hair_suffix = ""
 	sewrepair = TRUE
 
-/obj/item/clothing/head/roguetown/necrahood
+/obj/item/clothing/head/roguetown/mjallidhornhood
 	name = "death shroud"
 	color = null
 	icon_state = "necrahood"
@@ -116,9 +116,9 @@
 	dynamic_hair_suffix = ""
 	sewrepair = TRUE
 
-/obj/item/clothing/head/roguetown/dendormask
+/obj/item/clothing/head/roguetown/ganimask
 	name = "briarmask"
-	desc = "A mask of wood worn by druids in service to Dendor."
+	desc = "A mask of wood worn by druids in service to Gani."
 	color = null
 	icon_state = "dendormask"
 	item_state = "dendormask"
@@ -137,8 +137,8 @@
 	sewrepair = TRUE
 
 /obj/item/clothing/head/roguetown/priestmask
-	name = "solar visage"
-	desc = "The sanctified helm of the most devoted. Thieves beware."
+	name = "visage of aspects"
+	desc = "The sanctified helm of the most devoted to the Aspects. Thieves beware."
 	color = null
 	icon_state = "priesthead"
 	item_state = "priesthead"
@@ -149,7 +149,7 @@
 /obj/item/clothing/head/roguetown/priestmask/pickup(mob/living/user)
 	..()
 	if((user.job != "Priest") && (user.job != "Priestess"))
-		to_chat(user, "<font color='yellow'>UNWORTHY HANDS TOUCH THE VISAGE, CEASE OR BE PUNISHED</font>")
+		to_chat(user, "<font color='yellow'>THE ASPECTS ROAR! UNWORTHY HANDS TOUCH ITS VISAGE!</font>")
 		spawn(30)
 			if(loc == user)
 				user.adjust_fire_stacks(5)
@@ -361,7 +361,7 @@
 	color = CLOTHING_RED
 
 /obj/item/clothing/head/roguetown/crown/serpcrown
-	name = "crown of azure peak"
+	name = "crown of Etgard"
 	desc = ""
 	icon_state = "serpcrown"
 	//dropshrink = 0
@@ -379,7 +379,7 @@
 		SSroguemachine.crown = src
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/proc/anti_stall()
-	src.visible_message(span_warning("The Crown of Azure Peak crumbles to dust, the ashes spiriting away in the direction of the Keep."))
+	src.visible_message(span_warning("The Crown of Etgard crumbles to dust, the ashes spiriting away in the direction of the Keep."))
 	SSroguemachine.crown = null //Do not harddel.
 	qdel(src) //Anti-stall
 
@@ -526,7 +526,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -572,7 +572,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -622,7 +622,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Elemental's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -690,9 +690,9 @@
 	smeltresult = /obj/item/ingot/steel
 	max_integrity = 400
 
-/obj/item/clothing/head/roguetown/helmet/heavy/psydonbarbute
-	name = "psydonian barbute"
-	desc = "A barbute styled with Psydonian Imagery."
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
+	name = "katholikos barbute"
+	desc = "A barbute styled with Katholikos imagery."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 
@@ -769,7 +769,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -819,7 +819,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -845,9 +845,9 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
-	name = "astrata helmet"
-	desc = "Headwear commonly worn by Templars in service to Astrata. The firstborn child's light will forever shine on within its crest."
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm
+	name = "visires helmet"
+	desc = "Headwear commonly worn by Templars in service to Visires. The devil child's light will forever shine on within its crest."
 	icon_state = "astratahelm"
 	item_state = "astratahelm"
 	emote_environment = 3
@@ -856,15 +856,15 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
-	name ="otavan armet"
-	desc = "Headwear commonly worn by Templars in service to the Inquisition of Otava. PSYDON Endures."
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
+	name ="aspect armet"
+	desc = "Headwear commonly worn by Templars in service to the Inquisition of the Katholikos."
 	icon_state = "psydonarmet"
 	item_state = "psydonarmet"
 
-/obj/item/clothing/head/roguetown/helmet/heavy/nochelm
-	name = "noc helmet"
-	desc = "Headwear commonly worn by Templars in service to Noc. Without the night there can be no day, without Noc there can be no light in the dark hours."
+/obj/item/clothing/head/roguetown/helmet/heavy/akan
+	name = "helmet of skies"
+	desc = "Headwear commonly worn by Templars in service to Akan. As light as a feather, as free as can be."
 	icon_state = "nochelm"
 	item_state = "nochelm"
 	emote_environment = 3
@@ -874,9 +874,9 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/necrahelm
-	name = "necra helmet"
-	desc = "Headwear commonly worn by Templars in service to Necra. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+	name = "mjallidhorn helmet"
+	desc = "Headwear commonly worn by Templars in service to Mjallidhorn. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
 	icon_state = "necrahelm"
 	item_state = "necrahelm"
 	emote_environment = 3
@@ -885,9 +885,9 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
-	name = "dendor helmet"
-	desc = "Headwear commonly worn by Templars in service to Dendor. Its protrusions almost resemble branches. Take root in the earth, and you will never be moved."
+/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+	name = "earthen helmet"
+	desc = "Headwear commonly worn by Templars in service to Gani. Its protrusions almost resemble branches. Take root in the earth, and you will never be moved."
 	icon_state = "dendorhelm"
 	item_state = "dendorhelm"
 	emote_environment = 3
@@ -959,7 +959,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -987,7 +987,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/frogmouth
 	name = "froggemund helmet"
-	desc = "A tall and imposing frogmouth-style helm popular in the highest plateaus of the Azure Peak. Covers not just the head, but the neck as well. Add a cloth to show the colors of your family or allegiance."
+	desc = "A tall and imposing frogmouth-style helm popular in the highest plateaus of Geramor. Covers not just the head, but the neck as well. Add a cloth to show the colors of your family or allegiance."
 	icon_state = "frogmouth"
 	item_state = "frogmouth"
 	emote_environment = 3
@@ -1010,7 +1010,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -1230,7 +1230,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -1254,21 +1254,6 @@
 		if(get_detail_color())
 			pic.color = get_detail_color()
 		add_overlay(pic)
-
-//Eora content from Stonekeep
-
-/obj/item/clothing/head/roguetown/eoramask
-	name = "eoran mask"
-	desc = "A silver rabbit mask worn by the faithful of Eora, usually during their rituals."
-	color = null
-	icon_state = "eoramask"
-	item_state = "eoramask"
-	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
-	worn_x_dimension = 64
-	worn_y_dimension = 64
-	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDEHAIR
-	dynamic_hair_suffix = ""
-	resistance_flags = FIRE_PROOF // Made of metal
 
 /obj/item/clothing/head/roguetown/helmet/tricorn
 	slot_flags = ITEM_SLOT_HEAD

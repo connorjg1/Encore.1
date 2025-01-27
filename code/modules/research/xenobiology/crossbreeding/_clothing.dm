@@ -94,11 +94,9 @@ Slimecrossing Armor
 		to_chat(owner, span_notice("I channel nearby light into a glowing, ethereal prism."))
 		new /obj/structure/light_prism(get_turf(owner), glasses.glasses_color)
 
-//Eora content from Stonekeep
-
 /obj/item/clothing/head/peaceflower
-	name = "eoran bud"
-	desc = "A flower of gentle petals, associated with Eora or Necra. Usually adorned as a headress or laid at graves as a symbol of love or peace."
+	name = "blessed bud"
+	desc = "A flower of gentle petals, associated with Gani's favored. Usually adorned as a headress or laid at graves as a symbol of love or peace."
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "peaceflower"
 	item_state = "peaceflower"

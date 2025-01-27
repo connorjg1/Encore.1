@@ -13,9 +13,9 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
-/obj/item/clothing/suit/roguetown/shirt/robe/astrata
+/obj/item/clothing/suit/roguetown/shirt/robe/visires
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
-	name = "sun robe"
+	name = "flame robe"
 	desc = ""
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
 	icon_state = "astratarobe"
@@ -27,9 +27,9 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
-/obj/item/clothing/suit/roguetown/shirt/robe/noc
+/obj/item/clothing/suit/roguetown/shirt/robe/akan
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
-	name = "moon robe"
+	name = "air robe"
 	desc = ""
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
 	icon_state = "nocrobe"
@@ -55,7 +55,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
-/obj/item/clothing/suit/roguetown/shirt/robe/dendor
+/obj/item/clothing/suit/roguetown/shirt/robe/gani
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
 	name = "briar robe"
 	desc = ""
@@ -69,7 +69,7 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
-/obj/item/clothing/suit/roguetown/shirt/robe/necra
+/obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
 	name = "mourning robe"
 	desc = ""
@@ -167,55 +167,6 @@
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 	resistance_flags = FIRE_PROOF
-
-//Eora content from Stonekeep
-
-/obj/item/clothing/suit/roguetown/shirt/robe/eora
-	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
-	name = "eoran robe"
-	desc = "Holy robes, intended for use by followers of Eora"
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
-	icon_state = "eorarobes"
-	icon = 'icons/roguetown/clothing/armor.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/onmob/armor.dmi'
-	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
-	boobed = TRUE
-	color = null
-	flags_inv = HIDEBOOB|HIDECROTCH
-	r_sleeve_status = SLEEVE_NORMAL
-	l_sleeve_status = SLEEVE_NORMAL
-	var/fanatic_wear = FALSE
-
-/obj/item/clothing/suit/roguetown/shirt/robe/eora/alt
-	name = "open eoran robe"
-	desc = "Used by more radical followers of the Eoran Church"
-	body_parts_covered = null
-	icon_state = "eorastraps"
-	flags_inv = HIDEBOOB
-	fanatic_wear = TRUE
-
-/obj/item/clothing/suit/roguetown/shirt/robe/eora/attack_right(mob/user)
-	switch(fanatic_wear)
-		if(FALSE)
-			name = "open eoran robe"
-			desc = "Used by more radical followers of the Eoran Church"
-			body_parts_covered = null
-			icon_state = "eorastraps"
-			fanatic_wear = TRUE
-			flags_inv = HIDEBOOB
-			to_chat(usr, span_warning("Now wearing radically!"))
-		if(TRUE)
-			name = "eoran robe"
-			desc = "Holy robes, intended for use by followers of Eora"
-			body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
-			icon_state = "eorarobes"
-			fanatic_wear = FALSE
-			flags_inv = HIDEBOOB|HIDECROTCH
-			to_chat(usr, span_warning("Now wearing normally!"))
-	update_icon()
-	if(ismob(loc))
-		var/mob/L = loc
-		L.update_inv_armor()
 
 /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
 	name = "hierophant's kandys"

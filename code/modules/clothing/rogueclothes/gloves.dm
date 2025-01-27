@@ -90,8 +90,8 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 
-/obj/item/clothing/gloves/roguetown/chain/psydon
-	name = "otavan chain gauntlets"
+/obj/item/clothing/gloves/roguetown/chain/all_aspect
+	name = "katholikos chain gauntlets"
 	icon_state = "psydongloveschain"
 	item_state = "psydongloveschains"
 

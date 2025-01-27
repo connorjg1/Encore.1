@@ -58,7 +58,7 @@
 
 /obj/structure/underworld/barrier //Blocks sprite locations
 	name = "DONT STAND HERE"
-	desc = "The Undermaiden awaits."
+	desc = "The Forever War awaits."
 	icon = 'icons/roguetown/underworld/underworld.dmi'
 	icon_state = "spiritpart"
 	density = TRUE
@@ -66,7 +66,7 @@
 
 /obj/structure/underworld/carriage_normal
 	name = "Carriage"
-	desc = "Azure Peak awaits."
+	desc = "Domotan Island awaits."
 	icon = 'icons/roguetown/underworld/enigma_carriage.dmi'
 	icon_state = "carriage_normal"
 	anchored = TRUE
@@ -74,7 +74,7 @@
 
 /obj/structure/underworld/carriage
 	name = "Carriage"
-	desc = "The Undermaiden awaits."
+	desc = "The Forever War awaits."
 	icon = 'icons/roguetown/underworld/enigma_carriage.dmi'
 	icon_state = "carriage_lit"
 	layer = ABOVE_MOB_LAYER

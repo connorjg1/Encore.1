@@ -5,14 +5,10 @@
 	name = "Half Orc"
 	id = "halforc"
 	desc = "<b>Half Orcs</b><br>\
-	With the Ironmask clan on a centuries-long warpath to consolidate all orcs within their banner, \
-	crushed orc tribes have lost their menfolk and war-widows have been scattered to the hinterlands. \
-	Between human civilization and orc savagery, orc-women opting for exile over dishonor have become \
-	more common visitors to fur trading posts and prospecting camps, eventually leading to half-orcs \
-	being born in these rough places otherwise devoid of a fairer sex. Your mother-clan is in thrall \
-	to the Ironmask, true orcs would kill you as a mongrel dog and your father’s people cannot decide \
-	between mere distrust and disgust. Yet somehow your wandering feet came to Azure Peak, where \
-	half-orcs ply muscle and their hardiness in the rough underbelly or outer reaches of society. \
+	Half-orcs are the lineage of Humans and Orcs, and are thus demonic in nature.\
+	Seen as a terrible omen virtually everywhere they go, half-orcs face scrutiny from both their demonic lineage and their mortal kin.\
+	Being a standing depiction of the worst union of all, these are more often than not terrible people and very good monsters.\
+	Because of demonic origins, these are definitively enemies of the Katholikos and all elemental derivatives- expect serious problems if you play this race!\
 	+1 Strength, -1 Intelligence."
 
 	skin_tone_wording = "Clan"

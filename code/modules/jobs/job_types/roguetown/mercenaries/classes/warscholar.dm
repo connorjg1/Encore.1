@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/warscholar
 	name = "Sultanate Warscholar"
-	tutorial = "Heralded by sigils of black-and-gold and their distinct masks, the Qadirid Warscholars once prowled the dunes of the Southern Reach, exterminating the ill-favored in exchange for coin, artifacts, or knowledge. A sellsword by all accounts, but legendary in their capability."
+	tutorial = "Heralded by sigils of black-and-gold and their distinct masks, the Qadirid Warscholars once prowled the dunes of the Southern Reach, exterminating the ill-favored in exchange for coin, artifacts, or knowledge. A sellsword by all accounts, but legendary in their capability. As natives to Visires' domain, they possess no magical capability."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/warscholar
@@ -9,7 +9,7 @@
 
 /datum/outfit/job/roguetown/mercenary/warscholar
 	var/detailcolor
-	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_patrons = list(/datum/patron/elemental/visires)
 
 /datum/outfit/job/roguetown/mercenary/warscholar/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -34,7 +34,7 @@
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	mask = /obj/item/clothing/mask/rogue/lordmask/naledi
-	wrists = /obj/item/clothing/neck/roguetown/psicross/naledi
+	wrists = /obj/item/clothing/neck/roguetown/psicross/visires
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -45,7 +45,7 @@
 
 		if("Hierophant")//TBD-Class Overhaul
 			H.set_blindness(0)
-			to_chat(H, span_warning("Hierophants are magicians who studied under cloistered sages, well-versed in all manners of Thauma. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
+			to_chat(H, span_warning("Hierophants are grand alchemists who studied under cloistered sages, well-versed in all manners of Thauma. They prioritize enhancing their teammates and distracting foes while staying in the backline."))
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
@@ -56,21 +56,16 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 			H.grant_language(/datum/language/celestial)
 			if(H.age == AGE_OLD)
-				H.mind.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 				H.change_stat("speed", -1)
 				H.change_stat("intelligence", 1)
 				H.change_stat("perception", 1)
-				H.mind.adjust_spellpoints(1)
 			H.change_stat("strength", -1)
 			H.change_stat("constitution", -1)
 			H.change_stat("perception", 1)
 			H.change_stat("intelligence", 3)
-			H.mind.adjust_spellpoints(2)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			r_hand = /obj/item/rogueweapon/woodstaff/naledi
 
 
@@ -83,26 +78,21 @@
 
 		if("Pontifex")//TBD-Class Overhaul
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Naledi Pontifex, a warrior trained into a hybridized style of movement-controlling magic and hand-to-hand combat. Though your abilities in magical fields are lacking, you are far more dangerous than other magi in a straight fight. You manifest your calm, practiced skill into a killing intent that takes the shape of an arcyne blade."))
+			to_chat(H, span_warning("You are a Sultanate Pontifex, a warrior augmented with Thaumatech capable of calling upon the Blade of Aspects- a feigned mimic of the treasure which Visires once stole from the Aspects."))
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
-			H.mind.adjust_spellpoints(-6) //The - is intended.
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 2)
 			H.change_stat("perception", -1)
 			H.change_stat("speed", 2)
 			H.grant_language(/datum/language/celestial)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch) // In an attempt to make them less Possibly Wildly OP, they can't freely pick their spells. Casts at apprentice level, but doesn't get the spellbuy points it'd provide.
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofaspects)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 			head = /obj/item/clothing/head/roguetown/roguehood/pontifex
@@ -115,28 +105,24 @@
 
 		if("Vizier")//TBD-Class Overhaul
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Naledi Vizier. You are a healer, trained in both physick and holy practices. Likely of a learned or upper class background, you are a supporting fellow, meant to heal your allies with miracles and surgeries- though you are no stranger to combat."))
+			to_chat(H, span_warning("You are a Qadirid Vizier. You are a healer, trained in both physick and divine practices. Likely of a learned or upper class background, you are a supporting fellow, meant to heal your allies with miracles and surgeries- though you are no stranger to combat."))
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 			H.mind.adjust_spellpoints(1)
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 2)
 			H.change_stat("intelligence", 2)
 			H.change_stat("speed", 3)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/push_spell)
 			r_hand = /obj/item/rogueweapon/sword/long/rider
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/magered
 

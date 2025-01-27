@@ -2,7 +2,7 @@
 /datum/advclass/bard
 	name = "Bard"
 	tutorial = "Bards make up one of the largest populations of \
-	registered adventurers in Enigma, mostly because they are \
+	registered adventurers in the Goblet, mostly because they are \
 	the last ones in a party to die. Their wish is to experience \
 	the greatest adventures of the age and write amazing songs about them. \
 	The class has the option between the jack of all trades Bard, the martial-focused Skald, magic-equip arcanist, and the gospel Hymnist." //Azure peak updated for Hymnist
@@ -173,13 +173,13 @@
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			switch(H.patron?.type)
 				if(/datum/patron/elemental/visires)
-					neck = /obj/item/clothing/neck/roguetown/psicross/astrata
+					neck = /obj/item/clothing/neck/roguetown/psicross/visires
 				if(/datum/patron/elemental/akan)
-					neck = /obj/item/clothing/neck/roguetown/psicross/noc
+					neck = /obj/item/clothing/neck/roguetown/psicross/akan
 				if(/datum/patron/elemental/gani)
-					neck = /obj/item/clothing/neck/roguetown/psicross/dendor
+					neck = /obj/item/clothing/neck/roguetown/psicross/gani
 				if(/datum/patron/elemental/mjallidhorn)
-					neck = /obj/item/clothing/neck/roguetown/psicross/necra
+					neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			backpack_contents = list(/obj/item/lockpickring/one = 1)
 			H.change_stat("strength", 1)
 			H.change_stat("intelligence", 2)

@@ -47,7 +47,7 @@
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
-#define TRAIT_AKANSIGHT "Blessing of Noc" // I can see just a bit more clearly in darkness.
+#define TRAIT_AKANSIGHT "Blessing of Akan" // I can see just a bit more clearly in darkness.
 #define TRAIT_DEATHSIGHT "Veiled Whispers" // Is notified when a player character dies, but not told exactly where or how.
 //Hearthstone/Azure end.
 
@@ -57,13 +57,13 @@
 #define TRAIT_WATERBREATHING "Water Breathing"
 
 // PATRON GOD TRAITS
-#define TRAIT_ROT_EATER "Blessing of Pestra" //can eat rotten food
-#define TRAIT_ORGAN_EATER "Blessing of Graggar" //can eat organs
-#define TRAIT_KNEESTINGER_IMMUNITY "Blessing of Dendor"
-#define TRAIT_SOUL_EXAMINE "Blessing of Necra" //can check bodies to see if they have departed
-#define TRAIT_CRACKHEAD "Blessing of Baotha" //will never overdose
-#define TRAIT_CHOSEN "Astrata's Chosen"
-#define TRAIT_MJALLIDHORN_SWIM "Blessing of Mjallidhorn" //less base fatigue drain when swimming
+#define TRAIT_ROT_EATER "Blessing of Pestilence" //can eat rotten food
+#define TRAIT_ORGAN_EATER "Blessing of Hungering Hells" //can eat organs
+#define TRAIT_KNEESTINGER_IMMUNITY "Blessing of Gani"
+#define TRAIT_SOUL_EXAMINE "Blessing of Mjallidhorn" //can check bodies to see if they have departed
+#define TRAIT_CRACKHEAD "Blessing of Depravity" //will never overdose
+#define TRAIT_CHOSEN "Gani's Chosen"
+#define TRAIT_MJALLIDHORN_SWIM "Blessing of the Norts" //less base fatigue drain when swimming
 #define TRAIT_ILIOPE "Blessing of Iliope" //secret thieves cant language
 
 // ASCENDANT CULTIST TRAITS (all of them recognize each other)
@@ -96,9 +96,9 @@
 
 GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_LEPROSY = span_necrosis("I'm a disgusting leper..."),
-	TRAIT_GUARDSMAN = span_info("I am vigilant in my duties. In the town of Azure Peak, my abilities are sharper due to my routine and familiarity."),
-	TRAIT_KNIGHTSMAN = span_info("I am a stalwart defender of the crown. In the keep of Azure Peak, my abilities are sharper due to my routine and familiarity."),
-	TRAIT_CHOSEN = "Astrata choose you to represent her glory.",
+	TRAIT_GUARDSMAN = span_info("I am vigilant in my duties. In the town of Old Doma, my abilities are sharper due to my routine and familiarity."),
+	TRAIT_KNIGHTSMAN = span_info("I am a stalwart defender of the Shirleigh crown. In the keep of Etgard, my abilities are sharper due to my routine and familiarity."),
+	TRAIT_CHOSEN = "Gani has chosen you to represent her glory.",
 	TRAIT_WEBWALK = "I can move freely between webs.",
 	TRAIT_NOSTINK = span_dead("My nose is numb to the smell of decay."),
 	TRAIT_ZJUMP = "Time to reach a new high.",
@@ -149,20 +149,20 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_NORUN = span_warning("My body has atrophied in my state of decay; my leg joints just don't have the strength or durability for running anymore"),
 	TRAIT_GOODLOVER = span_love("It's a lucky thing to share my bed."),
 	TRAIT_SEEDKNOW = span_info("I know which seeds grow which crops."),
-	TRAIT_PERFECT_TRACKER = span_info("I am the perfect tracker. No tracks will deceive my eyes, nor will they hide their secrets from me."),//Hearthstone port.
-	TRAIT_NOCSIGHT = span_info("Noc blesses my eyes to be unburdened by the night."), //Hearthstone change.
+	TRAIT_PERFECT_TRACKER = span_info("I am the perfect tracker. No tracks will deceive my eyes, nor will they hide their secrets from me."),
+	TRAIT_AKANSIGHT = span_info("Akan blesses my eyes to be unburdened by the night."),
 	TRAIT_CIVILIZEDBARBARIAN = span_info("Your fists are heavier."),
 	TRAIT_COMICSANS = span_sans("I am cursed with a odd voice."),
 	TRAIT_SQUIRE_REPAIR = span_info("I know my way around my Master's tools."),
 	TRAIT_WATERBREATHING = span_info("I do not drown in bodies of water."),
 	TRAIT_NUDE_SLEEPER = span_warning("I can't fall asleep unless I'm nude and in bed."),
-	TRAIT_ABYSSOR_SWIM = "I get far less tired when swimming than my peers.",
+	TRAIT_MJALLIDHORN_SWIM = "I get far less tired when swimming than my peers.",
 	TRAIT_LONGSTRIDER = "Each of my steps finds it's footing no matter how treacherous the terrain is.",
 	TRAIT_TRAINED_SMITH = span_info("I've spent long training, and with some more, I will be able to smith legendary items."),
-	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the Undermaiden's attention."),
-	TRAIT_XYLIX = span_info("I know how to speak in code that only fellow tricksters can understand."),
-	TRAIT_CABAL = span_info("In secret, I have studied the ways of Her ascension, and know of others of the Cabal."),
-	TRAIT_HORDE = span_info("BY BLOOD AND BONE, I AM OF GRAGGAR'S ANOINTED! I FEEL THE STRENGTH IN OTHERS WHO ARE THE SAME."),
+	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the attention of Mjallidhorn."),
+	TRAIT_ILIOPE = span_info("I know how to speak in code that only fellow tricksters can understand."),
+	TRAIT_CABAL = span_info("In secret, I have studied the ways of the One Envy, and know of others of the Cabal."),
+	TRAIT_HORDE = span_info("By blood and bone, I am of Hell's anoited! I feel the strength in others who are the same."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others.")

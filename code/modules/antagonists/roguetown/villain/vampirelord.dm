@@ -883,7 +883,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 
 /datum/objective/vampirelord/ascend
 	name = "sun"
-	explanation_text = "Astrata has spurned me long enough. I must conquer the Sun."
+	explanation_text = "The One Star has spurned me long enough. I must conquer the Sun."
 	team_explanation_text = ""
 	triumph_count = 5
 

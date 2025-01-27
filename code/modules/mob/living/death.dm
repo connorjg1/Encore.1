@@ -139,7 +139,7 @@
 					if (HAS_TRAIT(player, TRAIT_CABAL))
 						to_chat(player, span_warning("I feel the faint passage of disjointed life essence as it flees [locale]."))
 					else
-						to_chat(player, span_warning("Veiled whispers herald the Undermaiden's gaze in my mind's eye as it turn towards [locale] for but a brief, singular moment."))
+						to_chat(player, span_warning("Veiled whispers herald the Ice God's gaze in my mind's eye as it turn towards [locale] for but a brief, singular moment."))
 	// AZURE EDIT END
 
 	return TRUE
@@ -148,17 +148,17 @@
 	var/area_of_death = lowertext(get_area_name(src))
 	var/locale = "a locale wreathed in enigmatic fog"
 	switch (area_of_death) // we're deliberately obtuse with this.
-		if ("mountains", "mt decapitation")
+		if ("mountains", "mount miracle")
 			locale = "a twisted tangle of soaring peaks"
-		if ("wilderness", "azure basin")
+		if ("wilderness", "county of etgard")
 			locale = "somewhere in the wilds"
 		if ("bog", "dense bog")
 			locale = "a wretched, fetid bog"
 		if ("coast", "coastforest")
-			locale = "somewhere betwixt Abyssor's realm and Dendor's bounty"
+			locale = "somewhere betwixt Mjallidhorn's realm and Gani's bounty"
 		if ("indoors", "shop", "physician", "outdoors", "roofs", "manor", "wizard's tower", "garrison", "dungeon cell", "baths", "tavern")
-			locale = "the city of Azure Peak and all its bustling souls"
+			locale = "the town of Old Doma and all its bustling souls"
 		if ("church")
-			locale = "a hallowed place, sworn to the Ten" // special bit for the church since it's sacred ground
+			locale = "a hallowed place, sworn to the Elementals" // special bit for the church since it's sacred ground
 	
 	return locale

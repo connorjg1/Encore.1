@@ -2,14 +2,12 @@
 	race = /datum/species/anthromorph
 
 /datum/species/anthromorph
-	name = "Wild-Kin"
+	name = "Otherkin"
 	id = "anthromorph"
-	desc = "A product of Dendor's enigmatic meddling in mortals races. The average wild-kin suffers from animalistic urges that vary in severity, \
-	from simply avoiding certain foods to smoldering desires to howl at the moon or chase prey. Usually these urges are tied to the animal that the wild-kin is melded with, \
-	making them rather predictable. Despite this, the way each wild-kin approaches their bizarre physiology and psychology varies, \
-	creating a diverse race of people who may not even empathise with one another. And whilst Dendor is considered the main culprit for Wild-kin, there are those created through other means, \
-	akin to Noc's stolen knowledge that created lupians and other abstract experimentation or circumstance. \
-	(Wild-kin are not a template race to play your own custom race, if you play a wild-kin, you are expected to roleplay to the setting and the race's lore.)"
+	desc = "A product of any variety of upbringing in all the globe- in being called Otherkin, one is generally classified as a lesser-populated species. \
+	Never having had the forefront of the world's attention before the creation of the Goblet, they now consist of a huge minority of leftovers in the new world. \
+	This selection enables the player to create their own species; beware that all normal server rules, especially believability, are still enforced. \
+	You are solely responsible for your character's origins."
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

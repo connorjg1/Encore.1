@@ -282,7 +282,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Aspect's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",

@@ -18,7 +18,7 @@
 	leads the race towards technological advacement as they continue \
 	to improve their craft through powerful mechanization and forging \
 	Dwarves are hearty, but are not known for their speed or eyesight... \
-	Each dwarf hails from a ancient fortress named after the most plentiful mineral. \
+	Each dwarf hails from the annals of the Undermen, their greatest achivements represented by Geramor. \
 	+1 Constitution."
 
 	skin_tone_wording = "Dwarf Fortress"
@@ -80,15 +80,15 @@
 
 /datum/species/dwarf/mountain/get_skin_list()
 	return list(
-		"Platinum" = SKIN_COLOR_PLATINUM,
-		"Aurum" = SKIN_COLOR_AURUM,
-		"Quicksilver" = SKIN_COLOR_QUICKSILVER,
-		"Brass" = SKIN_COLOR_BRASS,
-		"Iron" = SKIN_COLOR_IRON,
-		"Malachite" = SKIN_COLOR_MALACHITE,
-		"Obsidian" = SKIN_COLOR_OBSIDIAN,
-		"Brimstone" = SKIN_COLOR_BRIMSTONE,
-		"Jade" = SKIN_COLOR_JADE
+		"High Geramor" = SKIN_COLOR_PLATINUM,
+		"Dorston" = SKIN_COLOR_AURUM,
+		"Peaks Tayn" = SKIN_COLOR_QUICKSILVER,
+		"The Blind" = SKIN_COLOR_BRASS,
+		"The Watchers" = SKIN_COLOR_IRON,
+		"Amberland Bastion" = SKIN_COLOR_MALACHITE,
+		"The Scars" = SKIN_COLOR_OBSIDIAN,
+		"Old Arnkin Ruin" = SKIN_COLOR_BRIMSTONE,
+		"Tuk" = SKIN_COLOR_JADE
 	)
 
 /datum/species/dwarf/mountain/get_hairc_list()

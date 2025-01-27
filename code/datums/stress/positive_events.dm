@@ -140,7 +140,7 @@
 
 /datum/stressevent/puzzle_impossible
 	stressadd = -4
-	desc = span_boldgreen("I solved an extremely difficult puzzle. Xylix is smiling at me, and surely even Noc must find it impressive.")
+	desc = span_boldgreen("I solved an extremely difficult puzzle. Iliope is smiling at me, and surely even Akan must find it impressive.")
 	timer = 15 MINUTES
 
 /datum/stressevent/noble_lavish_food

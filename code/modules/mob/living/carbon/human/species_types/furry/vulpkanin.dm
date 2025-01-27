@@ -4,7 +4,9 @@
 /datum/species/vulpkanin
 	name = "Vulpkian"
 	id = "vulpkanin"
-	desc = "Foxy creatures known for their cleverness and mischief. In ancient history they were Dendor's original champions, but as His madness grew the connect became frey and forgotten, leaving them to their own devices. Or, at least, that's what they say."
+	desc = "Foxy creatures known for their cleverness and mischief.\
+	 In distant history they were denizens of the Far East, among those displaced with the Noma Guilds. \
+	 They once served as fierce champions of ancient nations, and were the last to fall against the demonic invasions which inevitably came."
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,

@@ -1,5 +1,5 @@
 /obj/structure/roguemachine/lottery_roguetown
-	name = "XYLIX'S FORTUNE"
+	name = "ILIOPE'S FORTUNE"
 	desc = "An infinite, yawning hole that makes or breaks men. Come and play!"
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "lottery"
@@ -66,7 +66,7 @@
 
 	else
 		src.diceroll = rand(1,100)
-		src.say(pick("Around and around I go, where I stop, only I know.", "Xylix smiles upon your idiocy, child.", "The wheel of fate spins, and spins.", "Oh, you poor fool.", "This is going to hurt for one of us.", "I laugh, you cry; I weep, you cheer..", "I will be your fool; I'll perform for you...", "Let's go gambling!", "Around and around, folly abounds.", "Dance with ruin and wealth."))
+		src.say(pick("Around and around I go, where I stop, only I know.", "Iliope smiles upon your idiocy, child.", "The wheel of fate spins, and spins.", "Oh, you poor fool.", "This is going to hurt for one of us.", "I laugh, you cry; I weep, you cheer..", "I will be your fool; I'll perform for you...", "Let's go gambling!", "Around and around, folly abounds.", "Dance with ruin and wealth."))
 		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		playsound(src, 'sound/misc/letsgogambling.ogg', 100, FALSE, -1)
 		src.gamblingprob += (user.STALUC - src.probpenalty)
@@ -199,7 +199,7 @@
 			src.say("...though 'tis difficult to argue what happened after that didn't benefit Her.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 		if(5)
-			src.say("Oh, Psydon?")
+			src.say("Oh, Akan?")
 			playsound(src, 'sound/misc/machinequestion.ogg', 100, FALSE, -1)
 			sleep(30)
 			src.say("To be honest, I'm about PSY-DONE with this whole debate! Ha-ha-h- ...No? Too soon? Alright.")
@@ -220,13 +220,13 @@
 			src.say("Can't you smell the stench in the air? It's terrible.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 			sleep(30)
-			src.say("It wasn't nearly so bad, before. Rot and puss. Oh, well.")
+			src.say("It wasn't nearly so bad, before. Oh, well.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 		if(9)
 			src.say("Can't you smell the stench in the air, fool? It's terrible.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 			sleep(30)
-			src.say("I don't know how you could miss it. Rot and puss. Oh, well.")
+			src.say("I don't know how you could miss it. Oh, well.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 		if(10)
 			src.say("Maybe you ought stop while you are ahead, jester.")
@@ -235,7 +235,7 @@
 			src.say("...greed is what got your lot into this mess, after all.")
 			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
 		if(11)
-			src.say("A father and his son are riding a carriage through a forrest. Suddenly, Z's curse! The axle snaps!")
+			src.say("A father and his son are riding a carriage through a forest. Suddenly, Devil's curse! The axle snaps!")
 			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			src.say("The father dies, but the son- the son yet lives! He's brought to the nearby village's physician.")

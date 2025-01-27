@@ -192,79 +192,51 @@
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/psydon
-	name = "psydon tabard"
-	result = list(/obj/item/clothing/cloak/templar/psydon)
+/datum/crafting_recipe/roguetown/sewing/all_aspect
+	name = "katholikos tabard"
+	result = list(/obj/item/clothing/cloak/templar/all_aspect)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/astrata
-	name = "astrata tabard"
-	result = list(/obj/item/clothing/cloak/templar/astrata)
+/datum/crafting_recipe/roguetown/sewing/visires
+	name = "visires tabard"
+	result = list(/obj/item/clothing/cloak/templar/visires)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/noc
-	name = "noc tabard"
-	result = list(/obj/item/clothing/cloak/templar/noc)
+/datum/crafting_recipe/roguetown/sewing/akan
+	name = "akan tabard"
+	result = list(/obj/item/clothing/cloak/templar/akan)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/dendor
-	name = "dendor tabard"
-	result = list(/obj/item/clothing/cloak/templar/dendor)
+/datum/crafting_recipe/roguetown/sewing/gani
+	name = "gani tabard"
+	result = list(/obj/item/clothing/cloak/templar/gani)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/necra
-	name = "necra tabard"
-	result = list(/obj/item/clothing/cloak/templar/necra)
+/datum/crafting_recipe/roguetown/sewing/mjallidhorn
+	name = "mjallidhorn tabard"
+	result = list(/obj/item/clothing/cloak/templar/mjallidhorn)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/abyssor
-	name = "abyssor tabard"
-	result = list(/obj/item/clothing/cloak/templar/abyssor)
+/datum/crafting_recipe/roguetown/sewing/golerkanh
+	name = "goler kanh tabard"
+	result = list(/obj/item/clothing/cloak/templar/golerkanh)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3
 
-/datum/crafting_recipe/roguetown/sewing/malum
-	name = "malum tabard"
-	result = list(/obj/item/clothing/cloak/templar/malum)
-	reqs = list(/obj/item/natural/cloth = 3,
-				/obj/item/natural/fibers = 1)
-	craftdiff = 3
-
-/datum/crafting_recipe/roguetown/sewing/eora
-	name = "eora tabard"
-	result = list(/obj/item/clothing/cloak/templar/eora)
-	reqs = list(/obj/item/natural/cloth = 3,
-				/obj/item/natural/fibers = 1)
-	craftdiff = 3
-
-/datum/crafting_recipe/roguetown/sewing/pestra
-	name = "pestra tabard"
-	result = list(/obj/item/clothing/cloak/templar/pestra)
-	reqs = list(/obj/item/natural/cloth = 3,
-				/obj/item/natural/fibers = 1)
-	craftdiff = 3
-
-/datum/crafting_recipe/roguetown/sewing/ravox
-	name = "ravox tabard"
-	result = list(/obj/item/clothing/cloak/templar/ravox)
-	reqs = list(/obj/item/natural/cloth = 3,
-				/obj/item/natural/fibers = 1)
-	craftdiff = 3
-
-/datum/crafting_recipe/roguetown/sewing/xylix
-	name = "xylix tabard"
-	result = list(/obj/item/clothing/cloak/templar/xylix)
+/datum/crafting_recipe/roguetown/sewing/iliope
+	name = "iliope tabard"
+	result = list(/obj/item/clothing/cloak/templar/iliope)
 	reqs = list(/obj/item/natural/cloth = 3,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 3

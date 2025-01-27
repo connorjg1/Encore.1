@@ -294,7 +294,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	var/list/dat = list()
 	dat += GLOB.roleplay_readme
 	if(dat)
-		var/datum/browser/popup = new(src, "Primer", "AZURE PEAK", 460, 550)
+		var/datum/browser/popup = new(src, "Primer", "DOMOTAN ISLAND", 460, 550)
 		popup.set_content(dat.Join())
 		popup.open()
 
@@ -304,7 +304,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 		ready = PLAYER_NOT_READY
 		return FALSE
 
-	var/this_is_like_playing_right = alert(src,"Are you sure you wish to observe? Playing is a lot more fun.","VOYEUR","Yes","No")
+	var/this_is_like_playing_right = alert(src,"Are you sure you wish to observe? Playing is a lot more fun.","OBSERVE","Yes","No")
 
 	if(QDELETED(src) || !src.client || this_is_like_playing_right != "Yes")
 		ready = PLAYER_NOT_READY

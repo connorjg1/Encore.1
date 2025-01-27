@@ -1,6 +1,6 @@
 /datum/migrant_role/heartfelt/lord
-	name = "Lord of Heartfelt"
-	greet_text = "You are the Lord of Heartfelt, ruler of a once-prosperous barony now in ruin. Guided by your Magos, you journey to the Peak, seeking aid to restore your domain to its former glory, or perhaps claim a new throne."
+	name = "Foreign Lord"
+	greet_text = "You are the Lord of a distant land, one of the disparate nations across the Sea of Fire. You have ventured to Domotan for any reason you see fit, though in unknown tidings for the local royals..."
 	outfit = /datum/outfit/job/roguetown/heartfelt/lord
 	allowed_sexes = list(MALE)
 	allowed_races = RACES_ALL_KINDS
@@ -50,8 +50,8 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/migrant_role/heartfelt/lady
-	name = "Lady of Heartfelt"
-	greet_text = "You are the Lady of Heartfelt, once a respected noblewoman now struggling to survive in a desolate landscape. With your home in ruins, you look to the Peak, hoping to find new purpose or refuge amidst the chaos."
+	name = "Foreign Lady"
+	greet_text = "You are the Lady of a distant land, one of the disparate nations across the Sea of Fire. You have ventured to Domotan for any reason you see fit, though in unknown tidings for the local royals..."
 	outfit = /datum/outfit/job/roguetown/heartfelt/lady
 	allowed_sexes = list(FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -94,8 +94,8 @@
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
 
 /datum/migrant_role/heartfelt/hand
-	name = "Hand of Heartfelt"
-	greet_text = "You are the Hand of Heartfelt, burdened by the perception of failure in protecting your Lord's domain. Despite doubts from others, your loyalty remains steadfast as you journey to the Peak, determined to fulfill your duties."
+	name = "Foreign Hand"
+	greet_text = "You are the Hand of the foreign Lordship, burdened in protecting your Lord's domain. Despite doubts from others, your loyalty remains steadfast as you journey to Domotan Island, determined to fulfill your duties."
 	outfit = /datum/outfit/job/roguetown/heartfelt/hand
 	allowed_races = RACES_ALL_KINDS
 	grant_lit_torch = TRUE
@@ -135,8 +135,8 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)
 
 /datum/migrant_role/heartfelt/knight
-	name = "Knight of Heartfelt"
-	greet_text = "You are a Knight of Heartfelt, once part of a brotherhood in service to your Lord. Now, alone and committed to safeguarding what remains of your court, you ride to the Peak, resolved to ensure their safe arrival."
+	name = "Foreign Knight"
+	greet_text = "You are a Knight of a foreign land, once part of a brotherhood in service to your Lord. Now, alone and committed to safeguarding your court, you sail to Domotan Island, resolved to ensure their safe arrival."
 	outfit = /datum/outfit/job/roguetown/heartfelt/knight
 	allowed_races = RACES_ALL_KINDS
 	grant_lit_torch = TRUE
@@ -208,8 +208,8 @@
 		H.name = "[honorary] [prev_name]"
 
 /datum/migrant_role/heartfelt/magos
-	name = "Magos of Heartfelt"
-	greet_text = "You are the Magos of Heartfelt, renowned for your arcane knowledge yet unable to foresee the tragedy that befell your home. Drawn by a guiding star to the Peak, you seek answers and perhaps a new purpose in the wake of destruction."
+	name = "Foreign Magos"
+	greet_text = "You are the Magos of a foreign land, committed to wander as your Lord deems fit."
 	outfit = /datum/outfit/job/roguetown/heartfelt/magos
 	allowed_races = RACES_ALL_KINDS
 	grant_lit_torch = TRUE
@@ -266,8 +266,8 @@
 			H.mind.AddSpell(new S)
 
 /datum/migrant_role/heartfelt/prior
-	name = "Prior of Heartfelt"
-	greet_text = "The Prior of Heartfelt, you were destined for ascension within the Church, but fate intervened with the barony's downfall, delaying it indefinitely. Still guided by the blessings of Astrata, you journey to the Peak, determined to offer what aid and solace you can."
+	name = "Foreign Prior"
+	greet_text = "The Prior of a foreign lordship, you were destined for ascension within the Church, but fate intervened with your assignment to the Lord's adventure, delaying it indefinitely. Still guided by the blessings of Gani, you journey to Domotan, determined to offer what aid and solace you can."
 	outfit = /datum/outfit/job/roguetown/heartfelt/prior
 	allowed_races = RACES_ALL_KINDS
 	grant_lit_torch = TRUE
@@ -275,7 +275,7 @@
 
 /datum/outfit/job/roguetown/heartfelt/prior/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/clothing/neck/roguetown/psicross/astrata
+	neck = /obj/item/clothing/neck/roguetown/psicross/gani
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
