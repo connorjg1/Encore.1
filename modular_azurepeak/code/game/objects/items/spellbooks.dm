@@ -130,7 +130,7 @@
 	icon_state = "[base_icon_state]_[open]"
 
 /obj/item/book/granter/spellbook/on_reading_start(mob/user)
-	to_chat(user, span_notice("Arcyne mysteries abound in this enigmatic tome, gift of Noc..."))
+	to_chat(user, span_notice("Arcyne mysteries abound in this enigmatic tome, gift of Akan..."))
 
 /obj/item/book/granter/spellbook/on_reading_finished(mob/user)
 	var/mob/living/carbon/human/gamer = user

@@ -11,7 +11,7 @@
 
 /datum/mapGeneratorModule/cave
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
-	allowed_turfs = list(/turf/open/floor/rogue/dirt/road,/turf/open/water,/turf/open/floor/rogue/volcanic)
+	allowed_turfs = list(/turf/open/floor/rogue/dirt, /turf/open/floor/rogue/naturalstone,/turf/open/water,/turf/open/floor/rogue/volcanic)
 	spawnableAtoms = list(/obj/item/natural/stone = 19,/obj/structure/roguerock=5,/obj/item/natural/rock = 3, /obj/structure/glowshroom = 4)
 	allowed_areas = list(/area/rogue/under/cave/spider,/area/rogue/indoors/cave,/area/rogue/under/cavewet,/area/rogue/under/cave,/area/rogue/under/cavelava)
 

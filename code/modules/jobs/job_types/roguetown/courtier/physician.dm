@@ -9,11 +9,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_PHYSICIAN
-	tutorial = "You were a child born into good wealth--but poor health. \
-		Perhaps in another life, you would have turned out to be a powerful mage, wise archivist or a shrewd steward, \
-		but leprosy took away your younger years. \
-		Out of desperation, you followed the ways of Pestra and managed to be cured. \
-		Now you serve in the Duke's court ensuring the good health of those inhabiting the keep."
+	tutorial = "An expert in all matters of the physical body, these doctors use scientific method first to mend the worst of wounds. When all else fails, seek alchemical solutions."
 	outfit = /datum/outfit/job/roguetown/physician
 	whitelist_req = TRUE
 
