@@ -3993,16 +3993,8 @@
 "dZc" = (
 /obj/structure/bookcase,
 /obj/item/book/rogue/sword,
-/obj/item/book/rogue/abyssor,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
-"dZT" = (
-/obj/effect/decal/cobbleedge{
-	dir = 9;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "eaw" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -6084,13 +6076,6 @@
 "gmr" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/rtfield)
-"gnb" = (
-/obj/effect/decal/cobbleedge{
-	dir = 4;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "gnw" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
@@ -6444,10 +6429,7 @@
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
 "gGG" = (
-/obj/effect/decal/cobbleedge{
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
+/turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/under/cavewet)
 "gGZ" = (
 /obj/structure/stairs{
@@ -8735,13 +8717,6 @@
 "jbX" = (
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/shop)
-"jcX" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "jcY" = (
 /obj/structure/mineral_door/wood/fancywood{
 	locked = 1;
@@ -18066,13 +18041,6 @@
 /obj/item/paper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/garrison)
-"sTs" = (
-/obj/effect/decal/cobbleedge{
-	dir = 6;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "sTI" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/clothing/mask/cigarette/pipe/westman,
@@ -18898,7 +18866,6 @@
 /area/rogue/under/town/basement)
 "tFt" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/necra,
 /obj/item/book/rogue/tales1,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
@@ -19709,13 +19676,6 @@
 /obj/item/clothing/head/roguetown/helmet/bascinet,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
-"usP" = (
-/obj/effect/decal/cobbleedge{
-	dir = 8;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "utd" = (
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/exposed/town/keep)
@@ -23093,13 +23053,6 @@
 "yfc" = (
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/beach)
-"yfz" = (
-/obj/effect/decal/cobbleedge{
-	dir = 5;
-	icon_state = "borderfall"
-	},
-/turf/open/water/ocean/deep,
-/area/rogue/under/cavewet)
 "yfB" = (
 /obj/machinery/light/rogue/lanternpost{
 	dir = 4
@@ -59339,9 +59292,6 @@ asD
 asD
 asD
 asD
-dZT
-gnb
-jcX
 asD
 asD
 asD
@@ -59357,9 +59307,12 @@ asD
 asD
 asD
 asD
-dZT
-gnb
-jcX
+asD
+asD
+asD
+asD
+asD
+asD
 asD
 asD
 asD
@@ -59596,9 +59549,8 @@ asD
 asD
 asD
 asD
-gGG
+asD
 aCS
-utq
 asD
 asD
 asD
@@ -59614,9 +59566,10 @@ asD
 asD
 asD
 asD
-gGG
+asD
+asD
 aCS
-utq
+asD
 asD
 asD
 asD
@@ -59853,9 +59806,9 @@ asD
 asD
 asD
 asD
-yfz
-usP
-sTs
+asD
+asD
+asD
 asD
 apT
 apT
@@ -59871,9 +59824,9 @@ asD
 asD
 asD
 asD
-yfz
-usP
-sTs
+asD
+asD
+asD
 asD
 asD
 asD
@@ -60117,7 +60070,7 @@ apT
 apT
 apT
 apT
-apT
+bKo
 apT
 asD
 asD
@@ -60365,16 +60318,16 @@ asD
 asD
 asD
 asD
-dZT
-gnb
-jcX
+asD
+asD
+asD
 asD
 apT
 apT
+bKo
+bKo
 apT
-apT
-apT
-apT
+bKo
 apT
 apT
 asD
@@ -60622,17 +60575,17 @@ asD
 asD
 asD
 asD
-gGG
+asD
 aCS
-utq
+asD
 asD
 apT
+bKo
+bKo
+bKo
 apT
-apT
-apT
-apT
-apT
-apT
+bKo
+bKo
 apT
 asD
 asD
@@ -60879,17 +60832,17 @@ asD
 asD
 asD
 asD
-yfz
-usP
-sTs
+asD
+asD
+asD
 asD
 apT
 apT
+bKo
+bKo
 apT
 apT
-apT
-apT
-apT
+bKo
 apT
 asD
 asD
@@ -61670,9 +61623,9 @@ asD
 asD
 asD
 asD
-dZT
-gnb
-jcX
+asD
+asD
+asD
 asD
 asD
 asD
@@ -61927,9 +61880,9 @@ asD
 asD
 asD
 asD
-gGG
+asD
 aCS
-utq
+asD
 asD
 asD
 asD
@@ -62157,20 +62110,20 @@ asD
 apT
 apT
 asD
-asD
+bKo
 apT
 apT
 gnw
 gnw
-asD
+gGG
 apT
 apT
-asD
-asD
-asD
-asD
-asD
-nsQ
+gGG
+gGG
+gGG
+gGG
+gGG
+gGG
 bKo
 bKo
 nsQ
@@ -62184,9 +62137,9 @@ asD
 asD
 asD
 asD
-yfz
-usP
-sTs
+asD
+asD
+asD
 asD
 asD
 asD
@@ -62912,9 +62865,9 @@ apT
 apT
 apT
 apT
-asD
-asD
-asD
+apT
+gGG
+gGG
 apT
 apT
 apT
