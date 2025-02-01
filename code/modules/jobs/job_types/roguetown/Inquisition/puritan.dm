@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/job/roguetown/puritan
 	display_order = JDO_PURITAN
 	give_bank_account = 30
-	min_pq = 10 //Woah there buddy. Here's a soft antagging role. You're gonna need to be a Cool Guy:tm: to start doing this work. Usually a high strain role, and can actually ruin rounds for people if not done proper.
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 

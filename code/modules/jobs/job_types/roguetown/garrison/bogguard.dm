@@ -14,7 +14,7 @@
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/bogguardsman
 	give_bank_account = 16
-	min_pq = 0
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 

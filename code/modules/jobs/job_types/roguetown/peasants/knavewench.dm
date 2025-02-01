@@ -13,7 +13,7 @@
 	outfit = /datum/outfit/job/roguetown/knavewench
 	display_order = JDO_KNAVEWENCH
 	give_bank_account = 10
-	min_pq = -10
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 

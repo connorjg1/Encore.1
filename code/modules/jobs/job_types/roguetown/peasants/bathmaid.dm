@@ -17,7 +17,7 @@
 	display_order = JDO_WENCH
 	give_bank_account = TRUE
 	can_random = FALSE
-	min_pq = -10
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 

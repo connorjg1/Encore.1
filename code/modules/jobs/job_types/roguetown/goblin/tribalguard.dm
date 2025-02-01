@@ -11,7 +11,7 @@
 	tutorial = "Goblin Guards rensposible for their kingdom and his majesty King."
 	display_order = JDO_GOBLINGUARD
 	outfit = /datum/outfit/job/roguetown/goblinguard
-	min_pq = 1
+	min_pq = -999
 	max_pq = null
 
 /datum/outfit/job/roguetown/goblinguard/pre_equip(mob/living/carbon/human/H)

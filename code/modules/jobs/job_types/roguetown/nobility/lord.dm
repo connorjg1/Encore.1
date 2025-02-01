@@ -25,7 +25,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	display_order = JDO_LORD
 	tutorial = "You were appointed your throne by King Malryck whose seat you occupy in their absence. You are the absolute authority of this island, and are at the center of every plot within it. Don't disappoint your mother, Queen Alyssandrine herself."
 	whitelist_req = FALSE
-	min_pq = 10
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 4
 	give_bank_account = 1000

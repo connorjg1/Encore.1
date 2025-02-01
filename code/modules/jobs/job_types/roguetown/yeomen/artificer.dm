@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/job/roguetown/artificer
 	display_order = JDO_ARTIFICER
 	give_bank_account = 8
-	min_pq = 0
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 

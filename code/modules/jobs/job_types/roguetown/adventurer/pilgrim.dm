@@ -18,7 +18,7 @@
 
 	announce_latejoin = FALSE
 	display_order = JDO_PILGRIM
-	min_pq = -20
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 	wanderer_examine = TRUE

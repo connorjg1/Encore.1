@@ -6,13 +6,12 @@
 	total_positions = 1
 	spawn_positions = 1
 	display_order = 6
-	min_pq = 0
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = RACES_ALL_KINDS
 	display_order = JDO_TAILOR
 	outfit = /datum/outfit/job/roguetown/tailor
 	give_bank_account = 16
-	min_pq = 0
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 

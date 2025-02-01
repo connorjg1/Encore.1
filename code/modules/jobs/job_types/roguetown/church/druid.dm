@@ -15,7 +15,7 @@
 
 	display_order = JDO_DRUID
 	give_bank_account = TRUE
-	min_pq = 0
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 

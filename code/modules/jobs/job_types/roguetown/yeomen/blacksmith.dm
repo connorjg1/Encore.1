@@ -13,7 +13,7 @@
 	outfit = /datum/outfit/job/roguetown/armorsmith
 	display_order = JDO_ARMORER
 	give_bank_account = 11
-	min_pq = 0
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 3
 
@@ -77,7 +77,7 @@
 	outfit = /datum/outfit/job/roguetown/weaponsmith
 	display_order = JDO_WEAPONSMITH
 	give_bank_account = 11
-	min_pq = 0
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 3
 
@@ -140,7 +140,7 @@
 	outfit = /datum/outfit/job/roguetown/blacksmith
 	display_order = JDO_BLACKSMITH
 	give_bank_account = 11
-	min_pq = 0
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 3
 

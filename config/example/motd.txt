@@ -1,4 +1,5 @@
 <!-- Most valid html will work in here, excluding images. -->
-Roguetown Discord Server: <a href="https://discord.gg/9uYTPsRMKa">discord.gg/RogueTown</a>
-Roguetown Patreon: <a href="https://www.patreon.com/user?u=58204426">patreon.com/ROGUETOWN</a>
+Encore Discord Server: <a href="https://discord.gg/PcnpNHZf">DISCORD LINK</a>
+Encore Server Github: <a href="https://github.com/Encore-Server/Encore.1">GITHUB LINK</a>
+Encore Server Wiki: <a href="https://encore.miraheze.org/wiki/Main_Page">WIKI LINK</a>
 <center>* Unstable Playtest - Expect Restarts *</center>

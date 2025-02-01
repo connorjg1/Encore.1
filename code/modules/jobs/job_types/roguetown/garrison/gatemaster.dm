@@ -13,7 +13,7 @@
 
 	outfit = /datum/outfit/job/roguetown/gatemaster
 	give_bank_account = 3
-	min_pq = 0
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 

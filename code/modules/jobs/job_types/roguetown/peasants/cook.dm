@@ -12,7 +12,7 @@
 	outfit = /datum/outfit/job/roguetown/cook
 	display_order = JDO_COOK
 	give_bank_account = 25
-	min_pq = -10
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 
