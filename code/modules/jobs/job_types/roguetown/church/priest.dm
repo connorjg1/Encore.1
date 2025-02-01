@@ -83,7 +83,7 @@
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Grand Duke")
+		if(HU.mind.assigned_role == "Prince Regent")
 			continue
 		if(!HU.head)
 			continue
@@ -93,24 +93,24 @@
 		//Abdicate previous King
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "Grand Duke" || HL.mind.assigned_role == "Consort")
+				if(HL.mind.assigned_role == "Prince Regent" || HL.mind.assigned_role == "Consort")
 					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Grand Duke")
+			if(HL.job == "Prince Regent")
 				HL.job = "Duke Emeritus"
 			if(HL.job == "Consort")
 				HL.job = "Consort Dowager"
 
 		//Coronate new King (or Queen)
-		HU.mind.assigned_role = "Grand Duke"
-		HU.job = "Grand Duke"
+		HU.mind.assigned_role = "Prince Regent"
+		HU.job = "Prince Regent"
 		switch(HU.pronouns)
 			if(SHE_HER)
 				SSticker.rulertype = "Grand Duchess"
 			if(THEY_THEM_F)
 				SSticker.rulertype = "Grand Duchess"
 			else
-				SSticker.rulertype = "Grand Duke"
+				SSticker.rulertype = "Prince Regent"
 		SSticker.rulermob = HU
 		var/dispjob = mind.assigned_role
 		removeomen(OMEN_NOLORD)

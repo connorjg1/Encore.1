@@ -285,46 +285,7 @@ GLOBAL_LIST_EMPTY(temporary_donators)
 		return
 	for(var/X in donatorss)
 		return X
-/*
-/mob/dead/new_player/proc/register_patreon()
-	set name = "RegisterPatreon"
-	set category = "Register"
-	if(client)
-		if(client.patreonlevel())
-			return
-	var/name = input("Enter your patreon DISPLAY NAME exactly as it appears on Patreon.","ROGUETOWN") as text|null
-	if(!name)
-		return
-	var/email = input("Enter your patreon EMAIL ADDRESS exactly as it appears on Patreon.","ROGUETOWN") as text|null
-	if(!email)
-		return
-	if(!patreon_lookup(name) || !patreon_lookup(email) || !findtext(email, "@"))
-		to_chat(src, span_warning("We couldn't find that name/email combo.</span> <span class='info'>Donator status is updated weekly before every playtest. If you have waited a week, seek help in our DISCORD SERVER (https://discord.gg/9uYTPsRMKa)"))
-		return
-//	var/saniemail = sanitize_simple(email,list("@"="AT","."="DOT"))
-	var/fug = patemail2ckey(email)
-	if(fug && (fug != ckey))
-		to_chat(src, span_warning("That Patreon is already registered to a different player.</span> <span class='info'>Donator status is updated weekly before every playtest. If you have waited a week, seek help in our DISCORD SERVER (https://discord.gg/9uYTPsRMKa)"))
-		return
-	add_patreon(ckey,email)
-	client.patreonlevel = -1
-	to_chat(src, span_boldnotice("Patreon registered."))
-	var/shown_patreon_level = client.patreonlevel()
-	if(!shown_patreon_level)
-		shown_patreon_level = "NONE"
-	switch(shown_patreon_level)
-		if(1)
-			shown_patreon_level = "Silver"
-		if(2)
-			shown_patreon_level = "Gold"
-		if(3)
-			shown_patreon_level = "Mythril"
-		if(4)
-			shown_patreon_level = "Merchant"
-		if(5)
-			shown_patreon_level = "Lord"
-	to_chat(src, span_info("Your Donator Level: [shown_patreon_level]"))
-*/
+
 /proc/add_patreon(ckey,email)
 	if(!email || !ckey)
 		return
