@@ -4,8 +4,8 @@
 	department_flag = COURTIERS
 	selection_color = JCOLOR_COURTIER
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
@@ -17,7 +17,7 @@
 	outfit = /datum/outfit/job/roguetown/magician
 	whitelist_req = TRUE
 	give_bank_account = 47
-	min_pq = -999
+	min_pq = null
 	max_pq = null
 	round_contrib_points = 2
 

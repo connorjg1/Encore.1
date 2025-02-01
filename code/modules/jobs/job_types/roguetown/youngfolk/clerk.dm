@@ -3,8 +3,8 @@
 	flag = CLERK
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/job/roguetown/clerk
 	display_order = JDO_CLERK
 	give_bank_account = TRUE
-	min_pq = null
+	min_pq = -999
 	max_pq = null
 	round_contrib_points = 2
 
