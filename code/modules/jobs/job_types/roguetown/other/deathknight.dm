@@ -3,10 +3,12 @@
 	flag = DEATHKNIGHT
 	department_flag = SLOP
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	min_pq = null //no pq
 	max_pq = null
+	tutorial = "One who is truly damned, a subservient undead entombed in eternal armor; loyal only to those of demonic origin. Kin to the hordes of Hell forevermore!"
+	allowed_patrons = list(/datum/patron/heretic/devil)
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
