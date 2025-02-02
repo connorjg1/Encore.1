@@ -50,4 +50,4 @@
 						/obj/structure/flora/roguegrass/maneater = 7,
 							/obj/item/natural/stone = 18,
 							/obj/item/grown/log/tree/stick = 3)
-	allowed_areas = list(/area/rogue/outdoors/town,/area/rogue/outdoors/rtfield)
+	allowed_areas = list(/area/rogue/outdoors/town,/area/rogue/outdoors/rtfield, /area/rogue/outdoors/woods/lakeside, /area/rogue/outdoors/woods/crossroads)

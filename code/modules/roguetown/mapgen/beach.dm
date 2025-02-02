@@ -23,7 +23,7 @@
 							/obj/structure/closet/dirthole/closed/loot=3,
 							/obj/structure/flora/roguetree/burnt = 3)
 	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=5)
-	allowed_areas = list(/area/rogue/outdoors/beach/forest)
+	allowed_areas = list(/area/rogue/outdoors/beach/forest, /area/rogue/outdoors/woods/heavenscoast, /area/rogue/outdoors/woods/crossroads)
 
 /datum/mapGeneratorModule/beachroad
 	clusterCheckFlags = CLUSTER_CHECK_SAME_ATOMS|CLUSTER_CHECK_DIFFERENT_ATOMS
