@@ -11,7 +11,7 @@
 
 /datum/mapGeneratorModule/beach
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
-	allowed_turfs = list(/turf/open/floor/rogue/sand)
+	allowed_turfs = list(/turf/open/floor/rogue/sand, /turf/open/floor/rogue/grass)
 	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
 	spawnableAtoms = list(/obj/structure/flora/newtree = 15,
 							/obj/structure/flora/roguegrass/bush = 13,
