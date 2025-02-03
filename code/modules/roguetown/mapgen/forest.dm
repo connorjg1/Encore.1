@@ -30,7 +30,7 @@
 							/obj/structure/flora/roguegrass/maneater/real=3)
 	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=2,
 						/turf/open/water/swamp=1)
-	allowed_areas = list(/area/rogue/outdoors/woods)
+	allowed_areas = list(/area/rogue/outdoors/woods, /area/rogue/outdoors/rtfield, /area/rogue/outdoors/beach/forest, /area/rogue/outdoors/woods/berkleigh)
 
 /datum/mapGeneratorModule/forestroad
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS

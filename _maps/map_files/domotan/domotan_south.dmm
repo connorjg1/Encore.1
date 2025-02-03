@@ -1571,12 +1571,9 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/woods)
 "tQ" = (
-/obj/effect/landmark/mapGenerator/rogue/cave{
-	startTurfX = 137;
-	startTurfY = 164
-	},
-/turf/closed/mineral/random/rogue,
-/area/rogue/under/cave)
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "tU" = (
 /obj/structure/bed/rogue/inn/hay,
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
@@ -1754,6 +1751,10 @@
 "vL" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/under/cave)
+"vR" = (
+/obj/effect/decal/cleanable/blood,
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cavewet/bogcaves)
 "vS" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/naturalstone,
@@ -2569,6 +2570,7 @@
 /obj/effect/landmark/mapGenerator/sunlights{
 	endTurfY = 255
 	},
+/obj/effect/landmark/mapGenerator/rogue/forest,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
 "Gt" = (
@@ -2960,6 +2962,10 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/shelter)
+"Lb" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "Lh" = (
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
@@ -2972,9 +2978,9 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/crossroads)
 "Lk" = (
-/obj/structure/flora/roguetree/stump/log,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "Ll" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/outdoors/mountains)
@@ -3361,6 +3367,10 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
 /turf/open/water/swamp,
 /area/rogue/outdoors/bog/dense)
+"Qq" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet/bogcaves)
 "Qr" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/hexstone,
@@ -3668,13 +3678,9 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach)
 "Vi" = (
-/obj/effect/landmark/mapGenerator/rogue/bog{
-	startTurfY = 163;
-	startTurfX = 18;
-	endTurfX = 81;
-	endTurfY = 216
-	},
-/turf/closed/mineral/random/rogue,
+/obj/effect/decal/remains/wolf,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "Vo" = (
 /obj/structure/rack/rogue/shelf/big,
@@ -6603,7 +6609,7 @@ My
 NV
 nA
 nA
-nA
+Ha
 Oj
 Oj
 nA
@@ -6859,9 +6865,9 @@ nA
 nA
 Oj
 Oj
-Oj
-Oj
-Oj
+Ha
+Ha
+Ha
 Oj
 My
 Oj
@@ -7112,13 +7118,13 @@ My
 nA
 nA
 Oj
-My
+Ha
+Ha
+Lb
 Oj
-Oj
-nA
-Oj
-NV
-nA
+Ha
+Ha
+Ha
 Oj
 My
 nA
@@ -7369,13 +7375,13 @@ Oj
 My
 nA
 Oj
+Ha
+Vi
 Oj
 Oj
-nA
-nA
-My
-nA
-nA
+Oj
+Oj
+Oj
 Oj
 nA
 nA
@@ -7626,13 +7632,13 @@ Oj
 My
 nA
 My
+Lk
+Lb
 Oj
 Oj
-nA
-My
-nA
-My
-nA
+Oj
+Lb
+Oj
 My
 NV
 Oj
@@ -7883,13 +7889,13 @@ My
 My
 nA
 My
-My
 Oj
-My
+Lk
+Qq
+Lb
+vR
 Oj
-My
-nA
-nA
+tQ
 Oj
 Oj
 nA
@@ -8140,12 +8146,12 @@ Oj
 My
 nA
 nA
-nA
-Oj
-nA
-nA
+Ha
 Oj
 Oj
+Ha
+Ha
+tQ
 Oj
 nA
 nA
@@ -8397,13 +8403,13 @@ Oj
 My
 nA
 nA
-nA
-nA
+Ha
+Ha
+Ha
+Ha
+Ha
 Oj
 Oj
-My
-My
-My
 nA
 nA
 nA
@@ -8470,7 +8476,7 @@ yS
 yS
 yS
 My
-Vi
+My
 My
 My
 AQ
@@ -39052,7 +39058,7 @@ AQ
 AQ
 AQ
 AQ
-tQ
+AQ
 AQ
 AQ
 AQ
@@ -57064,7 +57070,7 @@ cz
 cz
 AQ
 AQ
-MZ
+bC
 MZ
 MZ
 MZ
@@ -57319,9 +57325,9 @@ gX
 cz
 cz
 cz
-Lk
 cz
-sa
+cz
+bC
 MZ
 MZ
 MZ

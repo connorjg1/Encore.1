@@ -1,4 +1,4 @@
-/* /datum/weather/fog
+/datum/weather/fog
 	name = "fog"
 	desc = ""
 
@@ -31,4 +31,4 @@
 	if(GLOB.forecast != "fog")
 		wind_down()
 		return
-#endif */
+#endif

@@ -270,7 +270,7 @@
 	keys = list(/obj/item/roguekey/church, /obj/item/roguekey/graveyard)
 
 /obj/item/storage/keyring/puritan
-	keys = list(/obj/item/roguekey/puritan, /obj/item/roguekey/inquisition, /obj/item/roguekey/church)
+	keys = list(/obj/item/roguekey/puritan, /obj/item/roguekey/inquisition, /obj/item/roguekey/church, /obj/item/roguekey/graveyard)
 
 /obj/item/storage/keyring/nightman
 	keys = list(/obj/item/roguekey/nightman, /obj/item/roguekey/nightmaiden)
