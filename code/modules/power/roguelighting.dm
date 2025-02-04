@@ -163,6 +163,10 @@
 	var/can_damage = FALSE
 	var/start_fuel //Override for fueluse. Mostly used for smelters.
 	var/fuel_modifier = 1 //Modifier for firefuel
+	//Ash 
+	var/burntime = 0 //How long has this fire been lit
+	var/ash_amount = 0 //How much ash has been produced by this fire
+	var/ash_max = 3 // How much ash can be produced by this fire
 
 /obj/machinery/light/rogue/Initialize()
 	if(soundloop)
@@ -175,6 +179,15 @@
 		fueluse = fueluse - (rand(fueluse*0.1,fueluse*0.3))
 	update_icon()
 	. = ..()
+
+/obj/machinery/light/rogue/process()
+	if(on && ash_max) //Only care if it's lit and can produce ash
+		burntime++
+		if(burntime >= 300) //Produce ash after some time only. Prevents igniting+extinguishing for rapid ash production
+			burntime = 0 //Reset
+			ash_amount = min(ash_amount + 1, ash_max)
+	..()
+
 
 /obj/machinery/light/rogue/weather_trigger(W)
 	if(W==/datum/weather/rain)
@@ -190,10 +203,14 @@
 				minsleft = "less than a minute"
 			else
 				minsleft = "[round(minsleft)] minutes"
-			. += span_info("The fire will last for [minsleft].")
+			if(on)
+				. += span_info("The fire will last for [minsleft].")
+			else
+				. += span_info("Enough fuel remains for a fire to burn for [minsleft].")
 		else
 			if(initial(fueluse) > 0)
-				. += span_warning("The fire is burned out and hungry...")
+				var/desc = ash_amount > 0 ? "Where once there was a roaring flame, naught but ashes remain..." : "The fire is burned out and hungry..."
+				. += span_warning(desc)
 
 /obj/machinery/light/rogue/extinguish()
 	if(on)
@@ -309,12 +326,12 @@
 			return
 		if(!W)
 			return
-		qdel(W)
 		user.visible_message(span_warning("[user] feeds [W] to [src]."))
 		if(initial(fueluse))
 			fueluse = fueluse + W.firefuel*fuel_modifier
 			if(fueluse > initial(fueluse)) //keep it at the max
 				fueluse = initial(fueluse)
+		qdel(W)
 		return TRUE
 	else
 		if(on)
@@ -330,6 +347,27 @@
 			if(user.used_intent?.type != INTENT_SPLASH)
 				W.spark_act()
 	. = ..()
+
+/obj/machinery/light/rogue/attack_hand(mob/user)
+	if(!on && ash_amount && ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(istype(src, /obj/machinery/light/rogue/hearth))
+			var/obj/machinery/light/rogue/hearth/hearth = src
+			if(hearth.attachment) //Only remove ash when a hearth has nothing on it.
+				return
+		H.visible_message(span_info("[H] begins to scoop ash out of the [src]."))
+		if(do_after(H, 20, target = src))
+			ash_amount = max(ash_amount - 1, 0)
+			var/turf/T = get_turf(H)
+			var/obj/item/ash/A = new /obj/item/ash(T)
+			H.put_in_hands(A)
+			if(ash_amount)
+				to_chat(H, span_notice("There seems to be more ash in the [src]."))
+			else
+				to_chat(H, span_notice("You've removed all the ash from the [src]"))
+		return 
+	. = ..()
+
 
 /obj/machinery/light/rogue/take_damage(damage_amount, damage_type = BRUTE, damage_flag = 0, sound_effect = 1)
 	if(!can_damage)
@@ -357,6 +395,7 @@
 	cookonme = TRUE
 	fueluse = 0
 	max_integrity = 150
+	ash_max = 1
 
 /obj/machinery/light/rogue/firebowl/CanPass(atom/movable/mover, turf/target)
 	if(istype(mover) && (mover.pass_flags & PASSTABLE))
@@ -459,6 +498,7 @@
 	cookonme = FALSE
 	pixel_y = 32
 	soundloop = null
+	ash_max = 0
 
 /obj/machinery/light/rogue/wallfire/candle/OnCrafted(dirin, user)
 	pixel_x = 0
@@ -512,6 +552,7 @@
 	crossfire = FALSE
 	plane = GAME_PLANE_UPPER
 	cookonme = FALSE
+	ash_max = 0
 
 /obj/machinery/light/rogue/torchholder/c
 	pixel_y = 32
@@ -642,6 +683,7 @@
 	soundloop = null
 	crossfire = FALSE
 	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN | BLOCK_Z_IN_UP
+	ash_max = 0
 
 /obj/machinery/light/rogue/chand/attack_hand(mob/user)
 	if(isliving(user) && on)
@@ -887,6 +929,10 @@
 				fueluse = max(fueluse - 10, 0)
 			if(fueluse == 0)
 				burn_out()
+			burntime++
+			if(burntime >= 300)
+				burntime = 0
+				ash_amount = min(ash_amount + 1, ash_max)
 		if(attachment)
 			if(istype(attachment, /obj/item/cooking/pan))
 				if(food)
