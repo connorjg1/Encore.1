@@ -364,7 +364,7 @@
 			if(ash_amount)
 				to_chat(H, span_notice("There seems to be more ash in the [src]."))
 			else
-				to_chat(H, span_notice("You've removed all the ash from the [src]"))
+				to_chat(H, span_notice("I've removed all the ash I can from the [src]."))
 		return 
 	. = ..()
 
@@ -417,7 +417,7 @@
 		if(istype(H))
 			H.visible_message(span_info("[H] warms \his hand over the fire."))
 
-			if(do_after(H, 15, target = src))
+			if(do_after(H, 30, target = src))
 				var/obj/item/bodypart/affecting = H.get_bodypart("[(user.active_hand_index % 2 == 0) ? "r" : "l" ]_arm")
 				to_chat(H, span_warning("HOT!"))
 				if(affecting && affecting.receive_damage( 0, 5 ))		// 5 burn damage
