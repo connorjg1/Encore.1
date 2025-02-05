@@ -11,7 +11,7 @@
 	possible_locs = list(BODY_ZONE_CHEST)
 
 /datum/surgery_step/extract_lux
-	name = "Extract Lux"
+	name = "Extract Thauma"
 	implements = list(
 		TOOL_SCALPEL = 80,
 	)
@@ -29,22 +29,22 @@
 		return FALSE
 
 /datum/surgery_step/extract_lux/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
-	display_results(user, target, span_notice("I begin to scrape lux from [target]'s heart..."),
-		span_notice("[user] begins to scrape lux from [target]'s heart."),
-		span_notice("[user] begins to scrape lux from [target]'s heart."))
+	display_results(user, target, span_notice("I begin to scrape thauma from [target]'s heart..."),
+		span_notice("[user] begins to scrape thauma from [target]'s heart."),
+		span_notice("[user] begins to scrape thauma from [target]'s heart."))
 	return TRUE
 
 /datum/surgery_step/extract_lux/success(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	target.emote("painscream")
 	if(target.has_status_effect(/datum/status_effect/debuff/devitalised))
-		display_results(user, target, span_notice("You cannot draw lux from [target]; they have none left to give."),
-		"[user] extracts lux from [target]'s innards.",
-		"[user] extracts lux from [target]'s innards.")
+		display_results(user, target, span_notice("You cannot draw thauma from [target]; they have none left to give."),
+		"[user] extracts thauma from [target]'s innards.",
+		"[user] extracts thauma from [target]'s innards.")
 		return FALSE
 	else
-		display_results(user, target, span_notice("You extract a single dose of lux from [target]'s heart."),
-			"[user] extracts lux from [target]'s innards.",
-			"[user] extracts lux from [target]'s innards.")
+		display_results(user, target, span_notice("You extract a single dose of thauma from [target]'s heart."),
+			"[user] extracts thauma from [target]'s innards.",
+			"[user] extracts thauma from [target]'s innards.")
 		new /obj/item/reagent_containers/lux(target.loc)
 		target.apply_status_effect(/datum/status_effect/debuff/devitalised)
 	return TRUE
