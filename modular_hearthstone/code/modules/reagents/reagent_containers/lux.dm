@@ -1,5 +1,5 @@
 /obj/item/reagent_containers/lux
-	name = "lux"
+	name = "thauma"
 	desc = "The stuff of life and souls, retrieved from within a hopefully-willing donor. It's a bit clammy and squishy, like a half-fried egg."
 	icon = 'icons/roguetown/items/produce.dmi'
 	icon_state = "lux"
