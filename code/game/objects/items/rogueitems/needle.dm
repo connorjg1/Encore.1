@@ -160,11 +160,20 @@
 	return FALSE
 
 /obj/item/needle/thorn
-	name = "needle"
+	name = "thorn needle"
 	icon_state = "thornneedle"
 	desc = "This rough needle can be used to sew cloth and wounds."
 	stringamt = 5
 	maxstring = 5
+	max_integrity = 10
+	anvilrepair = null
+
+/obj/item/needle/bone
+	name = "bone needle"
+	desc = "A needle made from a sharp bone fragment, used to sew cloth and wounds."
+	stringamt = 10
+	maxstring = 10
+	max_integrity = 15
 	anvilrepair = null
 
 /obj/item/needle/pestra
