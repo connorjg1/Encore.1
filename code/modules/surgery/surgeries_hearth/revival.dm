@@ -4,16 +4,16 @@
 		/datum/surgery_step/clamp,
 		/datum/surgery_step/retract,
 		/datum/surgery_step/saw,
-		/datum/surgery_step/infuse_lux,
+		/datum/surgery_step/infuse_thauma,
 		/datum/surgery_step/cauterize
 	)
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	possible_locs = list(BODY_ZONE_CHEST)
 
-/datum/surgery_step/infuse_lux
+/datum/surgery_step/infuse_thauma
 	name = "Infuse Thauma"
 	implements = list(
-		/obj/item/reagent_containers/lux = 80,
+		/obj/item/reagent_containers/thauma = 80,
 	)
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/carbon/monkey)
 	time = 10 SECONDS
@@ -22,19 +22,19 @@
 	preop_sound = 'sound/surgery/organ2.ogg'
 	success_sound = 'sound/surgery/organ1.ogg'
 
-/datum/surgery_step/infuse_lux/validate_target(mob/user, mob/living/target, target_zone, datum/intent/intent)
+/datum/surgery_step/infuse_thauma/validate_target(mob/user, mob/living/target, target_zone, datum/intent/intent)
 	. = ..()
 	if(target.stat < DEAD)
 		to_chat(user, "They're not dead!")
 		return FALSE
 
-/datum/surgery_step/infuse_lux/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
+/datum/surgery_step/infuse_thauma/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	display_results(user, target, span_notice("I begin to revive [target]..."),
 		span_notice("[user] begins to work thauma into [target]'s heart."),
 		span_notice("[user] begins to work thauma into [target]'s heart."))
 	return TRUE
 
-/datum/surgery_step/infuse_lux/success(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
+/datum/surgery_step/infuse_thauma/success(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	var/revive_pq = PQ_GAIN_REVIVE
 	if(target.mob_biotypes & MOB_UNDEAD)
 		display_results(user, target, span_notice("You cannot infuse life into the undead! The rot must be cured first."),
@@ -67,7 +67,7 @@
 			ADD_TRAIT(target, TRAIT_IWASREVIVED, "[type]")
 	return TRUE
 
-/datum/surgery_step/infuse_lux/failure(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent, success_prob)
+/datum/surgery_step/infuse_thauma/failure(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent, success_prob)
 	display_results(user, target, span_warning("I screwed up!"),
 		span_warning("[user] screws up!"),
 		span_notice("[user] works the thauma into [target]'s innards."), TRUE)

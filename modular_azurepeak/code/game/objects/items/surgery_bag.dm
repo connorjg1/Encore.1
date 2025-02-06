@@ -20,7 +20,7 @@
 		STR.max_w_class = WEIGHT_CLASS_NORMAL
 		STR.max_items = 9
 		STR.not_while_equipped = TRUE
-		STR.set_holdable(list(/obj/item/rogueweapon/surgery, /obj/item/needle, /obj/item/natural/worms/leech, /obj/item/reagent_containers/lux))
+		STR.set_holdable(list(/obj/item/rogueweapon/surgery, /obj/item/needle, /obj/item/natural/worms/leech, /obj/item/reagent_containers/thauma))
 
 /obj/item/storage/belt/rogue/surgery_bag/full/PopulateContents()
 	new /obj/item/rogueweapon/surgery/scalpel(src)
