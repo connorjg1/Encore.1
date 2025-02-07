@@ -123,12 +123,23 @@
 	name = "stone arrow"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/stone
 
+/obj/projectile/bullet/reusable/arrow/bone
+	name = "bone arrow"
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/bone
+
 /obj/item/ammo_casing/caseless/rogue/arrow/stone
 	name = "stone arrow"
 	desc = "A wooden shaft with a jagged rock on the end."
 	icon_state = "stonearrow"
 	max_integrity = 5
 	projectile_type = /obj/projectile/bullet/reusable/arrow/stone
+
+/obj/item/ammo_casing/caseless/rogue/arrow/bone
+	name = "bone arrow"
+	desc = "A wooden shaft with a sharpened bone fragment on the end."
+	icon_state = "bonearrow"
+	max_integrity = 5
+	projectile_type = /obj/projectile/bullet/reusable/arrow/bone
 
 /obj/item/ammo_casing/caseless/rogue/arrow/poison
 	name = "poisoned arrow"
@@ -142,6 +153,12 @@
 	desc = "A wooden shaft with a jagged rock on the end. This one is stained green with floral toxins."
 	projectile_type = /obj/projectile/bullet/reusable/arrow/poison/stone
 	icon_state = "stonearrow_poison"
+
+/obj/item/ammo_casing/caseless/rogue/arrow/bone/poison
+	name = "poisoned bone arrow"
+	desc = "A wooden shaft with a sharpened bone fragment on the end. This one is stained green with floral toxins."
+	icon_state = "bonearrow_poison"
+	projectile_type = /obj/projectile/bullet/reusable/arrow/poison/bone
 
 /obj/projectile/bullet/reusable/arrow/poison
 	name = "poison arrow"
@@ -258,6 +275,10 @@
 /obj/projectile/bullet/reusable/arrow/poison/stone
 	name = "stone arrow"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/stone
+
+/obj/projectile/bullet/reusable/arrow/poison/bone
+	name = "bone arrow"
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/bone
 
 /obj/projectile/bullet/reusable/arrow/poison/on_hit(atom/target, blocked = FALSE)
 	. = ..()

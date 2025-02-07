@@ -72,6 +72,13 @@
 	icon_state = "bsmith"
 	layer = ABOVE_MOB_LAYER
 
+/obj/structure/fluff/walldeco/wavy_flag
+	name = "shirleigh flag"
+	desc = "A proud flagpole waving the flag of the Shirleighs, indicating your arrival in Old Doma."
+	icon = 'icons/roguetown/misc/96x96.dmi'
+	icon_state = "flag_doma"
+	layer = ABOVE_MOB_LAYER
+
 /obj/structure/fluff/walldeco/goblet
 	name = "sign"
 	desc = ""
