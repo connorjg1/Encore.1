@@ -3424,7 +3424,7 @@
 #include "code\modules\surgery\surgeries\prosthetic_replacement.dm"
 #include "code\modules\surgery\surgeries\remove_embedded_object.dm"
 #include "code\modules\surgery\surgeries_hearth\cure_rot.dm"
-#include "code\modules\surgery\surgeries_hearth\extract_lux.dm"
+#include "code\modules\surgery\surgeries_hearth\extract_thauma.dm"
 #include "code\modules\surgery\surgeries_hearth\revival.dm"
 #include "code\modules\tgs\includes.dm"
 #include "code\modules\tgui\external.dm"
@@ -3582,6 +3582,6 @@
 #include "modular_hearthstone\code\interface\LOOC.dm"
 #include "modular_hearthstone\code\modules\mob\living\simple_animal\rogue\orc.dm"
 #include "modular_hearthstone\code\modules\mob\living\simple_animal\rogue\rogue_corpse.dm"
-#include "modular_hearthstone\code\modules\reagents\reagent_containers\lux.dm"
+#include "modular_hearthstone\code\modules\reagents\reagent_containers\thauma.dm"
 #include "modular_hearthstone\code\modules\spells\roguetown\wizard.dm"
 // END_INCLUDE
