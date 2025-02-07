@@ -12386,7 +12386,7 @@
 "nIZ" = (
 /obj/structure/fluff/walldeco/wavy_flag{
 	pixel_x = -11;
-	pixel_y = -7;
+	pixel_y = 30;
 	layer = 11
 	},
 /turf/open/floor/rogue/blocks,
