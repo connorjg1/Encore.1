@@ -230,4 +230,5 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 !/config/title_screens/images/exclude
 
 
-!/tools/build
+!/tools/build/
+!/tools/build/lib
