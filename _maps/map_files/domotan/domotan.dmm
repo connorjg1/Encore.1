@@ -21395,10 +21395,6 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town/shop)
-"wQz" = (
-/obj/item/gun/magic/staff/necropotence,
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/indoors/town/vault)
 "wQM" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -58375,7 +58371,7 @@ tjR
 tjR
 ajW
 cGE
-wQz
+fEL
 fEL
 yfY
 fEL
