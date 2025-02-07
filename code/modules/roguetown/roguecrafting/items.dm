@@ -4,11 +4,18 @@
 
 
 /datum/crafting_recipe/roguetown/tneedle
-	name = "sewing needle"
+	name = "sewing needle (thorn)"
 	result = /obj/item/needle/thorn
 	reqs = list(/obj/item/natural/thorn = 1,
 				/obj/item/natural/fibers = 1)
 	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/bneedle
+	name = "sewing needle (bone)"
+	result = /obj/item/needle/bone
+	reqs = list(/obj/item/natural/bone = 1,
+				/obj/item/natural/fibers = 1)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 
 /datum/crafting_recipe/roguetown/cloth
 	name = "cloth"
@@ -346,6 +353,26 @@
 				/obj/item/natural/stone = 5)
 	req_table = TRUE
 
+/datum/crafting_recipe/roguetown/bonearrow
+	name = "bone arrow"
+	result = /obj/item/ammo_casing/caseless/rogue/arrow/bone
+	reqs = list(/obj/item/grown/log/tree/stick = 1,
+				/obj/item/natural/bone = 1)
+	req_table = TRUE
+
+/datum/crafting_recipe/roguetown/bonearrow_five
+	name = "bone arrow (x5)"
+	result = list(
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone,
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone,
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone,
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone,
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone
+				)
+	reqs = list(/obj/item/grown/log/tree/stick = 5,
+				/obj/item/natural/bone = 5)
+	req_table = TRUE
+
 /datum/crafting_recipe/roguetown/poisonarrow
 	name = "poisoned arrow"
 	result = /obj/item/ammo_casing/caseless/rogue/arrow/poison
@@ -360,6 +387,15 @@
 	result = /obj/item/ammo_casing/caseless/rogue/arrow/stone/poison
 	reqs = list(
 				/obj/item/ammo_casing/caseless/rogue/arrow/stone = 1,
+				/datum/reagent/berrypoison = 5
+				)
+	req_table = TRUE
+
+/datum/crafting_recipe/roguetown/poisonarrow_bone
+	name = "poisoned bone arrow"
+	result = /obj/item/ammo_casing/caseless/rogue/arrow/bone/poison
+	reqs = list(
+				/obj/item/ammo_casing/caseless/rogue/arrow/bone = 1,
 				/datum/reagent/berrypoison = 5
 				)
 	req_table = TRUE
