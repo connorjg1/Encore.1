@@ -60,9 +60,6 @@
 				if(possible_targets.len)
 					return
 				possible_targets = list()
-				for(var/obj/structure/flora/roguetree/RT in range(7, src))
-					if(can_see(src, RT, 7))
-						possible_targets += RT
 				for(var/obj/structure/flora/newtree/RT in range(7, src))
 					if(can_see(src, RT, 7))
 						possible_targets += RT
