@@ -23,7 +23,6 @@
 	has_loadout = TRUE
 	allowed_patrons = ALL_PALADIN_PATRONS
 	id = /obj/item/clothing/ring/silver
-	backl = /obj/item/storage/backpack/rogue/satchel
 	
 /datum/job/roguetown/templar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
@@ -57,6 +56,7 @@
 		if(/datum/patron/elemental/akan)
 			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
+	backl = /obj/item/storage/backpack/rogue/satchel
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
@@ -120,6 +120,7 @@
 			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
+	backl = /obj/item/storage/backpack/rogue/satchel
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	pants = /obj/item/clothing/under/roguetown/chainlegs
@@ -211,7 +212,6 @@
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	beltl = /obj/item/rogueweapon/sword/short
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1)
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
