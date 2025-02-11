@@ -199,7 +199,7 @@
 
 /obj/item/natural/worms/leech/cheele
 	name = "cheele"
-	desc = "A beautiful, blood-infusing altruistic organism made by Pestra herself."
+	desc = "A beautiful, blood-infusing altruistic organism made by Gani herself."
 	icon_state = "cheele"
 	color = null
 	consistent = TRUE
