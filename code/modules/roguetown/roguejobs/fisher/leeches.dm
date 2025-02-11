@@ -16,6 +16,8 @@
 		"embedded_fall_chance" = 0,
 		"embedded_bloodloss"= 0,
 	)
+	plural_name = "leeches"
+	max_amt = 1
 	/// Consistent AKA no lore
 	var/consistent = FALSE
 	/// Are we giving or receiving blood?
