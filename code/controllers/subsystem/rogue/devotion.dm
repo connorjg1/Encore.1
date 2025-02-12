@@ -123,7 +123,7 @@
 
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0)
 	if(istype(patron,/datum/patron/elemental))
-		spelllist += /obj/effect/proc_holder/spell/targeted/abrogation
+		spelllist += /obj/effect/proc_holder/spell/invoked/lesser_heal
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
