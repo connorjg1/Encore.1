@@ -493,6 +493,13 @@
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/rogue/concrete,
 /area/rogue/outdoors/woods)
+"pq" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods)
 "pH" = (
 /obj/structure/table/wood{
 	icon_state = "largetable";
@@ -33029,7 +33036,7 @@ KQ
 KQ
 KQ
 KQ
-cn
+KQ
 cn
 cn
 cn
@@ -33287,8 +33294,8 @@ ok
 ok
 KQ
 KQ
-cn
-cn
+KQ
+KQ
 cn
 cn
 uz
@@ -33545,7 +33552,7 @@ ok
 ok
 ok
 KQ
-ok
+KQ
 cn
 cn
 uz
@@ -73381,7 +73388,7 @@ Eb
 Eb
 Eb
 nB
-Eb
+nB
 nB
 nB
 nB
@@ -78270,9 +78277,9 @@ Es
 Sf
 Sf
 CE
-cV
+pq
 kc
-cV
+pq
 cV
 Ro
 QL
