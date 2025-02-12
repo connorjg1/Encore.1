@@ -10,7 +10,7 @@
 /datum/outfit/job/roguetown/adventurer/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Ranger","Gloom Stalker", "Ranger-Knight") // Ranger Knight is the unique subclass. Gives you steel breastplate and a sword.
+	var/classes = list("Ranger","Gloom Stalker", "Ranger-Knight")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
