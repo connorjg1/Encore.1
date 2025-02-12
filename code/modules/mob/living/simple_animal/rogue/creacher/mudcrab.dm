@@ -52,6 +52,9 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/muckcrab
 	name = "muckcrab"
 	desc = "A small, muck-burrowing crab. Not dangerous like its larger cousin, but just as delicious."
+	icon_state = "muckcrab"
+	icon_living = "muckcrab"
+	icon_dead = "muckcrab_dead"
 	health = 5
 	maxHealth = 5
 	melee_damage_upper = 3
