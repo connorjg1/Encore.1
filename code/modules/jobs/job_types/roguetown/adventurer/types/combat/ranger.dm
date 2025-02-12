@@ -114,7 +114,7 @@
 			beltl = /obj/item/rogueweapon/sword/short
 			pants = /obj/item/clothing/under/roguetown/chainlegs
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
