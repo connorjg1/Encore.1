@@ -4186,6 +4186,11 @@
 	layer = 9;
 	anchored = 1
 	},
+/obj/machinery/light/rogue/firebowl/standing/blue{
+	pixel_y = 28;
+	density = 0;
+	pixel_x = -16
+	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/town/roofs)
 "erK" = (
@@ -4832,10 +4837,6 @@
 /obj/item/rogueweapon/sword/long/exe/cloth{
 	pixel_x = -21;
 	pixel_y = -11
-	},
-/obj/item/rogueweapon/sword/long/oathkeeper{
-	pixel_y = -9;
-	pixel_x = -4
 	},
 /obj/item/rogueweapon/sword/sabre/elf{
 	pixel_x = 21;
@@ -9005,10 +9006,6 @@
 /obj/structure/table/wood{
 	icon_state = "largetable"
 	},
-/obj/machinery/light/rogue/firebowl/standing/blue{
-	pixel_y = 28;
-	density = 0
-	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/town/roofs)
 "jGD" = (
@@ -13176,11 +13173,6 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/rtfield)
 "nSK" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
 /obj/structure/table/wood{
 	icon_state = "largetable"
 	},
@@ -17142,6 +17134,7 @@
 	pixel_y = 37;
 	pixel_x = 5
 	},
+/obj/item/rogue/instrument/lute,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "sjC" = (
@@ -17766,9 +17759,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
-"sNK" = (
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/beach)
 "sNX" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -19257,8 +19247,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/garrison)
 "unT" = (
-/obj/structure/glowshroom,
-/turf/open/floor/rogue/naturalstone,
+/obj/structure/roguerock,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave)
 "uoz" = (
 /obj/structure/fluff/railing/wood{
@@ -19279,7 +19269,8 @@
 /obj/structure/fluff/railing/wood{
 	dir = 4;
 	layer = 2.8;
-	pixel_x = 8
+	pixel_x = 8;
+	pixel_y = -15
 	},
 /obj/structure/table/wood{
 	dir = 8;
@@ -22057,6 +22048,14 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/staff/broom,
+/obj/item/rogue/instrument/viola,
+/obj/item/rogue/instrument/vocals,
+/obj/item/rogue/instrument/hurdygurdy,
+/obj/item/rogue/instrument/guitar,
+/obj/item/rogue/instrument/harp,
+/obj/item/rogue/instrument/drum,
+/obj/item/rogue/instrument/flute,
+/obj/item/rogue/instrument/accord,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
 "xyI" = (
@@ -28643,10 +28642,10 @@ sVV
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -28899,16 +28898,16 @@ sVV
 sVV
 sVV
 sVV
-sNK
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -29156,16 +29155,16 @@ sVV
 sVV
 sVV
 sVV
-sNK
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -29413,14 +29412,14 @@ sVV
 sVV
 sVV
 sVV
-sNK
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -29670,14 +29669,14 @@ sVV
 sVV
 sVV
 sVV
-sNK
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -29924,17 +29923,17 @@ sVV
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -30184,16 +30183,16 @@ sVV
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -30441,16 +30440,16 @@ sVV
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -30698,12 +30697,12 @@ sVV
 sVV
 sVV
 sVV
-sNK
 sVV
 sVV
 sVV
 sVV
-sNK
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -30956,10 +30955,10 @@ sVV
 sVV
 sVV
 sVV
-sNK
-sNK
-sNK
-sNK
+sVV
+sVV
+sVV
+sVV
 sVV
 sVV
 sVV
@@ -80947,7 +80946,7 @@ rcb
 wDb
 rcb
 rcb
-tEP
+ovp
 tEP
 tEP
 tEP
@@ -81466,7 +81465,7 @@ uih
 uih
 uih
 uih
-tEP
+ovp
 tEP
 tEP
 tEP
@@ -82230,7 +82229,7 @@ uih
 uih
 tEP
 tEP
-tEP
+ovp
 tEP
 uih
 uih
@@ -82489,7 +82488,7 @@ tEP
 tEP
 tEP
 tEP
-unT
+tEP
 uih
 mUn
 mUn
@@ -82743,7 +82742,7 @@ uih
 uih
 tEP
 tEP
-unT
+tEP
 uih
 tEP
 tEP
@@ -83773,7 +83772,7 @@ tEP
 ovp
 tEP
 tEP
-tEP
+ovp
 tEP
 kMz
 uih
@@ -84027,7 +84026,7 @@ uih
 uih
 uih
 uih
-unT
+tEP
 tEP
 tEP
 tEP
@@ -84286,7 +84285,7 @@ uih
 uih
 uih
 uih
-tEP
+ovp
 kMz
 uih
 uih
@@ -85059,7 +85058,7 @@ uih
 uih
 tEP
 tEP
-unT
+tEP
 uih
 uih
 uih
@@ -85316,10 +85315,10 @@ uih
 uih
 uih
 tEP
-tEP
+ovp
 tEP
 uih
-unT
+tEP
 ovp
 tEP
 uih
@@ -85583,8 +85582,8 @@ tEP
 uih
 uih
 uih
-oJI
-rcb
+unT
+uih
 uih
 uih
 uih
@@ -85834,12 +85833,12 @@ uih
 uih
 ovp
 tEP
+ovp
 tEP
 tEP
 tEP
 tEP
 uih
-tEP
 tEP
 uih
 uih
@@ -86092,9 +86091,9 @@ uih
 uih
 tEP
 tEP
+ovp
 tEP
-tEP
-tEP
+kMz
 tEP
 tEP
 tEP
@@ -86607,7 +86606,7 @@ uih
 uih
 uih
 uih
-unT
+tEP
 uih
 uih
 uih
@@ -255874,7 +255873,7 @@ lvm
 lvm
 lvm
 hRM
-qSS
+hRM
 jGy
 erp
 xen
@@ -256131,7 +256130,7 @@ lvm
 lvm
 lvm
 lvm
-qSS
+hRM
 nSK
 upk
 vwO

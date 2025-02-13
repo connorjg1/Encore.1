@@ -211,22 +211,22 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	first_time_text = "THE HAMLET OF LAKESIDE"
 
 /area/rogue/outdoors/woods/whisperen
-	first_time_text = "THE HAMLET OF WEY WHISPEREN"
+	first_time_text = "WEY WHISPEREN"
 
 /area/rogue/outdoors/woods/berkleigh
-	first_time_text = "THE HAMLET OF LODGE BERKLEIGH"
+	first_time_text = "LODGE BERKLEIGH"
 
 /area/rogue/outdoors/woods/seculton
-	first_time_text = "THE SECULTON GATE"
+	first_time_text = "SECULTON GATE"
 
 /area/rogue/outdoors/woods/northplains
-	first_time_text = "THE COUNTY OF NORTHPLAINS"
+	first_time_text = "NORTHPLAINS"
 
 /area/rogue/outdoors/woods/heavenscoast
-	first_time_text = "THE COUNTY OF HEAVENSCOAST"
+	first_time_text = "HEAVENSCOAST"
 
 /area/rogue/outdoors/woods/crossroads
-	first_time_text = "THE COUNTY OF CROSSROADS"
+	first_time_text = "CROSSROADS"
 
 /area/rogue/outdoors/river
 	name = "river"
