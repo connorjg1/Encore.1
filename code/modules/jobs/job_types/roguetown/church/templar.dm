@@ -332,6 +332,6 @@
 			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		if("Recurve Bow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
 			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
