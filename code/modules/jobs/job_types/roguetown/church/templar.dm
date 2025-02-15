@@ -245,12 +245,12 @@
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Crossbow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
-			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Longbow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), TRUE)
-			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 
 /datum/advclass/templar/lightranger
@@ -328,10 +328,10 @@
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Crossbow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
-			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		if("Recurve Bow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
-			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE
+			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
