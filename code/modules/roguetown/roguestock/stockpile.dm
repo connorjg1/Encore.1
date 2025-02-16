@@ -311,8 +311,9 @@
 	name = "Fish"
 	desc = "Edible creature of the sea."
 	item_type = /obj/item/reagent_containers/food/snacks/fish
+	withdrawal_type = /obj/item/reagent_containers/food/snacks/fish/common
 	payout_price = 3
-	withdraw_price = 5
+	withdraw_price = 10
 	transport_fee = 2
 	export_price = 8
 	importexport_amt = 5
