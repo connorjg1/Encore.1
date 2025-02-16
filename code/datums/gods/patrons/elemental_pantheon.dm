@@ -14,6 +14,7 @@
 	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
 	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
 	t4 = /obj/effect/proc_holder/spell/invoked/revive
+	additional_spells = list(/obj/effect/proc_holder/spell/invoked/heal)
 	confess_lines = list(
 		"GOLDEN GREENING!",
 		"WE SPROUT ANEW!",

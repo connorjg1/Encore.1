@@ -10,6 +10,7 @@
 	var/ex_light = 7
 	var/ex_flash = 25//You are going to get flashed
 	var/exp_fire = 9//even the caster is in danger
+	devotion_unlockable = FALSE
 
 /obj/effect/proc_holder/spell/targeted/explosion/cast(list/targets,mob/user = usr)
 	for(var/mob/living/target in targets)
