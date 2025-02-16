@@ -1575,12 +1575,6 @@
 /obj/item/natural/rock/gold,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods/west/crags)
-"jY" = (
-/obj/structure/bars/passage/steel{
-	redstone_id = "oldthrone"
-	},
-/turf/open/floor/rogue/carpet/lord/right,
-/area/rogue/under/cave/oldfort)
 "jZ" = (
 /obj/structure/fluff/railing/rampart{
 	dir = 9
@@ -2666,9 +2660,6 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/oldtown)
 "ri" = (
-/obj/structure/bars/passage/steel{
-	redstone_id = "oldthrone"
-	},
 /turf/open/floor/rogue/carpet/lord/center,
 /area/rogue/under/cave/oldfort)
 "rk" = (
@@ -3038,8 +3029,8 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/oldfort)
 "tE" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/axe,
-/turf/open/floor/rogue/cobble/mossy,
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "tG" = (
 /obj/item/rogueore/copper{
@@ -3764,10 +3755,6 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/west)
 "yP" = (
-/obj/structure/lever/wall{
-	redstone_id = "oldthrone";
-	pixel_x = 14
-	},
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = 32
 	},
@@ -5771,10 +5758,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/cave/oldfort)
-"LI" = (
-/mob/living/simple_animal/hostile/rogue/skeleton/axe,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cave/oldfort)
 "LJ" = (
 /obj/structure/bars/pipe{
 	dir = 6
@@ -7609,10 +7592,11 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/oldtown)
 "Xp" = (
-/obj/structure/bars/passage/steel{
-	redstone_id = "oldthrone"
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1
 	},
-/turf/open/floor/rogue/carpet/lord/left,
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "Xq" = (
 /turf/open/floor/rogue/woodturned/nosmooth,
@@ -59340,7 +59324,7 @@ ze
 ze
 Ae
 HC
-vH
+tE
 Ae
 ND
 vH
@@ -59599,7 +59583,7 @@ Ae
 vH
 Ie
 Ae
-vH
+tE
 gF
 Ae
 gF
@@ -59854,7 +59838,7 @@ BT
 vJ
 Ae
 Ie
-tE
+Ie
 Ae
 Ka
 gF
@@ -60624,7 +60608,7 @@ fv
 Jy
 Jy
 uu
-Ie
+VC
 vH
 Ae
 gF
@@ -60882,7 +60866,7 @@ SI
 ze
 Ae
 vH
-LI
+vH
 Ae
 IU
 gF
@@ -97639,7 +97623,7 @@ wA
 Od
 ii
 kO
-Xp
+kO
 Pl
 Ey
 Ey
@@ -98153,7 +98137,7 @@ lU
 cl
 MO
 vz
-jY
+vz
 Pl
 Ey
 Ey
@@ -99696,7 +99680,7 @@ iJ
 MR
 KZ
 iJ
-uu
+Xp
 hC
 yS
 hC
@@ -100466,7 +100450,7 @@ MR
 iJ
 lR
 lR
-uu
+Xp
 vH
 yR
 MH

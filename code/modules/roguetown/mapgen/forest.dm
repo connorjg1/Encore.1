@@ -104,7 +104,7 @@
 //shattered rocky landscape filled with sea goblins and topped with snazzy gems. Outrageous sea goblin ambush chance
 /datum/mapGeneratorModule/forest/west/crags
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
-	allowed_turfs = list(/turf/open/floor/rogue/sand, /turf/open/floor/rogue/dirt)
+	allowed_turfs = list(/turf/open/floor/rogue/sand, /turf/open/floor/rogue/dirt, /turf/open/water/ocean, /turf/open/water/ocean/deep)
 	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
 	spawnableAtoms = list(/obj/structure/flora/roguegrass = 78,
 							/obj/structure/flora/roguetree/burnt = 18,
@@ -114,7 +114,7 @@
 							/obj/item/natural/rock = 25,
 							/obj/structure/closet/dirthole/closed/loot = 15,
 							/obj/structure/flora/roguegrass/maneater/real = 35)
-	spawnableTurfs = list()
+	spawnableTurfs = list(/turf/open/floor/rogue/sand = 5)
 	allowed_areas = list(/area/rogue/outdoors/woods/west/crags)
 
 //Thornbed
@@ -134,7 +134,6 @@
 							/obj/structure/flora/roguegrass/swampweed = 15,
 							/obj/structure/closet/dirthole/closed/loot = 5,
 							/obj/structure/flora/roguegrass/maneater/real = 35)
-	spawnableTurfs = list()
 	allowed_areas = list(/area/rogue/outdoors/woods/west/thornbed)
 
 //Lonely Eerie
@@ -154,7 +153,6 @@
 							/obj/item/natural/stone = 15,
 							/obj/item/natural/rock = 5,
 							/obj/structure/flora/roguegrass/swampweed = 35)
-	spawnableTurfs = list()
 	allowed_areas = list(/area/rogue/outdoors/woods/west/lonelyeerie)
 
 //Weeping Wood underground
@@ -175,5 +173,5 @@
 							/obj/item/natural/stone = 24,
 							/obj/item/natural/rock = 8, 
 							/obj/structure/glowshroom = 35)
-	spawnableTurfs = list()
+	spawnableTurfs = list(/turf/open/floor/rogue/dirt = 2)
 	allowed_areas = list(/area/rogue/under/cavewet/bogcaves)
