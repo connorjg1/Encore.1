@@ -9,7 +9,7 @@
 	desc = "Gani, the Mother, embodies the fundamental element of earth. They are an ancient spirit made divine as they would personify the very essence of the stern, immovable and protective Aspect of Stone. Gani is the world beneath the feet of all. She is the only God of the Four whose omnipresence extends beyond her domain."
 	worshippers = "All Earthly things, the farms, the huntsmen and matriarchs"
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
-	t0 = /obj/effect/proc_holder/spell/invoked/heal
+	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
 	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
@@ -26,6 +26,7 @@
 	desc = "Mjhallidhorn, the Warrior, embodies the fundamental element of ice. They are a once-mortal made divine as they would personify the very essence of the ruthless, brutal and materialistic Aspect of Frost. Mjallidhorn is an Elemental locked in battle in the far north against the hordes of Hell, perhaps forevermore."
 	worshippers = "Warriors, sellswords, justiciers and freedom fighters"
 	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_MJALLIDHORN_SWIM, TRAIT_DEATHSIGHT)
+	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/invoked/avert
 	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
 	t3 = /obj/effect/proc_holder/spell/targeted/soulspeak
@@ -42,8 +43,8 @@
 	desc = "Akan, the Elder, embodies the fundamental element of air. They are an ancient spirit made divine as they would personify the very essence of the wistful, everlasting and free Aspect of the Sky."
 	worshippers = "Nomads, scholars and the forever-free"
 	mob_traits = list(TRAIT_EMPATH, TRAIT_NIGHT_OWL, TRAIT_AKANSIGHT)
-	t0 = /obj/effect/proc_holder/spell/invoked/diagnose
-	t1 = /obj/effect/proc_holder/spell/invoked/heal
+	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
+	t1 = /obj/effect/proc_holder/spell/invoked/diagnose
 	t2 = /obj/effect/proc_holder/spell/invoked/attach_bodypart
 	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot
 	t4 = /obj/effect/proc_holder/spell/invoked/revive
