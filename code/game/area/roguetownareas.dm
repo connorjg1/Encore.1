@@ -199,7 +199,6 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 40,
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
 				/mob/living/carbon/human/species/goblin/npc/ambush = 30)
-	first_time_text = "COUNTY OF THE WEEPING WOOD"
 	converted_type = /area/rogue/indoors/shelter/woods
 /area/rogue/indoors/shelter/woods
 	icon_state = "woods"
@@ -374,6 +373,12 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/under/cavewet/bogcaves
 	first_time_text = "The Undergrove"
+	ambush_mobs = list(
+				/mob/living/carbon/human/species/skeleton/npc = 5,
+				/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 30,
+				/mob/living/carbon/human/species/goblin/npc/sea = 15,
+				/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll = 45,
+				/mob/living/simple_animal/hostile/retaliate/rogue/spider = 30)
 
 /area/rogue/under/cave/spider
 	icon_state = "spider"
