@@ -36,9 +36,9 @@
 /area/rogue/outdoors/woods/west/crags
 	name = "crags"
 	ambush_mobs = list(
-				/mob/living/carbon/human/species/goblin/npc/ambush/sea = 35,
+				/mob/living/carbon/human/species/goblin/npc/ambush/sea = 95,//Good luck lmao
 				/mob/living/simple_animal/hostile/retaliate/rogue/mossback = 35)
-	first_time_text = "THE CRAGS"
+	first_time_text = "GOBLIN CRAGS"//No one would suspect an ambush here, right?
 
 //swampweed and booze here, not much danger
 /area/rogue/outdoors/woods/west/lonelyeerie
