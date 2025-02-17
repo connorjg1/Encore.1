@@ -13,7 +13,10 @@
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt,
-				/turf/open/floor/rogue/grass)
+				/turf/open/floor/rogue/grass,
+				/turf/open/floor/rogue/sand,
+				/turf/open/water/ocean,
+				/turf/open/water/ocean/deep)
 	ambush_mobs = list(
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 40,
 				/mob/living/simple_animal/hostile/retaliate/rogue/mossback = 20,
@@ -48,7 +51,7 @@
 
 //old fort
 /area/rogue/under/cave/oldfort
-	name = "lostkeep_lower"
+	name = "oldfort_lower"
 	icon_state = "under"
 	first_time_text = "KILN OF CLAIMS"
 	droning_sound = 'sound/music/area/sargoth.ogg'
@@ -57,7 +60,7 @@
 	converted_type = /area/rogue/outdoors/oldfort
 
 /area/rogue/outdoors/oldfort
-	name = "lostkeep_outdoors"
+	name = "oldfort_outdoors"
 	icon_state = "sargoth"
 	first_time_text = "INVADER'S GRAVE"
 	droning_sound = 'sound/music/area/siege.ogg'
