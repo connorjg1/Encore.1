@@ -21,7 +21,7 @@
 	icon = 'icons/mob/actions/roguespells.dmi'
 	icon_state = "katar_bound"
 	charges = 20
-	force = 18
+	force = 25
 	possible_item_intents = list(/datum/intent/katar/cut, /datum/intent/katar/thrust)
 	gripsprite = FALSE
 	wlength = WLENGTH_SHORT
