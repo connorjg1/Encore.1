@@ -37,3 +37,29 @@
 	var/mob/living/carbon/human/H = user
 	var/obj/item/bodypart/l_arm/prosthetic/woodleft/L = new()
 	L.attach_limb(H)
+
+/datum/charflaw/limbloss/leg_r
+	name = "Peg Leg (R)"
+	desc = "I lost my right leg long ago, but the peg leg doesn't bleed as much... but it is flammable."
+	lost_zone = BODY_ZONE_R_LEG
+
+/datum/charflaw/limbloss/leg_r/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/r_leg/prosthetic/wood/L = new()
+	L.attach_limb(H)
+
+/datum/charflaw/limbloss/leg_l
+	name = "Peg Leg (L)"
+	desc = "I lost my left leg long ago, but the peg leg doesn't bleed as much... but it is flammable."
+	lost_zone = BODY_ZONE_L_LEG
+
+/datum/charflaw/limbloss/leg_l/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/l_leg/prosthetic/wood/L = new()
+	L.attach_limb(H)
