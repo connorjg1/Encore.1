@@ -124,6 +124,7 @@
 	desc = "A prosthetic right leg, crafted of bronze."
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "prleg"
+	prosthetic_icon = "br" //different icon than wood peg leg
 	max_damage = 110
 	resistance_flags = FIRE_PROOF
 	status = BODYPART_ROBOTIC
@@ -163,6 +164,7 @@
 	desc = "A prosthetic left leg, crafted of bronze."
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "prleg"
+	prosthetic_icon = "br" //different icon than wood peg leg
 	max_damage = 110
 	resistance_flags = FIRE_PROOF
 	status = BODYPART_ROBOTIC

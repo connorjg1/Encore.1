@@ -90,6 +90,8 @@
 	var/list/aux_markings
 	/// Visual features of the bodypart, such as hair and accessories
 	var/list/bodypart_features
+	/// Prosthetic mob icons. "pr" is the default prosthetic prefix. Icon ends up as "[prosthetic_icon]_[body_zone]"
+	var/prosthetic_icon = "pr"
 
 	resistance_flags = FLAMMABLE
 
@@ -617,10 +619,10 @@
 
 	else
 		limb.icon = species_icon
-		limb.icon_state = "pr_[body_zone]"
+		limb.icon_state = "[prosthetic_icon]_[body_zone]"
 		if(aux_zone)
 			if(!hideaux)
-				aux = image(limb.icon, "pr_[aux_zone]", -aux_layer, image_dir)
+				aux = image(limb.icon, "[prosthetic_icon]_[aux_zone]", -aux_layer, image_dir)
 				. += aux
 
 
