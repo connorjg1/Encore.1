@@ -103,6 +103,8 @@
 	max_integrity = 300
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 15
+	toes = FALSE
+	pr_slowdown = 0.25
 
 /obj/item/bodypart/r_leg/prosthetic/attack(mob/living/M, mob/user)
 	if(!ishuman(M))
@@ -131,6 +133,7 @@
 	max_integrity = 350
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 30
+	heavy_steps = TRUE
 
 /obj/item/bodypart/l_leg/prosthetic/wood
 	name = "left peg leg"
@@ -143,6 +146,8 @@
 	max_integrity = 300
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 15
+	toes = FALSE
+	pr_slowdown = 0.25
 
 /obj/item/bodypart/l_leg/prosthetic/attack(mob/living/M, mob/user)
 	if(!ishuman(M))
@@ -171,3 +176,4 @@
 	max_integrity = 350
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 30
+	heavy_steps = TRUE

@@ -83,7 +83,11 @@
 	var/rotted = FALSE
 	var/skeletonized = FALSE
 
-	var/fingers = TRUE
+	///Prosthetic vars
+	var/fingers = TRUE 		//Dexterity checks for prosthetic arms
+	var/toes = TRUE			//Mostly for peg legs
+	var/heavy_steps = FALSE	//Heavy prosthetic legs/feet
+	var/pr_slowdown = 0 		//Slowdown based on prosthetics
 
 	/// Visaul markings to be rendered alongside the bodypart
 	var/list/markings
