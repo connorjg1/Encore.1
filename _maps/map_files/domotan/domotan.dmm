@@ -10721,6 +10721,10 @@
 "lqr" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/manor)
+"lqO" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town)
 "lqQ" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -49184,7 +49188,7 @@ wqw
 wqw
 wqw
 wqw
-ciu
+lqO
 ciu
 ciu
 vsp
