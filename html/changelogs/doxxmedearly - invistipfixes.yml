@@ -5,4 +5,4 @@ delete-after: True
 
 
 changes:
-  - bugfix: "Corrected messages and descriptions for the invisibility spell."
+  - bugfix: "Invisibility actually lasts 45 seconds now."
