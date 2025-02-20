@@ -1,0 +1,8 @@
+author: doxxmedearly
+
+# Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
+delete-after: True
+
+
+changes:
+  - bugfix: "Corrected messages and descriptions for the invisibility spell."
