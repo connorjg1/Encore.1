@@ -14,7 +14,7 @@
 	tutorial = "The Divine is all that matters in the Goblet now. The Elementals have cast the onus upon mortals to maintain order, as they hold the barrier against Hell itself for our sake. None may represent the Balance more stringently than the Aspects' worshippers, priests of the Katholikos."
 	whitelist_req = FALSE
 
-	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/howl/call_of_the_moon, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
+	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
 	outfit = /datum/outfit/job/roguetown/priest
 
 	display_order = JDO_PRIEST
