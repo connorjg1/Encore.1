@@ -856,6 +856,10 @@
 "aQL" = (
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
+"aQS" = (
+/obj/effect/landmark/start/prince,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/manor)
 "aRd" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -7303,6 +7307,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/landmark/start/magician,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician)
 "hFU" = (
@@ -9105,6 +9110,7 @@
 "jIL" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/fabric,
+/obj/effect/landmark/start/magician,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/magician)
 "jIP" = (
@@ -9152,7 +9158,7 @@
 "jKf" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
-	lockid = "inquisition";
+	lockid = "church";
 	name = "Churchling Quarters";
 	dir = 4
 	},
@@ -11170,6 +11176,7 @@
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
 "lRq" = (
@@ -17378,6 +17385,7 @@
 /area/rogue/under/town/basement/keep)
 "ssd" = (
 /obj/structure/chair/bench/couchablack,
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/manor)
 "ssK" = (
@@ -18907,6 +18915,7 @@
 /area/rogue/outdoors/beach/forest)
 "tOP" = (
 /obj/structure/rogue/trophy/deer,
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
 "tPg" = (
@@ -21273,6 +21282,10 @@
 /obj/structure/fluff/canopy,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
+"wzb" = (
+/obj/effect/landmark/start/prince,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/manor)
 "wzn" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician)
@@ -250294,7 +250307,7 @@ vLe
 glG
 jkg
 qah
-doq
+wzb
 doq
 bxu
 cmq
@@ -252601,7 +252614,7 @@ evC
 doq
 doq
 jkg
-pob
+aQS
 okb
 wLo
 jCe
