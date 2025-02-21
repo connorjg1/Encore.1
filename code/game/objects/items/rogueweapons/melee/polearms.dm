@@ -499,7 +499,3 @@
 	icon_state = "wizardstaff"
 	force = 25
 	force_wielded = 28
-	
-	/obj/item/rogueweapon/woodstaff/wizard/funny_attack_effects(mob/living/target, mob/living/user, nodmg)
-	. = ..()
-		target.electrocute_act(5, src)
