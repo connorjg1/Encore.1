@@ -32,6 +32,9 @@
 /obj/structure/fluff/littlebanners/bluered
 	icon_state = "hangingbanners_br"
 
+/obj/structure/fluff/littlebanners/elemental
+	icon_state = "hangingbanners_elem"
+
 /obj/structure/fluff/littlebanners/MouseDrop(over_object, src_location, over_location)
 	. = ..()
 	if(over_object == usr && Adjacent(usr) && (in_range(src, usr) || usr.contents.Find(src)))
