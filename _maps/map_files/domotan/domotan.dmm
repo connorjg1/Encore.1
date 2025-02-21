@@ -856,6 +856,10 @@
 "aQL" = (
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
+"aQS" = (
+/obj/effect/landmark/start/prince,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/manor)
 "aRd" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -2049,6 +2053,10 @@
 /obj/item/natural/cloth,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
+"cfP" = (
+/obj/structure/fluff/railing/rampart,
+/turf/open/transparent/openspace,
+/area/rogue/under/cave)
 "cgc" = (
 /obj/effect/decal/cobbleedge{
 	dir = 6
@@ -2154,6 +2162,12 @@
 /obj/machinery/light/rogue/forge,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/shelter/town/dwarf)
+"cjp" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "cjx" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8
@@ -7303,6 +7317,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/landmark/start/magician,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/magician)
 "hFU" = (
@@ -8495,6 +8510,12 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
+"jbL" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "jbU" = (
 /obj/effect/landmark/start/knight,
 /turf/open/floor/rogue/carpet/lord/center,
@@ -9068,6 +9089,9 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
+"jGN" = (
+/turf/open/water/ocean/deep,
+/area/rogue/under/cave)
 "jGZ" = (
 /obj/effect/oneway{
 	dir = 1
@@ -9105,6 +9129,7 @@
 "jIL" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/fabric,
+/obj/effect/landmark/start/magician,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/magician)
 "jIP" = (
@@ -9152,7 +9177,7 @@
 "jKf" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
-	lockid = "inquisition";
+	lockid = "church";
 	name = "Churchling Quarters";
 	dir = 4
 	},
@@ -9780,6 +9805,12 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
+"ksq" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 10
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "ksK" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/suit/roguetown/shirt/robe/necromancer{
@@ -10033,6 +10064,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
+"kHL" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "kIK" = (
 /obj/structure/chair/wood/rogue/chair3,
 /obj/machinery/light/rogue/torchholder/l,
@@ -10684,6 +10721,10 @@
 "lqr" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/town/manor)
+"lqO" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/town)
 "lqQ" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -11170,6 +11211,7 @@
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
 "lRq" = (
@@ -13414,6 +13456,10 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/transparent/openspace,
 /area/rogue/under/town/basement/keep)
+"odY" = (
+/obj/structure/fluff/railing/rampart,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "oed" = (
 /obj/item/roguekey/shop,
 /obj/item/roguekey/shop,
@@ -17378,6 +17424,7 @@
 /area/rogue/under/town/basement/keep)
 "ssd" = (
 /obj/structure/chair/bench/couchablack,
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/manor)
 "ssK" = (
@@ -17437,6 +17484,12 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
+"swG" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 9
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "sxg" = (
 /obj/structure/fluff/railing/wood,
 /obj/structure/fluff/railing/wood{
@@ -18907,6 +18960,7 @@
 /area/rogue/outdoors/beach/forest)
 "tOP" = (
 /obj/structure/rogue/trophy/deer,
+/obj/effect/landmark/start/prince,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/manor)
 "tPg" = (
@@ -20794,6 +20848,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
+"vTV" = (
+/obj/structure/fluff/railing/rampart{
+	dir = 6
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "vUb" = (
 /obj/structure/chair/wood/rogue{
 	dir = 8
@@ -21273,6 +21333,10 @@
 /obj/structure/fluff/canopy,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
+"wzb" = (
+/obj/effect/landmark/start/prince,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/manor)
 "wzn" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician)
@@ -44885,9 +44949,9 @@ uih
 uih
 uih
 uih
-uih
-uih
-uih
+jGN
+jGN
+jGN
 adx
 sVV
 sVV
@@ -45658,7 +45722,7 @@ asD
 asD
 asD
 asD
-coJ
+asD
 eBP
 sVV
 sVV
@@ -49124,7 +49188,7 @@ wqw
 wqw
 wqw
 wqw
-ciu
+lqO
 ciu
 ciu
 vsp
@@ -122944,10 +123008,10 @@ uih
 rcb
 tEP
 tEP
+vTV
+kHL
+cjp
 tEP
-tEP
-wnY
-wnY
 tEP
 uih
 uih
@@ -123201,11 +123265,11 @@ uih
 tEP
 tEP
 tEP
+odY
+wnY
+cfP
 tEP
-wnY
-wnY
-wnY
-wnY
+tEP
 uih
 uih
 uih
@@ -123458,11 +123522,11 @@ uih
 wnY
 bdP
 tEP
+odY
 wnY
-wnY
-wnY
-wnY
-wnY
+cfP
+tEP
+tEP
 uih
 uih
 uih
@@ -123715,10 +123779,10 @@ uih
 tEP
 tEP
 tEP
+odY
 wnY
-wnY
-wnY
-wnY
+cfP
+tEP
 uih
 uih
 uih
@@ -123972,9 +124036,9 @@ uih
 wnY
 tEP
 tEP
+odY
 wnY
-wnY
-wnY
+cfP
 tEP
 uih
 uih
@@ -124229,10 +124293,10 @@ uih
 tEP
 tEP
 tEP
+ksq
+jbL
+swG
 tEP
-wnY
-tEP
-rcb
 uih
 uih
 uih
@@ -188738,8 +188802,8 @@ xgO
 xgO
 xgO
 xgO
-sjF
-sjF
+xgO
+xgO
 xgO
 xls
 xls
@@ -188994,9 +189058,9 @@ dkn
 xgO
 xgO
 xgO
-sjF
-sjF
-sjF
+xgO
+xgO
+xgO
 xgO
 xgO
 xls
@@ -189251,10 +189315,10 @@ dkn
 xgO
 xgO
 xgO
-sjF
-sjF
-sjF
-sjF
+xgO
+xgO
+xgO
+xgO
 xgO
 xgO
 xls
@@ -189508,9 +189572,9 @@ dkn
 xgO
 xgO
 xgO
-sjF
-sjF
-sjF
+xgO
+xgO
+xgO
 xgO
 xgO
 xgO
@@ -250294,7 +250358,7 @@ vLe
 glG
 jkg
 qah
-doq
+wzb
 doq
 bxu
 cmq
@@ -252601,7 +252665,7 @@ evC
 doq
 doq
 jkg
-pob
+aQS
 okb
 wLo
 jCe
@@ -254787,8 +254851,8 @@ sjF
 dkn
 xgO
 xgO
-sjF
-sjF
+xgO
+xgO
 xgO
 dkn
 xls
