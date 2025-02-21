@@ -742,6 +742,6 @@
 	result = /obj/item/rogueweapon/woodstaff/wizard
 	reqs = list(/obj/item/grown/log/tree = 1,
 				/obj/item/roguegem/diamond = 1,
-				reagent_containers/powder/man = 3)
+				/obj/item/reagent_containers/powder/mana = 3)
 	skillcraft = /datum/skill/magic/arcane
 	craftdiff = 3 
