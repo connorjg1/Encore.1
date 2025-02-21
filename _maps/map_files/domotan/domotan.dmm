@@ -2129,6 +2129,10 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/cloak/templar/akan,
+/obj/item/clothing/cloak/templar/akan,
+/obj/item/clothing/cloak/templar/iliope,
+/obj/item/clothing/cloak/templar/iliope,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "chi" = (
@@ -16064,6 +16068,9 @@
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
 /obj/item/clothing/under/roguetown/heavy_leather_pants,
+/obj/item/clothing/cloak/templar/all_aspect,
+/obj/item/clothing/cloak/all_aspect,
+/obj/item/clothing/cloak/all_aspect/alt,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "qRH" = (
@@ -16542,12 +16549,21 @@
 /obj/structure/closet/crate/chest/neu,
 /obj/item/clothing/neck/roguetown/psicross/visires,
 /obj/item/clothing/neck/roguetown/psicross/visires,
-/obj/item/clothing/head/roguetown/helmet/heavy/visires,
 /obj/item/clothing/cloak/templar/visires,
 /obj/item/clothing/cloak/templar/visires,
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm{
+	name = "helmet of visires"
+	},
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm{
+	name = "helmet of visires"
+	},
+/obj/item/clothing/head/roguetown/helmet/heavy/visires,
+/obj/item/clothing/head/roguetown/helmet/heavy/visires,
+/obj/item/clothing/cloak/templar/visires/fire,
+/obj/item/clothing/cloak/templar/visires/fire,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "ruQ" = (
@@ -17818,10 +17834,11 @@
 /obj/item/clothing/cloak/templar/mjallidhorn,
 /obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
 /obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
-/obj/item/clothing/cloak/templar/iliope,
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/cloak/templar/mjallidhorn/frost,
+/obj/item/clothing/cloak/templar/mjallidhorn/frost,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "sHx" = (
@@ -19039,7 +19056,6 @@
 /obj/item/clothing/neck/roguetown/psicross/golerkanh,
 /obj/item/clothing/neck/roguetown/psicross/gani,
 /obj/item/clothing/neck/roguetown/psicross/gani,
-/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh,
 /obj/item/clothing/cloak/templar/golerkanh,
 /obj/item/clothing/cloak/templar/gani,
 /obj/item/clothing/cloak/templar/gani,
@@ -19049,6 +19065,10 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh,
+/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh,
+/obj/item/clothing/cloak/templar/golerkanh/earth,
+/obj/item/clothing/cloak/templar/golerkanh/earth,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "tRw" = (
