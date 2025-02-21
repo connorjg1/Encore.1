@@ -78,3 +78,7 @@
 /datum/crafting_recipe/roguetown/structure/littlebanners/bluered
 	name = "fair banners blue-red"
 	result = list(/obj/structure/fluff/littlebanners/bluered)
+
+/datum/crafting_recipe/roguetown/structure/littlebanners/elemental
+	name = "fair banners elemental"
+	result = list(/obj/structure/fluff/littlebanners/elemental)
