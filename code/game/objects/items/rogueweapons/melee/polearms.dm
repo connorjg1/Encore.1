@@ -494,8 +494,9 @@
 
 /obj/item/rogueweapon/woodstaff/wizard
 	name = "wizard staff"
-	desc = "A staff tipped by a rare Thaumalogically charged crystal. Making one of these is a rite of passage for many Magi apprentices."
+	desc = "A crackling staff tipped by a rare Thaumalogically charged crystal. Making one of these is a rite of passage for many Magi apprentices."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "wizardstaff"
 	force = 25
 	force_wielded = 28
+	stunforce = (3 SECONDS)
