@@ -104,7 +104,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 15
 	toes = FALSE
-	pr_slowdown = 0.25
+	pr_slowdown = 0.25 //Harder to move on a peg leg, even if you're used to it. Very minor slow
 
 /obj/item/bodypart/r_leg/prosthetic/attack(mob/living/M, mob/user)
 	if(!ishuman(M))
@@ -147,7 +147,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	sellprice = 15
 	toes = FALSE
-	pr_slowdown = 0.25
+	pr_slowdown = 0.25 //Harder to move on a peg leg, even if you're used to it. Very minor slow
 
 /obj/item/bodypart/l_leg/prosthetic/attack(mob/living/M, mob/user)
 	if(!ishuman(M))

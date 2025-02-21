@@ -3,13 +3,6 @@
 	var/lost_zone
 
 /datum/charflaw/limbloss/on_mob_creation(mob/user)
-	if(!ishuman(user))
-		return
-	var/mob/living/carbon/human/H = user
-	var/obj/item/bodypart/O = H.get_bodypart(lost_zone)
-	if(O)
-		O.drop_limb()
-		qdel(O)
 	return
 
 /datum/charflaw/limbloss/arm_r
