@@ -57,6 +57,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
 			H.grant_language(/datum/language/celestial)
 			if(H.age == AGE_OLD)
 				H.change_stat("speed", -1)
@@ -67,7 +68,11 @@
 			H.change_stat("perception", 1)
 			H.change_stat("intelligence", 3)
 			r_hand = /obj/item/rogueweapon/woodstaff/naledi
-
+			
+			var/datum/devotion/C = new /datum/devotion(H, H.patron)
+			C.grant_spells(H)
+			H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+			H.mind.adjust_spellpoints(3)
 
 			head = /obj/item/clothing/head/roguetown/roguehood/hierophant
 			cloak = /obj/item/clothing/cloak/hierophant
