@@ -6355,7 +6355,8 @@
 /area/rogue/outdoors/woods)
 "gJL" = (
 /obj/structure/roguemachine/vendor/inn{
-	pixel_y = -25
+	pixel_y = -25;
+	density = 0
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
@@ -7848,7 +7849,10 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/town)
 "iqt" = (
-/obj/structure/closet/crate/drawer/inn,
+/obj/structure/closet/crate/drawer/inn{
+	density = 0;
+	anchored = 1
+	},
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
@@ -8212,10 +8216,6 @@
 	icon_state = "roofg"
 	},
 /area/rogue/outdoors/town/roofs/keep)
-"iKs" = (
-/obj/structure/bars/cemetery,
-/turf/open/floor/rogue/blocks/newstone/alt,
-/area/rogue/under/town/basement/keep)
 "iKH" = (
 /turf/closed/wall/mineral/rogue/decowood/vert,
 /area/rogue/indoors/town/tavern)
@@ -12932,9 +12932,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
 "nDe" = (
-/obj/structure/bars/cemetery{
-	dir = 4;
-	pixel_y = -11
+/obj/structure/fluff/railing/border{
+	dir = 6
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/exposed/town/keep)
@@ -14755,7 +14754,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/physician)
 "pvd" = (
-/obj/structure/bars/cemetery{
+/obj/structure/fluff/railing/border{
 	dir = 4
 	},
 /turf/open/floor/rogue/blocks/bluestone,
@@ -16968,13 +16967,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/magician)
-"rQM" = (
-/obj/structure/mineral_door/bars{
-	lockid = "manor";
-	name = "Grand Treasury"
-	},
-/turf/open/floor/rogue/blocks/bluestone,
-/area/rogue/under/town/basement/keep)
 "rQW" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -188691,7 +188683,7 @@ nPX
 nPX
 utd
 nPX
-iKs
+qzx
 hkT
 iDz
 fIK
@@ -188948,7 +188940,7 @@ nPX
 utd
 utd
 utd
-rQM
+cIl
 uqS
 iDz
 fIK
