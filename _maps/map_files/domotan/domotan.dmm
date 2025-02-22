@@ -7516,6 +7516,12 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/garrison)
+"hTo" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/indoors/town/church)
 "hUd" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -10896,6 +10902,12 @@
 	icon_state = "roofg"
 	},
 /area/rogue/outdoors/mountains)
+"lCm" = (
+/obj/structure/fluff/walldeco/katholikos_banner/visires{
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel)
 "lCv" = (
 /obj/structure/closet/crate/roguecloset,
 /obj/item/paper/scroll,
@@ -11223,6 +11235,12 @@
 	},
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/town/shop)
+"lSv" = (
+/obj/structure/fluff/walldeco/katholikos_banner/gani{
+	pixel_x = 33
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel)
 "lTC" = (
 /obj/structure/fluff/railing/rampart{
 	dir = 9
@@ -15147,6 +15165,12 @@
 	icon_state = "roofg"
 	},
 /area/rogue/outdoors/town/roofs)
+"pTG" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/town/church/chapel)
 "pTI" = (
 /obj/structure/closet/crate/roguecloset,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -16297,6 +16321,12 @@
 "rcH" = (
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town/tavern)
+"rdd" = (
+/obj/structure/fluff/walldeco/katholikos_banner/akan{
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel)
 "rdi" = (
 /obj/structure/closet/crate/drawer/random,
 /turf/open/floor/rogue/woodturned,
@@ -21151,6 +21181,12 @@
 "woh" = (
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/manor)
+"wov" = (
+/obj/structure/fluff/walldeco/katholikos_banner/mjallidhorn{
+	pixel_x = 33
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/town/church/chapel)
 "woW" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -22874,7 +22910,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
 "yjP" = (
-/obj/structure/fluff/littlebanners/greenred,
+/obj/structure/fluff/littlebanners/elemental,
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/shelter/town)
 "ylR" = (
@@ -55595,9 +55631,9 @@ jVy
 abn
 axa
 gcy
-mvp
+rdd
 biT
-mvp
+lCm
 biT
 jVy
 jVy
@@ -56620,7 +56656,7 @@ tRh
 eZP
 eZP
 jVy
-sjS
+pTG
 hQz
 aJM
 mvp
@@ -57651,9 +57687,9 @@ vyy
 vpz
 jVy
 tPt
-mvp
+lSv
 bQN
-mvp
+wov
 bQN
 jVy
 jVy
@@ -60498,7 +60534,7 @@ fGa
 bwj
 fGa
 mIf
-cxK
+hTo
 cxK
 eME
 mIf
