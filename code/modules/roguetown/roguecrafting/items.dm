@@ -736,3 +736,12 @@
 				/obj/item/cart_upgrade/level_1 = 1,
 				/obj/item/ingot/iron = 1)
 	craftdiff = 4
+
+/datum/crafting_recipe/roguetown/woodstaff/wizard
+	name = "wizard staff"
+	result = /obj/item/rogueweapon/woodstaff/wizard
+	reqs = list(/obj/item/grown/log/tree = 1,
+				/obj/item/roguegem/diamond = 1,
+				/obj/item/reagent_containers/powder/mana = 3)
+	skillcraft = /datum/skill/magic/arcane
+	craftdiff = 3 
